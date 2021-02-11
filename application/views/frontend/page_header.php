@@ -61,6 +61,12 @@
                      <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
                   </a>
                </div>
+               <div class="row">
+                  <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
+                     <a href="<?=base_url();?>">
+                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/daycare-banner.jpg" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
+                     </a>
+                  </div>
                   <!-- <div class="col-md-3" style="border:0px solid green;margin: 5px 0;">
                      <img class="img-responsive" src="<?=base_url();?>fwedget/images/mujib100.png" alt="mujib 100 logo" height="50" style="float:right; height: 150px;">
                   </div> -->
