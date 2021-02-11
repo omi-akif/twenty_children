@@ -83,8 +83,8 @@
                         <div class="collapse navbar-collapse navbar-ex1-collapse">
                            <ul class="nav navbar-nav">
                               <li><a href="<?=base_url();?>">হোম <span class="sr-only">(current)</span></a></li>
-                              <li><a href="<?=base_url()?>about-us">আমাদের কথা</a></li>
-                              <li><a href="<?=base_url()?>service">সেবা সমূহ</a></li>
+                              <li><a href="<?=base_url()?>about-us">প্রকল্প প্রসঙ্গে</a></li>
+                              <!-- <li><a href="<?=base_url()?>service">সেবা সমূহ</a></li> -->
                               <li><a href="<?=base_url()?>contact-us">যোগাযোগ</a></li>
 
                               <?php if(!$this->ion_auth->logged_in()) { ?>

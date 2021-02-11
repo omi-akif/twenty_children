@@ -54,7 +54,7 @@ $route['404_override'] 			= '';
 $route['translate_uri_dashes'] 	= FALSE;
 
 
-$route['immunization'] 				= 'site/immunization';
+$route['admission-procedure'] = 'site/admission_procedure';
 $route['about-us'] 				= 'site/about_us';
 $route['service'] 				= 'site/services';
 $route['contact-us'] 			= 'site/contact_us';
@@ -83,7 +83,25 @@ $route['twelve-to-thirty-children-mental-improvement'] = 'site/twelve_to_thirty_
 $route['twelve-to-thirty-children-health-improvement'] = 'site/twelve_to_thirty_children_health_improvement';
 $route['twelve-to-thirty-children-curricular'] = 'site/twelve_to_thirty_childen_curricular';
 
+#2-4 years children routes
 
+$route['two-to-four-years-children-day-care']='site/two_to_four_years_children_day_care';
+$route['two-to-four-years-children-food-nutrition']='site/two_to_four_years_children_food_nutrition';
+$route['two-to-four-years-children-excitement']='site/two_to_four_years_children_excitement';
+$route['two-to-four-years-children-health-care']='site/two_to_four_years_children_health_care';
+$route['two-to-four-years-children-mental-improvement']='site/two_to_four_years_children_mental_improvement';
+$route['two-to-four-years-children-health-improvement']='site/two_to_four_years_children_health_improvement';
+$route['two-to-four-years-children-curricular'] = 'site/two_to_four_years_children_curricular';
+
+#4-6 years children routes
+
+$route['four-to-six-years-children-day-care']='site/four_to_six_years_children_day_care';
+$route['four-to-six-years-children-food-nutrition']='site/four_to_six_years_children_food_nutrition';
+$route['four-to-six-years-children-excitement']='site/four_to_six_years_children_excitement';
+$route['four-to-six-years-children-health-care']='site/four_to_six_years_children_health_care';
+$route['four-to-six-years-children-mental-improvement']='site/four_to_six_years_children_health_improvement';
+$route['four-to-six-years-children-health-improvement']='site/four_to_six_years_children_mental_improvement';
+$route['four-to-six-years-children-curricular'] = 'site/four_to_six_years_children_curricular';
 
 
 $route['event-details'] 		= 'site/event_details';
