@@ -30,10 +30,10 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?=base_url();?>awedget/assets/js/demo.js"></script>
 
-<script src="https://cdn.ckeditor.com/4.7.0/full/ckeditor.js"></script>
 <!-- <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script> -->
 
 <?php if($this->router->fetch_method('add') == 'add' || $this->router->fetch_method('edit') == 'edit'){ ?>
+<!-- <script src="https://cdn.ckeditor.com/4.7.0/full/ckeditor.js"></script> -->
 <!-- Select2 -->
 <script src="<?=base_url();?>awedget/assets/plugins/select2/select2.full.min.js"></script>
 <!-- InputMask -->
@@ -52,11 +52,13 @@
    $(function () {
       // Replace the <textarea id="editor1"> with a CKEditor
       // instance, using default configuration.
-      CKEDITOR.replace('editor1');
-      CKEDITOR.replace('editor2');
-      CKEDITOR.replace('editor3');
-      CKEDITOR.replace('editor4');
-      CKEDITOR.replace('editor5');
+      
+      // CKEDITOR.replace('editor1');
+      // CKEDITOR.replace('editor2');
+      // CKEDITOR.replace('editor3');
+      // CKEDITOR.replace('editor4');
+      // CKEDITOR.replace('editor5');
+
       //bootstrap WYSIHTML5 - text editor
       //$(".textarea").wysihtml5();
    });

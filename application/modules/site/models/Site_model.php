@@ -100,7 +100,8 @@ class Site_model extends MY_Model {
          $dbName = $this->dc_db_name($item->daycare_id);
          // $dbName = 'demo_'.$dbName;
          $this->db->select("dm.*, ud.id as ud_table_id");
-         $this->db->from("demo_daycare.users_daycares ud");
+         $this->db->from("daycares_main.users_daycares ud");
+         // $this->db->from("demo_daycare.users_daycares ud");         
          $this->db->join("$dbName.members dm", "dm.id = ud.member_id");
          // $this->db->where("dm.status", 0);
          $this->db->where("ud.user_id", $userID);

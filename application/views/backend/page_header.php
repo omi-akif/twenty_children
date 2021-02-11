@@ -25,7 +25,7 @@
    <!-- DataTables -->
    <link rel="stylesheet" href="<?=base_url();?>awedget/assets/plugins/datatables/dataTables.bootstrap.css">
 
-   <link rel="stylesheet" href="<?=base_url();?>awedget/assets/plugins/texteditor/editor.css">
+   <!-- <link rel="stylesheet" href="<?=base_url();?>awedget/assets/plugins/texteditor/editor.css"> -->
    <!-- bootstrap wysihtml5 - text editor -->
    <link rel="stylesheet" href="<?=base_url();?>awedget/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
@@ -156,6 +156,10 @@
 
                <?php if ($this->ion_auth->in_group(array('admin'))){ ?>
                <li class="<?=backend_activate_menu_class('day_care');?>"><a href="<?php echo base_url('adminpanel/day_care');?>"><i class="fa fa-th"></i> <span>Day Care Center</span></a></li>
+
+               <li class="<?=backend_activate_menu_class('day_care_others');?>"><a href="<?php echo base_url('adminpanel/day_care_others');?>"><i class="fa fa-th"></i> <span>Day Care Others</span></a></li>
+
+               <li class="<?=backend_activate_menu_class('doctors');?>"><a href="<?php echo base_url('adminpanel/doctors');?>"><i class="fa fa-th"></i> <span>Doctors</span></a></li>
 
                <li class="treeview <?=backend_activate_menu_class('manage_user');?>">
                   <a href="javascript:void();">

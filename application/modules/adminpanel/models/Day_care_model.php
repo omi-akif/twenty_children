@@ -12,6 +12,32 @@ class Day_care_model extends MY_Model {
         return $query;
     }
 
+    public function get_daycare_others() {
+      // count query
+      $this->db->select('dc.*, dv.div_name_bn, ds.dis_name_bn, up.upa_name_bn');
+      $this->db->from('day_cares_others dc');
+      $this->db->join('daycare_owner o', 'o.id = dc.owner_id', 'LEFT');
+      $this->db->join('divisions dv', 'dv.id = dc.division_id', 'LEFT');
+      $this->db->join('districts ds', 'ds.id = dc.district_id', 'LEFT');
+      $this->db->join('upazilas up', 'up.id = dc.upazila_id', 'LEFT');       
+      $this->db->order_by('dc.id', 'ASC');
+      $query = $this->db->get()->result();
+
+      return $query;
+   }
+
+   public function get_info_dc_other($id) {
+      // count query
+      $this->db->select('*');
+      $this->db->from('day_cares_others');     
+      $this->db->where('id', $id);
+      $query = $this->db->get()->row();
+
+      return $query;
+   }
+
+
+
    // public function get_info($id) {
    //    $this->customDB->select('m.id, m.child_name, m.child_age, m.child_weight, m.child_height, r.child_mother_name, r.child_mother_designation, r.child_mother_working_place, r.child_mother_ph_no, r.child_mother_total_salary');
    //    $this->customDB->from('members m');

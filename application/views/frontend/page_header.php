@@ -42,19 +42,25 @@
                   <div class="col-md-7" style="text-align: left; padding-top: 5px; padding-left: 0px;border: 0px solid red; font-size: 12px; line-height: 17px; font-weight: bold; color: white;margin-left: -30px;">
                      ২০টি শিশু দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প <br> মহিলা বিষয়ক অধিদপ্তর, মহিলা ও শিশু বিষয়ক মন্ত্রণালয়
                   </div>
-                  <div class="col-md-3 topright">
-                     <a href="#">ইংরেজি</a> | <a href="#">লগইন</a> | <a href="#">রেজিস্ট্রেশন</a>
+                  <?php if(!$this->ion_auth->logged_in()) { ?>
+                  <div class="col-md-3 topright" style="margin-top: 7px;">
+                     <a href="<?=base_url()?>login">লগইন</a> | <a href="<?=base_url()?>registration">রেজিস্ট্রেশন</a>
                   </div>
+                  <?php }else{ ?> 
+                  <div class="col-md-3 topright" style="margin-top: 7px;">
+                     <a href="<?=base_url()?>my-profile">প্রোফাইল</a> | <a href="<?=base_url()?>logout">লগ-আউট</a>
+                  </div>
+                  <?php } ?>
                   <div class="col-md-1" style="float:right; padding-right: 1px; border: 0px solid red;margin-right: 0;">
-                      <img class="img-responsive" src="<?=base_url();?>fwedget/images/mujib100.png" alt="mujib 100 logo" style="float:right; height: 37px; margin-top: 1px;">
-                  </div>
+                    <img class="img-responsive" src="<?=base_url();?>fwedget/images/mujib100.png" alt="mujib 100 logo" style="float:right; height: 37px; margin-top: 1px;">
+                 </div>
+              </div>
+              <div class="row">
+               <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
+                  <a href="<?=base_url();?>">
+                     <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
+                  </a>
                </div>
-               <div class="row">
-                  <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
-                     <a href="<?=base_url();?>">
-                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
-                     </a>
-                  </div>
                   <!-- <div class="col-md-3" style="border:0px solid green;margin: 5px 0;">
                      <img class="img-responsive" src="<?=base_url();?>fwedget/images/mujib100.png" alt="mujib 100 logo" height="50" style="float:right; height: 150px;">
                   </div> -->

@@ -122,6 +122,123 @@ class Common_model extends CI_Model {
       return $query->result();
    }
 
+   public function get_day_care_type(){
+        $data[''] = '-- Daycare Type --';
+        $this->db->select('id, type_name');
+        $this->db->from('day_care_type');        
+        // $this->db->order_by('sort_order', 'ASC');
+        $query = $this->db->get();
+
+         foreach ($query->result_array() AS $rows) {
+            $data[$rows['id']] = $rows['type_name'];
+        }
+
+        return $data;
+    }
+
+   public function get_organization(){
+        $data[''] = '-- Organization --';
+        $this->db->select('id, owner_name');
+        $this->db->from('daycare_owner');        
+        // $this->db->order_by('sort_order', 'ASC');
+        $query = $this->db->get();
+
+         foreach ($query->result_array() AS $rows) {
+            $data[$rows['id']] = $rows['owner_name'];
+        }
+
+        return $data;
+    }
+
+   public function get_division(){
+        $data[''] = '-- Division --';
+        $this->db->select('id, div_name_bn');
+        $this->db->from('divisions');        
+        $this->db->order_by('sort_order', 'ASC');
+        $query = $this->db->get();
+
+         foreach ($query->result_array() AS $rows) {
+            $data[$rows['id']] = $rows['div_name_bn'];
+        }
+
+        return $data;
+    }
+
+    public function get_district(){
+        $district[''] = '-- District --';
+        $this->db->select('id, dis_name_bn');
+        $this->db->from('districts');
+        $this->db->order_by('dis_name_bn', 'ASC');
+        $query = $this->db->get();
+
+         foreach ($query->result_array() AS $rows) {
+            $district[$rows['id']] = $rows['dis_name_bn'];
+        }
+
+        return $district;
+    }
+
+    public function get_upazila_thana(){
+        $district[''] = '-- Upazila --';
+        $this->db->select('id, upa_name_bn');
+        $this->db->from('upazilas');
+        $this->db->order_by('upa_name_bn', 'ASC');
+        $query = $this->db->get();
+
+         foreach ($query->result_array() AS $rows) {
+            $district[$rows['id']] = $rows['upa_name_bn'];
+        }
+
+        return $district;
+    }
+
+
+   public function get_district_by_div_id($id){
+        $data['0'] = '-- District --';
+        $this->db->select('id, dis_name_bn');
+        $this->db->from('districts');
+        $this->db->where('dis_div_id', $id);
+        // $this->db->where('status',1);
+        $this->db->order_by('dis_name_bn', 'ASC');
+        $query = $this->db->get();
+
+        foreach ($query->result_array() AS $rows) {
+            $data[$rows['id']] = $rows['dis_name_bn'];
+        }
+
+        return $data;
+    }
+
+    public function get_upa_tha_by_dis_id($id){
+        $data['0'] = '-- Upazila --';
+        $this->db->select('id, upa_name_bn');
+        $this->db->from('upazilas');
+        $this->db->where('upa_dis_id',$id);
+        // $this->db->where('status',1);
+        $this->db->order_by('upa_name_bn', 'ASC');
+        $query = $this->db->get();
+
+        foreach ($query->result_array() AS $rows) {
+            $data[$rows['id']] = $rows['upa_name_bn'];
+        }
+
+        return $data;
+    }
+
+    public function get_daycare_others() {
+      // count query
+      $this->db->select('dc.*, o.owner_name, dv.div_name_bn, ds.dis_name_bn, up.upa_name_bn');
+      $this->db->from('day_cares_others dc');
+      $this->db->join('daycare_owner o', 'o.id = dc.owner_id', 'LEFT');
+      $this->db->join('divisions dv', 'dv.id = dc.division_id', 'LEFT');
+      $this->db->join('districts ds', 'ds.id = dc.district_id', 'LEFT');
+      $this->db->join('upazilas up', 'up.id = dc.upazila_id', 'LEFT');       
+      $this->db->order_by('dc.id', 'ASC');
+      $query = $this->db->get()->result();
+
+      return $query;
+   }
+
 
 
 }
