@@ -1,0 +1,24 @@
+/* Poznan | Education HTML Template */
+
+
+@media only screen and (max-width: 767px){
+	.navbar-default .navbar-toggle{
+		position: absolute;
+		top: -50px;
+		right: -10px;
+	}
+	img.logo-img{
+		width: 40%;
+	}
+
+	body{
+		background-image:none;
+	}
+	.slogan-side{
+		margin-top: -70px!important;
+	}
+	.footer{
+		margin-left: 0px;
+	}
+
+}
