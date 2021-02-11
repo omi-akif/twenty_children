@@ -56,11 +56,11 @@
                  </div>
               </div>
               <div class="row">
-               <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
+<!--                <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
                   <a href="<?=base_url();?>">
                      <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
                   </a>
-               </div>
+               </div> -->
                <div class="row">
                   <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
                      <a href="<?=base_url();?>">
