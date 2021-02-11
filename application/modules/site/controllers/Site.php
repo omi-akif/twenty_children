@@ -444,7 +444,8 @@ class Site extends Frontend_Controller {
          // Load View
          $this->data['method'] = 'my_profile'; 
          $this->data['meta_title'] = 'প্রোফাইল';                
-         $this->data['subview'] = 'my_profile';
+         // $this->data['subview'] = 'my_profile';
+         $this->data['subview'] = 'childenroll_form';
          $this->data['edit'] = $edit == 'edit' ? true : false;
          $this->load->view('frontend/_layout_main', $this->data);
       }
