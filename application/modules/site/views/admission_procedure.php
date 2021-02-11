@@ -10,162 +10,278 @@
          <h4 class="heading-int">পটভূমি</h4>
          <p class="para">জাতি, ধর্ম, বর্ণ, গোত্র, ভাষা, বিত্ত নির্বিশেষে সমাজের সকল আর্থ-সামাজিক অবস্থানের কর্মজীবী নারীর শিশুদের দিবাকালীন সেবা প্রদানের লক্ষ্যে “২০টি শিশু দিবাযত্ন কেন্দ্র স্থাপন প্রকল্পের” আওতায় ১১টি জেলা শহরে ২০টি দিবাযত্ন কেন্দ্র স্থাপিত হয়েছে। এসকল দিবাযত্ন কেন্দ্রে লক্ষ্যভূক্ত কর্মজীবী নারীর শিশুদের ছাড়া অন্য পেশায় নিয়োজিত নারী যেমন ব্যবসায়ী, ছাত্রী, গৃহবধূর শিশু যেন ভর্তি না করানো হয় এবং কর্মজীবী নারী বলতে কাদের বোঝানো হয়েছে তা সুস্পষ্ট করা প্রয়োজন। এ পরিপ্রেক্ষিতে সকল দিবাযত্ন কেন্দ্রে কর্মজীবী নারীর শিশুদের ভর্তির সুযোগ গ্রহণযোগ্য একটি নীতির আওতায় আনার প্রয়োজনীয়তা গভীরভাবে উপলব্ধি করে প্রকল্পের উদ্দ্যেশের সাথে সংগতি রেখে নির্দেশিকাটি প্রণয়ন করা হয়েছে। এই নির্দেশিকার আলোকে সকল দিবাযত্ন কেন্দ্রে শিশু নির্বাচন ও ভর্তির কার্যক্রম পরিচালিত হবে।</p>
 
-         <h5> On this page</h5>
-         <ol style="margin-left: 30px;">
-            <li>Overview</li>
-            <li>Locations</li>
-            <li>Services</li>
-            <li>When to use this option</li>
-            <li>Referrals</li>
-            <li>Appointments</li>
-            <li>Fees</li>            
-         </ol>
-
-         <h5> 1. Overview/About vaccines</h5>
-         <p class="para">Vaccines prevent serious illnesses – including many that are easily spread in schools and daycare centres. For more than 200 years vaccines have been saving lives around the world. You can get your child immunized and learn about preventing diseases with vaccines at an immunization facility.</p>
-         <p class="para">Vaccines in Bangladesh’s routine immunization schedule are provided free of charge if you meet the eligibility criteria.</p>
-
-         <h5> 2. Locations</h5>
-         <p class="para">Immunization clinics are held at a variety of locations across Bangladesh, including:</p>
-         <ul style="margin-left: 30px;">
-            <li>Public health Units</li>
-            <li>Community Health Centres</li>
-            <li>Health Care Provider Offices (e.g. Doctor, Nurse Practitioner)</li>
-         </ul>
-
-         <h5> 3. Services</h5>
-         <p class="para">Here are the services you can get a particular publicly funded vaccination across the country:</p>
-         <ul style="margin-left: 30px;">
-            <li>immunization in the community (e.g. routinely recommended vaccines)</li>
-            <li>immunization programs in schools (Hep B, Men-C-ACYW, HPV)</li>
-            <li>flu vaccination</li>
-            <li>vaccines for travel</li>
-            <li>immunization services (e.g. routinely recommended vaccines) provided at health care provider  offices  (e.g. doctors, nurse practitioner)</li>
-            <li>student immunization clinics</li>
-            <li>immunization clinics provided during an outbreak</li>
-         </ul>
-         <p class="para">Keep in mind services may vary by location.</p>
-
-         <h5> 4. When to use this option</h5>
-         <p class="para">Immunization clinics are held at a variety of locations across Bangladesh, including:</p>
-         <ul style="margin-left: 30px;">
-            <li>If you’re seeking immunization or information for a specific disease</li>
-            <li>When you are travelling out of the country</li>
-         </ul>
-
-         <h5> 5. Referrals</h5>
-         <p class="para">You don’t need a referral for this service.</p>
-
-         <h5> 6. Appointments</h5>
-         <p class="para">An appointment may be required. Phone the nearest immunization clinic for more information.</p>
-
-         <h5> 7. Fees</h5>
-         <p class="para">You may have to pay a fee for some immunization services. It depends on whether:</p>
-         <ul style="margin-left: 30px;">
-            <li>• You qualify for a particular publicly funded vaccination</li>
-            <li>• The immunization service (including the vaccine and its administration)  is covered by the government</li>
-         </ul>
-
-         <h4 class="heading-int">Bangladesh’s routine immunization schedule tool</h4>
-         <p class="para">This immunization tool will help you learn about Bangladesh’s free vaccine program, and make it easy to keep your family up to date with the recommended vaccinations.</p>
-
-         <h5><i class="fa fa-check-circle"></i> Pregnancy - Building a healthy foundation</h5>
-         <p class="para">All expectant mothers should get the flu shot. The flu shot helps protect pregnant women from serious illness. It also helps protect the baby from getting the flu during the first few months after birth.<br>
-         <b>Routine Vaccinations:</b> Seasonal flu vaccine</p>
-
-         <h5><i class="fa fa-check-circle"></i> 2 & 4 months - Building a healthy foundation</h5>
-         <p class="para">Keeping up with routine immunizations protects your new baby from a variety of diseases. You can also keep your baby safe by ensuring that all new or second-hand equipment — including car seats, cribs, strollers, carriers, bassinets, change tables, playpens and toys — meet national safety standards.<br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Diphtheria</li>
-            <li>Tetanus</li>
-            <li>Pertussis</li>
-            <li>Polio</li>
-            <li>Haemophilus influenzae type b (DTaP-IPV-Hib) vaccine</li>
-            <li>Pneumococcal conjugate (Pneu-C-13) vaccine</li>
-            <li>Rotavirus (Rot-5) vaccine</li>            
-         </ul>
-         </p>
-         <p class="para">DTaP-IPV-Hib vaccine – given at 2 months, 4 months, 6 months and 18 months</p>
-         <p class="para">Pneumococcal conjugate (Pneu-C-13) vaccine – given at 2 months, 4 months and 12 months</p>
-         <p class="para">Rotavirus (Rot-5) vaccine – given at 2, 4 and 6 months</p>
-
-         <h5><i class="fa fa-check-circle"></i> 6 months - Building a healthy foundation</h5>
-         <p class="para">At 6 months, your baby should be ready to start on solid foods. Start by offering food two to three times a day, and always offer breast milk or formula first. If your baby does not eat meat, aim for at least 120 mL (8 tbsp) of iron-fortified cereal by age 9 months. <br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Diphtheria</li>
-            <li>Tetanus</li>
-            <li>Pertussis</li>
-            <li>Polio</li>
-            <li>Haemophilus influenzae type b (DTaP-IPV-Hib) vaccine</li>
-            <li>Pneumococcal conjugate (Pneu-C-13) vaccine</li>
-            <li>Rotavirus (Rot-5) vaccine</li>            
-         </ul>
-         <p class="para">DTaP-IPV-Hib vaccine - given at 2 months, 4 months, 6 months and 18 months</p>
-         <p class="para">Rotavirus (Rot-5) vaccine – given at 2, 4 and 6 months</p>
-
-         <h5><i class="fa fa-check-circle"></i> 12 months - Building a healthy foundation</h5>
-         <p class="para">At 12 months, your baby is trying new tastes and textures. Build your child’s palate with nutritious foods that are packed with the vitamins needed for healthy growth. Like routine immunizations, a healthy diet helps build a strong and healthy immune system for life.<br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Pneumococcal conjugate (Pneu-C-13) vaccine</li>
-            <li>Meningococcal conjugate (Men-C-C) vaccine</li>
-            <li>Measles, mumps and rubella (MMR) vaccine</li>           
-         </ul>
-         <p class="para">Pneumococcal conjugate (Pneu-C-13) vaccine – given at 2 months, 4 months and 12 months</p>
-         <p class="para">Measles, mumps and rubella (MMR) vaccine - given at 12 months</p>
-
-         <h5><i class="fa fa-check-circle"></i> 15 months - Building a healthy foundation</h5>
-         <p class="para">Toddlers thrive on a regular routine, and major changes can be challenging for them. Make sure to provide regular nap, snack, meal and bedtimes. It’s also important to continue with scheduled immunizations to keep your child’s immune system strong and healthy.<br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Varicella (chickenpox) (Var) vaccine</li>
-         </ul>
-         <p class="para">Varicella (chickenpox) (Var) vaccine - given at 15 months</p>
-
-         <h5><i class="fa fa-check-circle"></i> 18 months - Building a healthy foundation</h5>
-         <p class="para">Routines — like regular immunizations — can be the foundation for a healthy life. Family meals are a healthy routine that gives children a sense of comfort and security. Start when your child is young, and use meals as an opportunity to pass along traditions and keep the family connected.<br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Diphtheria</li>
-            <li>Tetanus</li>
-            <li>Pertussis</li>
-            <li>Polio</li>
-            <li>haemophilus influenzae type b (DTaP-IPV-Hib) vaccine</li>            
-         </ul>
-         <p class="para">DTaP-IPV-Hib vaccine - given at 2 months, 4 months, 6 months and 18 months</p>
-
-         <h5><i class="fa fa-check-circle"></i> 4-6 years - Building a healthy foundation</h5>
-         <p class="para">Dental care is as important as regular immunization when it comes to your child's overall health. Serve food from all food groups, limit sugary snacks and drinks, and have kids brush their teeth twice a day. And children are wonderful imitators, so let your child watch you brushing your teeth as often as possible.<br>
-         <b>Routine Vaccinations:</b>
-         <ul style="margin-left: 30px">
-            <li>Tetanus</li>
-            <li>diphtheria</li>
-            <li>pertussis and polio (Tdap-IPV) vaccine ,</li>
-            <li>Measles, mumps, rubella and varicella (MMRV) vaccine</li>
-         </ul>
-         <p class="para">Tdap -IPV vaccine – given at 4 to 6 years</p>
-         <p class="para">Measles, Mumps, Rubella and Varicella (MMRV) vaccine - given at 4 to 6 years</p>
-
-         <h5><i class="fa fa-check-circle"></i> Register a birth (new baby)</h5>
-         <p class="para">How to register your new baby with the province, online, for free.<br>
-
-         <h5><i class="fa fa-check-circle"></i> Overview</h5>
-         <p class="para">When a child is born in Bangladesh, their birth needs to be registered with the Government of Bangladesh, within 45 days.<br>
-         <b>Birth registration in Bangladesh is a two-step process:</b>
-         <ol style="margin-left: 30px">
-            <li>Statement of Live Birth Form, is completed by parents of newborns and submitted to ----</li>
-            <li>Notice of Live Birth Form, is completed by qualified medical staff and submitted to -------</li>
-         </ol>
-         <p class="para">Registration is free and it is quicker to register a birth online than submitting a paper statement of live birth form by mail to: 
-         Office of Register General----
+         <h4 class="heading-int">উদ্দেশ্য</h4>
+         <p class="para">
+            এই নির্দেশিকার মূল উদ্দেশ্য হলোঃ
+            <li>প্রকল্পের উদ্দেশ্য অনুযায়ী প্রকৃত উপকারভোগী নির্বাচন;</li>
+            <li>সকল দিবাযত্ন কেন্দ্রে শিশু ভর্তির আবেদন ও মূল্যায়ণ সামঞ্জস্যপূর্ণ রাখা; এবং</li>
+            <li>প্শিশু ভর্তি আবেদনের নির্ভুল মূল্যায়ণ ও প্রকল্পের লক্ষ্যমাত্রা অনুযায়ী শিশু ভর্তি নিশ্চিত করা।</li>
          </p>
 
-         <p class="para">Order a birth certificate online at website address
-         For more information, visit <a href="http://br.lgd.gov.bd/english.html" target="_blank"> br.lgd.gov.bd/english.html</a> Office of the Registrar General’s website.
+
+         <h4 class="heading-int">সংজ্ঞা</h4>
+         <p class="para">
+            বিষয় বা প্রসঙ্গের পরিপন্থী কোন কিছু না থাকলে এ নির্দেশিকায় “কর্মজীবী নারী” বলতে-
+            <li>সকল সরকারী, আধা-সরকারী, স্বায়ত্বশাসিত, আধা-স্বায়ত্বশাসিত, বে-সরকারী সংস্থা, ব্যাংক, বীমা বা আর্থিক প্রতিষ্ঠানে কর্মরত নারী;</li>
+            <li>প্রফেশনাল দক্ষতা অর্জনের জন্য প্রশিক্ষণে নিয়োজিত অথবা শিক্ষা প্রতিষ্ঠানে সার্বক্ষণিক অধ্যায়নরত নারী;</li>
+            <li>ক্ষুদ্র ব্যবসায়ী (দোকানদার, দোকানের কর্মচারী), নির্মান শ্রমিক, গৃহকর্মী, দিনমজুর, দর্জি, পার্লারকর্মী ও গৃহশিক্ষক ইত্যাদি কাজে নিয়োজিত নারী। </li>
          </p>
 
+         <h4 class="heading-int">দিবাযত্ন কেন্দ্র সমূহের প্রচার ও শিশু ভর্তির আহবান</h4>
+         <p class="para">
+            ২০টি শিশু দিবাযত্ন কেন্দ্রে লক্ষ্যভোগী কর্মজীবী নারীদের শিশু সংগ্রহের জন্য নিম্নলিখিতভাবে প্রচার ও প্রচারণা করা 
+            <li>দৈনিক পত্রিকায় বিজ্ঞপ্তি প্রকাশ এবং রেডিও ও টেলিভিশনসহ অন্যান্য সকল ইলেকট্রনিক্স মিডিয়ায় বিজ্ঞাপন প্রকাশ।</li>
+            <li>প্বিভিন্ন সরকারী ও বে- সরকারী প্রতিষ্ঠান, মাদ্রাসা, স্কুল, কলেজ, বিভিন্ন সামাজিক প্রতিষ্ঠানসমূহে ও প্রকল্প এলাকার ঘরে ঘরে বুকলেট, ব্রুশিয়ার, পোস্টার, লিফলেট, স্টিকার বিতরণের মাধ্যমে কর্মজীবী নারীদের অবহিত করে শিশু ভর্তির আহবান।</li>
+            <li>মহিলা ও শিশু বিষয়ক মন্ত্রণালয়, মহিলা বিষয়ক অধিদপ্তর ও ২০টি শিশু দিবাযত্ন কেন্দ্র স্থাপন প্রকল্পের ওয়েবসাইটে দিবাযত্ন কেন্দ্রের সেবা সম্পর্কিত তথ্য প্রকাশ।</li>
+         </p>
+
+         <h4 class="heading-int">দিবাযত্ন কেন্দ্র সমূহের প্রচার ও শিশু ভর্তির আহবান</h4>
+         <p class="para">
+            ২০টি শিশু দিবাযত্ন কেন্দ্রে লক্ষ্যভোগী কর্মজীবী নারীদের শিশু সংগ্রহের জন্য নিম্নলিখিতভাবে প্রচার ও প্রচারণা করা 
+            <li>দৈনিক পত্রিকায় বিজ্ঞপ্তি প্রকাশ এবং রেডিও ও টেলিভিশনসহ অন্যান্য সকল ইলেকট্রনিক্স মিডিয়ায় বিজ্ঞাপন প্রকাশ।</li>
+            <li>প্বিভিন্ন সরকারী ও বে- সরকারী প্রতিষ্ঠান, মাদ্রাসা, স্কুল, কলেজ, বিভিন্ন সামাজিক প্রতিষ্ঠানসমূহে ও প্রকল্প এলাকার ঘরে ঘরে বুকলেট, ব্রুশিয়ার, পোস্টার, লিফলেট, স্টিকার বিতরণের মাধ্যমে কর্মজীবী নারীদের অবহিত করে শিশু ভর্তির আহবান।</li>
+            <li>মহিলা ও শিশু বিষয়ক মন্ত্রণালয়, মহিলা বিষয়ক অধিদপ্তর ও ২০টি শিশু দিবাযত্ন কেন্দ্র স্থাপন প্রকল্পের ওয়েবসাইটে দিবাযত্ন কেন্দ্রের সেবা সম্পর্কিত তথ্য প্রকাশ।</li>
+            <li>ডিজিটাল মার্কেটিংয়ের মাধ্যমে লক্ষ্যভূক্ত কর্মজীবী নারীদের কাছে দিবাযত্ন কেন্দ্রের সেবা সম্পর্কিত তথ্য পৌঁছানো।</li>
+         </p>
+
+         <h4 class="heading-int">কর্মজীবী নারী নির্বাচনের মানদন্ড</h4>
+         <p class="para">
+            ২০টি শিশু দিবাযত্ন কেন্দ্রে লক্ষ্যভোগী কর্মজীবী নারীদের শিশু সংগ্রহের জন্য নিম্নলিখিতভাবে প্রচার ও প্রচারণা করা 
+            <li>অবশ্যই বাংলাদেশের নাগরিক হতে হবে।</li>
+            <li>প্ফুলটাইম (দৈনিক ০৮ ঘন্টা) কর্মজীবী মা হতে হবে।</li>
+            <li>স্বামী থাকলে স্বামীকেও ফুলটাইম (দৈনিক ০৮ ঘন্টা) কর্মজীবী হতে হবে।</li>
+            <li>০৬ মাস থেকে ০৬ বছর বয়সের শিশু থাকতে হবে।</li>
+            <li>সিঙ্গেল মাদার অগ্রাধিকার পাবে।</li>
+         </p>
+
+         <h4 class="heading-int">শিশু ভর্তি গ্রুপ</h4>
+         <table style="width:100%">
+            <tr>
+               <th>গ্রুপের নাম</th>
+               <th>বয়স সীমা</th>
+               <th>গ্রুপ অনুযায়ী আসন সংখ্যা</th>
+            </tr>
+            <tr>
+               <td>প্রারম্ভিক উদ্দীপনা পর্যায়প্রারম্ভিক উদ্দীপনা পর্যায়</td>
+               <td>৬ মাস -১২ মাস</td>
+               <td>৬</td>
+            </tr>
+            <tr>
+               <td>প্রাক-প্রারম্ভিক শিখন পর্যায়</td>
+               <td>১২ মাস - ৩০ মাস</td>
+               <td>১২</td>
+            </tr>
+
+            <tr>
+               <td>প্রারম্ভিক শিখন পর্যায়</td>
+               <td>২.৫ বছর -৪ বছর</td>
+               <td>১৮</td>
+            </tr>
+            <tr>
+               <td>প্রাক-প্রাথমিক স্কুল পর্যায়</td>
+               <td>৪ বছর - ৬ বছর</td>
+               <td>২৪</td>            
+            </tr>
+            </table>
+
+
+         <h4 class="heading-int">শিশু ভর্তির নিয়মাবলী</h4>
+         <p class="para">
+         নিবন্ধন
+            <li>শিশু ভর্তির আবেদনের প্রথম পদক্ষেপ হিসেবে পিতামাতা বা অভিভাবককে নিবন্ধন ফি প্রদানপূর্বক অনলাইনে নিবন্ধন করতে হবে।</li>
+            <li>প্অনলাইনে নিবন্ধন ফরম পূরণ এবং নিবন্ধন ফি প্রদানের পর সংশ্লিষ্ট কেন্দ্রের আসন সংক্রান্ত তথ্য অনলাইনে পাওয়া যাবে।</li>
+            <li>স্বামী থাকলে স্বামীকেও ফুলটাইম (দৈনিক ০৮ ঘন্টা) কর্মজীবী হতে হবে।</li>
+            <li>আসন শূন্য থাকা সাপেক্ষে শিশু ভর্তি সংক্রান্ত ও আবেদন ফরমের লিঙ্ক সম্বলিত একটি ই-মেইল বার্তা বা এসএমএস পিতামাতা বা অভিভাবক পাবে। এসএমএস প্রাপ্তির তিন (০৩) কর্মদিবসের মধ্যে অনলাইনে আবেদন করতে হবে।</li>
+            <li>আবেদন ফরম জমা প্রদানের তারিখের ভিত্তিতে শিশু ভর্তির অগ্রাধিকার দেওয়া হবে।</li>
+         </p>
+
+
+         <p>
+         শিশু তালিকাভুক্তির আবেদন
+            <li>শিশু ভর্তির জন্য www.20cdcc.dwa.gov.bd ওয়েবসাইটে অনলাইনে আবেদন করতে হবে।</li>
+            <li>ভর্তি ফি জমা প্রদানপূর্বক অনলাইন আবেদনের সাথে প্রয়োজনীয় কাগজগুলো অবশ্যই স্ক্যান করে পিডিএফ ফরমেটে একটি ফাইলে আপলোড করতে হবে।</li>
+            <li>আবেদন ফরম সম্পূর্ণ পূরণ করা হলে এবং প্রয়োজনীয় সকল কাগজপত্র সংযুক্ত থাকলে আবেদনটি গ্রহণ, পর্যালোচনা ও মূল্যায়ণ করা হবে। অসম্পূর্ণ আবেদন মূল্যায়ণ করা হবে না। এধরণের সমস্যা এড়াতে আবেদন ফরম পূরণের সময় যথাযথভাবে পূরণ করা আবশ্যক।</li>
+            <li>অনলাইনে আবেদন করতে কোন সমস্যা হলে শিশু দিবাযত্ন কেন্দ্রে এসে সহযোগিতা নিয়ে অনলাইনে আবেদন করা যেতে পারে। </li>
+            <li>অনলাইনে আবেদন করতে কোন ধরনের প্রযুক্তিগত সমস্যার সম্মুখীন হলে "প্রযুক্তিগত সমস্যা"  শিরোনামে সংশ্লিষ্ট ডে-কেয়ার সেন্টারের ডে-কেয়ার অফিসারকে অবহিত করা যেতে পারে। সেক্ষেত্রে আবেদনকারীর নাম, আবেদনকৃত ডে-কেয়ার সেন্টারের নাম, আবেদনকারীর মোবাইল নম্বর, ই-মেইল আইডি এবং প্রযুক্তিগত সমস্যার স্পষ্ট ব্যাখ্যা অন্তর্ভুক্ত করার বিষয়ে নিশ্চিত হতে হবে।</li>
+            <li>অনলাইন আবেদনে কোনও ভুল/অসম্পূর্ণ ডকুমেন্ট আপলোড হলে "নথি আপলোড সহায়তা” শিরোনামে সংশ্লিষ্ট ডে-কেয়ার সেন্টারের ডে-কেয়ার অফিসারকে অবহিত করা যেতে পারে। সেক্ষেত্রে আবেদনকারীর নাম, আবেদনকৃত ডে-কেয়ার সেন্টারের নাম, আবেদনকারীর মোবাইল নম্বর, ই-মেইল নম্বর এবং ইস্যুটির স্পষ্ট ব্যাখ্যা অন্তর্ভুক্ত করার বিষয়ে নিশ্চিত হতে হবে।</li>
+         </p>
+
+         <h4 class="heading-int">শিশু তালিকাভুক্তির আবেদনের প্রয়োজনীয় সংযুক্তিসমূহ</h4>
+         <p>
+            <li>আবেদনকারীর পাসপোর্ট সাইজের ছবি;</li>
+            <li>পিতামাতা/অভিভাবকের জাতীয় পরিচয়পত্রের কপি;</li>
+            <li>শিশুর জন্মসনদের কপি;</li>
+            <li>নিয়ন্ত্রনকারী কর্তৃপক্ষ কর্তৃক পিতামাতা বা অভিভাবকের চাকুরী সংক্রান্ত প্রত্যয়ণপত্র;</li>
+         </p>
+
+         <h4 class="heading-int">আবেদন মূল্যায়ণ ও শিশু ভর্তি তালিকা প্রণয়ন</h4>
+         <p>
+            <li>আবেদন ফরম ও সংশ্লিষ্ট কাগজপত্রসমূহ শিশু ভর্তি কমিটি অথবা দায়িত্বে নিয়োজিত ব্যক্তিবর্গ যাচাই-বাছাই ও পর্যালোচনা করবে।</li>
+            <li>আবেদনের শর্তাবলী পূরণ শিশু ভর্তির জন্য কেবল একটি প্রয়োজনীয় শর্ত, পর্যাপ্ত শর্ত নয়। কারণ বয়স গ্রুপ অনুযায়ী আসন শূন্য থাকাই শিশু ভর্তির অন্যতম শর্ত।</li>
+            <li>আসন শূন্য, পূর্ণাঙ্গ আবেদন, ও ভর্তির আবেদনের তারিখের ভিত্তিতে ভর্তি কমিটি ভর্তিযোগ্য শিশুর একটি অগ্রাধিকার তালিকা প্রণয়ন করে অনুমোদনের জন্য প্রকল্প পরিচালক বরাবর প্রেরণ করবে।</li>
+            <li>ভর্তিযোগ্য তালিকা অনুমোদনের পর প্রথম ৬০ জন শিশুকে ভর্তির জন্য আহবান জানানো হবে এবং অবশিষ্টদের অপেক্ষমাণ তালিকায় রাখা হবে।</li>
+            <li>পরবর্তীতে আসন শূন্য হলে অপেক্ষমাণ তালিকা থেকে ভর্তির আহবান জানানো হবে এবং নতুন আবেদনকারীকে অপেক্ষমান তালিকায় অন্তর্ভূক্ত করা হবে।</li>
+            <li>ভর্তির এই প্রক্রিয়াটি সারা বছর চলমান থাকবে।</li>
+         </p>
+
+         <h4 class="heading-int">অপেক্ষমান তালিকা প্রণয়ন</h4>
+         <p>
+            <li>আবেদনের তারিখের ভিত্তিতে একটি স্বচ্ছ অপেক্ষমান তালিকা প্রস্তুত করা হবে।</li>
+            <li>অপেক্ষমাণ তালিকা প্রস্তুতের সময় সিঙ্গেল মাদারের শিশু এবং ভর্তিকৃত শিশুর সহোদরকে অপেক্ষমান তালিকায় অগ্রাধিকার দেওয়া হবে।</li>
+            <li>অপেক্ষমান তালিকা সম্পর্কিত নীতি ও পদ্ধতি বিষয়ে কোন জিজ্ঞাসা থাকলে কেন্দ্রে যোগাযোগ করতে হবে।</li>
+            <li>আদেনকারীর কোন ব্যাক্তিগত তথ্য (বাসার ঠিকানা, মোবাইল নম্বর) পরিবর্তিত হলে তা কেন্দ্রে অবহিত করতে হবে</li>
+         </p>
+         <h4 class="heading-int">শিশু ভর্তি প্রক্রিয়া</h4>
+         <p>
+            <li>সম্পূর্ণ শিশু ভর্তি ফরম ও প্রয়োজনীয় সংযুক্তিসমূহ দাখিলের পর দায়িত্বরত কর্মচারী তা</li>
+            <li>ডে-কেয়ার অফিসার সংশ্লিষ্ট শিশুর পিতামাতা বা অভিভাবকের সাথে চুক্তি করবে;</li>
+            <li>নির্দেশিকায় উল্লেখিত চুক্তিপত্রের নমুনা এক্ষেত্রে প্রযোজ্য হবে।</li>
+         </p>
+
+         <!-- শিশু ভর্তির প্রয়োজনীয় সংযুক্তিসমূহ -->
+         <h4 class="heading-int">শিশু ভর্তির প্রয়োজনীয় সংযুক্তিসমূহ</h4>
+         <p>
+            <li>শিশু ও পিতামাতা বা অভিভাবকের পাসপোর্ট সাইজের ছবি;</li>
+            <li>দুই কপি শিশুর টিকা কার্ড;</li>
+            <li>এককালীন অফেরতযোগ্য ভর্তি ফি;</li>
+            <li>দুই মাসের মাসিক ফি;</li>
+            <li>শিশু অসুস্থতা নীতি সংক্রান্ত অঙ্গিকারনামা;</li>
+            <li>জরুরী চিকিৎসা সেবা প্রদানের সম্মতি; এবং</li>
+            <li>শিশুর কার্যাবলি ও বিশেষ অনুষ্ঠানের ছবি ও তথ্যচিত্র ব্যবহারের অনুমতি।</li>
+         </p>
+         
+
+         <!-- শিশু ভর্তি ফি ও মাসিক ফি প্রদানের নিয়মাবলী -->
+
+         <h4 class="heading-int">শিশু ভর্তি ফি ও মাসিক ফি প্রদানের নিয়মাবলী</h4>
+         <p>
+            <li>শিশু ভর্তির সময় বয়স গ্রুপ অনুযায়ী এককালীন ভর্তি ফি জমা প্রদানপূর্বক শিশুকে ভর্তি করতে হবে।</li>
+            <li>শিশু এক বয়স গ্রুপ থেকে অন্য বয়স গ্রুপে উন্নীত হলে পুনরায় ভর্তি ফি দিয়ে ভর্তি নবায়ন করতে হবে।</li>
+            <li>ভর্তির সময় ভর্তি ফি এর সাথে ২ মাসের অগ্রীম (চলতি মাস ও শেষ মাস) মাসিক ফি জমা দিতে হবে।</li>
+            <li>মাসিক ফি কাঠামো অনুযায়ী যথাসময়ে মাসিক ফি প্রদান খুবই গুরুত্বপূর্ণ কেননা এর মাধ্যমেই শিশুর জন্য সর্বোত্তম সেবা প্রদানের নিশ্চয়তা দেওয়া হয়।</li>
+            <li>ভর্তুকি প্রাপ্তদের ক্ষেত্রে মাসিক ফি এর উপর ভর্তুকি বাদে অবশিষ্ট ফি প্রদান করতে হবে।</li>
+            <li>প্রতি মাসের শেষ সপ্তাহে পরবর্তী মাসের ফি জমা দিতে হবে, অন্যথায় শিশু দিবাযত্ন কেন্দ্রে শিশুর সেবা অব্যাহত রাখা যাবে না।</li>
+            <li>যে কোন কারনে শিশুর অনুপস্থিতির জন্য মাসিক ফি মওকুফ করা হবে না। এছাড়াও শুক্র, শনিবারসহ সকল সরকারি ছুটির দিনগুলোতে দিবাযত্ন কেন্দ্রে সেবা না দেওয়া হলেও নির্ধারিত মাসিক ফি এর অন্তর্ভুক্ত থাকবে।</li>
+            <li>মাসিক ফি অবশ্যই সরাসরি স্ব স্ব কেন্দ্রে জমা দিতে হবে, অন্য কোন মাধ্যম প্রযোজ্য নয়।</li>
+            <li>মাসিক ফি যে কোন সময় পরিবর্তিত হতে পারে।</li>
+         </p>
+
+         <h4 class="heading-int">নিবন্ধন ফি এবং বয়সভিত্তিক শিশু ভর্তি ও মাসিক ফি কাঠামো</h4>
+         <p>শিশুর বয়স গ্রুপের উপর ভিত্তি করে মাসিক ফি নির্ধারণ করা হয়েছে এবং শিশু ভর্তি ফি ও মাসিক ফি বয়স গ্রুপ অনুযায়ী পরিবর্তিত হবে।
+            <table style="width:100%">
+               <tr>
+                  <th>বয়স গ্রুপ</th>
+                  <th>বয়সসীমা</th>
+                  <th>এককালীন নিবন্ধন ফি</th>
+                  <th>ভর্তি ফি</th>
+                  <th>মাসিক ফি</th>
+               </tr>
+               <tr>
+                  <td>প্রারম্ভিক উদ্দীপনা পর্যায়</td>
+                  <td>০৬ মাস - ১২মাস</td>
+                  <td>১০০/-</td>
+                  <td>২০০/-</td>
+                  <td>২০০০/-</td>
+               </tr>
+               <tr>
+                  <td>প্রাক-প্রারম্ভিক শিখন পর্যায়</td>
+                  <td>১২ মাস - ৩০ মাস</td>
+                  <td>১০০/-</td>
+                  <td>৩০০/-</td>
+                  <td>১৫০০/-</td>
+               </tr>
+
+               <tr>
+                  <td>প্রারম্ভিক শিখন পর্যায়</td>
+                  <td>৩০ মাস - ৪৮ মাস</td>
+                  <td>১০০/-</td>
+                  <td>৪০০/-</td>
+                  <td>১২০০/-</td>
+               </tr>
+               <tr>
+                  <td>প্রাক-প্রাথমিক স্কুল পর্যায়</td>
+                  <td>০৪ বছর - ০৬ বছর</td>
+                  <td>১০০/-</td>            
+                  <td>৫০০/-</td>
+                  <td>১০০০/-</td>
+               </tr>
+            </table>
+         </p>
+
+
+         <h4 class="heading-int">মাসিক ফি এর উপর ভর্তুকী প্রদান</h4>
+         <p>পিতামাতা/ অভিভাককের দিবাকালীন শিশু যত্নের ব্যয় কমানোর জন্য প্রকল্পে একটি বিশেষ ভর্তুকী প্রদানের ব্যবস্থা রয়েছে। এই সুবিধাটি নিম্নলিখিত হারে প্রদান করা হয়ঃ
+            <table style="width:100%">
+               <tr>
+                  <th>আর্থ সামাজিক অবস্থান</th>
+                  <th>মাসিক আয়ের পরিমান</th>
+                  <th>ভর্তুকির হার</th>
+               </tr>
+               <tr>
+                  <td>উচ্চবিত্ত</td>
+                  <td>০৬ মাস - ১২মাস</td>
+                  <td>নেই</td>
+               </tr>
+               <tr>
+                  <td>উচ্চ-মধ্যবিত্ত</td>
+                  <td>৫০,০০০ - ৭৪,৯৯৯ টাকা</td>
+                  <td>নেই</td>>
+               </tr>
+
+               <tr>
+                  <td>মধ্যবিত্ত</td>
+                  <td>৩৫,০০০ - ৪৯,৯৯৯ টাকা</td>
+                  <td>৪০%</td>
+                  
+               </tr>
+               <tr>
+                  <td>নিম্ন-মধ্যবিত্ত</td>
+                  <td>২০,০০০ - ৩৪,৯৯৯ টাকা</td>
+                  <td>৫৫%</td>
+               </tr>
+               <tr>
+                  <td>নিম্নবিত্ত</td>
+                  <td>৮০০০ - ১৯,৯৯৯ টাকা</td>
+                  <td>৭০%</td>
+               </tr>
+
+               <tr>
+                  <td>দারিদ্রসীমার নিচে</td>
+                  <td>০ - ৭,৯৯৯ টাকা</td>
+                  <td>৮০%</td>
+               </tr>
+            </table>
+         </p>
+
+
+         <h4 class="heading-int">ভর্তুকী প্রাপ্তির যোগ্যতা ও শর্তাবলী</h4>
+         <p>
+         ভর্তুকী প্রপ্তির জন্য যেসব শর্ত পূরণ আবশ্যক তা হলো-
+            <li>অবশ্যই ফুলটাইম কর্মজীবী নারী হতে হবে;</li>
+            <li>এই সুবিধা প্রাপ্তির জন্য অবশ্যই পিতা-মাতা/অভিভাবককে আবেদনে ভর্তুকী প্রাপ্তির কথা উল্লেখ করতে হবে;</li>
+            <li>দিবাযত্ন কেন্দ্রে শিশুর উপস্থিতির হার ন্যূনতম ৮৫% হতে হবে;</li>
+            <li>পিতামাতা বা অভিভাবকের মাসিক বেতনের ব্যাংক স্টেটমেন্টের কপি; </li>
+            <li>পিতা-মাতা বা অভিভাবকের মাসিক মোট পারিবারিক আয় ৪৯,৯৯৯ (ঊনপঞ্চাশ হাজার নয়শত নিরানব্বই) টাকার উর্ব্ধে নয়।</li>
+         </p>
+
+         <h4 class="heading-int">শিশু ভর্তি বাতিল প্রক্রিয়া</h4>
+         <p>
+         সেন্টার থেকে শিশুর ভর্তি বাতিল করতে হলে ২ মাস পূর্বে উপযুক্ত কারণসহ লিখিতভাবে ডে-কেয়ার অফিসার বরাবর আবেদন করতে হবে। এছাড়াও নিম্নলিখিত কারণে সৃষ্ট পরিস্থিতিতে প্রকল্প পরিচালককে অবহিত করে কেন্দ্রের ডে-কেয়ার অফিসার যে কোন সময় শিশু ভর্তি বাতিল করার ক্ষমতা রাখেঃ
+            <li>মাসিক ফি পরিশোধে ১ মাস বিলম্ব হলে;</li>
+            <li>শিশুর বয়স ৬ বছর পূর্ণ হলে;</li>
+            <li>সেন্টারের অন্যান্য শিশুদের শারিরীক, আবেগীয় বা বুদ্ধিবৃত্তীয় সুষ্ঠু বিকাশের জন্য ক্ষতিকর এমন আচরণ দেখা গেলে, যেমন গালি দেওয়া বা অশালীন আচরণ বা আঘাত করা;</li>
+            <li>প্যারেন্ট হ্যান্ডবুক এবং কেন্দ্রের নীতিমালা অনুসারে মা-বাবা বা অভিভাবকের দায়িত্ব ও কর্তব্য পালনে অসম্মতি বা অনিয়ম দেখা গেলে।</li>
+
+            এই নির্দেশিকায় কোন কিছু অস্পষ্ট থাকলে বা কার্যকর করার ক্ষেত্রে কোন অসুবিধা দেখা দিলে প্রকল্প পরিচালক তা দূরীকরণের ব্যবস্থা নিতে পারবেন। এ বিষয়ে মহিলা বিষয়ক অধিদপ্তরের ব্যাখ্যাই চূড়ান্ত বলে গণ্য হবে।
+         </p>
+
+         <br><br> 
+         <p>
+            প্রকল্প পরিচালক <br>  
+            ২০টি শিশু দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প <br>
+            মহিলা বিয়ষক অধিদপ্তর <br>
+            মহিলা ও শিশু বিষয়ক মন্ত্রণালয় <br>
+         </p>
 
       </section>
    </div>
