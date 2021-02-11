@@ -52,7 +52,7 @@ class Site extends Frontend_Controller {
    {
       // Load View
 
-      $this->data['meta_title'] = 'আমাদের কথা';
+      $this->data['meta_title'] = 'test';
       $this->data['subview'] = 'about_us';
       $this->load->view('frontend/_layout_main', $this->data);
    }
@@ -538,7 +538,7 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
       }
 
-      // public public function FunctionName(Type $var = null)
+      // public public function FunctionName()
       // {
       //    # code...
       // }
@@ -575,6 +575,125 @@ class Site extends Frontend_Controller {
          $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
          $this->data['subview'] = 'twelve_to_thirty_childen_curricular'; #day_care_centers_under_mohila.php
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+      }
+
+
+      public function four_to_six_years_children_curricular()
+      {
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_curricular'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function four_to_six_years_children_day_care()
+      {
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_day_care'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+      public function four_to_six_years_children_excitement()
+      {
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_excitement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function four_to_six_years_children_food_nutrition()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_food_nutrition'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function four_to_six_years_children_health_care()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_health_care'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+      public function four_to_six_years_children_health_improvement()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_health_improvement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function four_to_six_years_children_mental_improvement()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'four_to_six_years_children_mental_improvement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+
+
+
+
+      public function two_to_four_years_children_curricular()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_curricular'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function two_to_four_years_children_day_care()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_day_care'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+      public function two_to_four_years_children_excitement()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_excitement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function two_to_four_years_children_food_nutrition()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_food_nutrition'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function two_to_four_years_children_health_care()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_health_care'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+      public function two_to_four_years_children_health_improvement()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_health_improvement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function two_to_four_years_children_mental_improvement()
+      {
+         # code...
+         $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
+         $this->data['subview'] = 'two_to_four_years_children_mental_improvement'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data);
       }
 
       public function day_care_details($id)

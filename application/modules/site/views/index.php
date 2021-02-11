@@ -130,24 +130,24 @@
                </td>
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
-                     <li>দিবাকালীন যত্ন</li>
-                     <li>খাদ্য ও পুষ্টি</li>
-                     <li>প্রারম্ভিক উদ্দীপনা</li>
-                     <li>প্রাথমিক স্বাস্থ্য সেবা</li>
-                     <li>শারীরিক বিকাশ</li>
-                     <li>মানসিক বিকাশ</li>
-                     <li>চিত্তোবিনোদন</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-day-care')?>">দিবাকালীন যত্ন</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-excitement')?>">প্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-health-improvement')?>">শারীরিক বিকাশ</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-mental-improvement')?>">মানসিক বিকাশ</li>
+                     <li><a href="<?=base_url('two-to-four-years-children-curricular')?>">চিত্তোবিনোদন</li>
                   </ul>
                </td>
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
-                     <li>দিবাকালীন যত্ন</li>
-                     <li>খাদ্য ও পুষ্টি</li>
-                     <li>প্রারম্ভিক উদ্দীপনা</li>
-                     <li>প্রাথমিক স্বাস্থ্য সেবা</li>
-                     <li>শারীরিক বিকাশ</li>
-                     <li>মানসিক বিকাশ</li>
-                     <li>চিত্তোবিনোদন</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-day-care')?>">দিবাকালীন যত্ন</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-excitement')?>">প্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-health-improvement')?>">শারীরিক বিকাশ</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-mental-improvement')?>">মানসিক বিকাশ</li>
+                     <li><a href="<?=base_url('four-to-six-years-children-curricular')?>">চিত্তোবিনোদন</li>
                   </ul>
                </td>
             </tr>
@@ -254,7 +254,7 @@
          </table>   
       </section>
 
-      <section class="project-purpose">
+      <section class="project-purpose">আমাদের কথা
          
          <h4 class="lnt text-center">প্রারম্ভিক উদ্দীপনা</h4>
          <br>
