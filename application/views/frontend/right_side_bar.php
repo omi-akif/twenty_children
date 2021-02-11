@@ -59,7 +59,16 @@
          <li><a href="<?=base_url('day-care-centers')?>">প্রকল্পের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
             <li><a href="<?=base_url('day-care-centers-under-mohila')?>">মহিলা বিষয়ক অধিদপ্তরের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
             <li><a href="">জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
-            <li><a href="">বাংলাদেশ শিশু একাডেমীর আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
+         </ul>
+         </div>
+      </div>
+
+      <div class="noticeslider mrt5">
+         <h4 class="heading-int">বাংলাদেশ শিশু একাডেমী</h4>
+         <div class="pdln" id="marquee4">
+         <ul>
+         <li><a href="<?=base_url('day-care-centers')?>">জেলা শাখা সমূহ</a></li>
+            <li><a href="<?=base_url('day-care-centers-under-mohila')?>">৬টি উপজেলা শাখা সমূহ</a></li>
          </ul>
          </div>
       </div>
