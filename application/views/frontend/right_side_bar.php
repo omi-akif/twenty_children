@@ -5,7 +5,7 @@
          <h4 class="heading-int">শিশু দিবাযত্ন কেন্দ্র পরিচালনার নির্দেশিকাসমূহ</h4>
          <div class="pdln" id="marquee4">
             <ul>
-               <li><a href="<?=base_url('immunization')?>">শিশু নির্বাচন ও ভর্তি নির্দেশিকা</a></li>
+               <li><a href="<?=base_url('admission-procedure')?>">শিশু নির্বাচন ও ভর্তি নির্দেশিকা</a></li>
                <li><a href="javascript:void()">কোভিড-১৯ সংক্রমন প্রতিরোধ নির্দেশিকা</a></li>
                <li><a href="javascript:void()">শিশু অধিকার সনদ প্রতিপালন নির্দেশিকা</a></li>
                <li><a href="javascript:void()">প্রাথমিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>

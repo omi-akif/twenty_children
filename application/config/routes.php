@@ -54,7 +54,7 @@ $route['404_override'] 			= '';
 $route['translate_uri_dashes'] 	= FALSE;
 
 
-$route['immunization'] 				= 'site/immunization';
+$route['admission-procedure'] = 'site/admission_procedure';
 $route['about-us'] 				= 'site/about_us';
 $route['service'] 				= 'site/services';
 $route['contact-us'] 			= 'site/contact_us';

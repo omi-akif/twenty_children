@@ -119,13 +119,13 @@
                </td>
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
-                     <li>দিবাকালীন যত্ন</li>
-                     <li>খাদ্য ও পুষ্টি</li>
-                     <li>প্রারম্ভিক উদ্দীপনা</li>
-                     <li>প্রাথমিক স্বাস্থ্য সেবা</li>
-                     <li>শারীরিক বিকাশ</li>
-                     <li>মানসিক বিকাশ</li>
-                     <li>চিত্তোবিনোদন</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-day-care')?>">দিবাকালীন যত্ন</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-excitement')?>">প্রারম্ভিকপ্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-health-improvement')?>">শারীরিক বিকাশ</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-mental-improvement')?>">মানসিক বিকাশ</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-curricular')?>">চিত্তোবিনোদনচিত্তোবিনোদন</li>
                   </ul>
                </td>
                <td>
