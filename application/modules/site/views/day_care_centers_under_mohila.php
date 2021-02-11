@@ -9,30 +9,31 @@
          <div class="col-md-3">
             <h4 style="margin-left:50px">বিভাগ</h4>
             <select name="division" id="division_id" class="form-control">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-               <option>4</option>
-               <option>5</option>
+               <option value="">All</option>
+               <option value="">Dhaka</option>
+               <option value="">Sylhet</option>
+               <option value="">Chittagong</option>
+               <option value="">Mymenshing</option>
+               <option value="">Khulna</option>
             </select>
          </div> 
 
          <div class="col-md-3">
             <h4 style="margin-left:50px">জেলা</h4>
             <select name="district" id="district_id" class="form-control">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-               <option>4</option>
-               <option>5</option>
+               <option value="">All</option>
+               <option value="">2</option>
+               <option value="">3</option>
+               <option value="">4</option>
+               <option value="">5</option>
             </select>
-         </div> 
+         </div>
 
          <div class="col-md-3">
 
             <h4 style="margin-left:50px">উপাযেলা</h4>
             <select name="upazila" id="upazila_id" class="form-control">
-               <option>1</option>
+               <option>All</option>
                <option>2</option>
                <option>3</option>
                <option>4</option>
