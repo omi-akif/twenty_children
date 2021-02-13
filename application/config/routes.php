@@ -63,6 +63,8 @@ $route['login'] 					= 'site/login';
 $route['day-care-details/(:any)'] 		= 'site/day_care_details/$1';
 $route['day-care-centers'] 		= 'site/day_care_centers'; #Day Care Centers
 $route['day-care-centers-under-mohila'] = 'site/mohila_day_care_centers';
+$route['day-care-centers-national-under-mohila'] = 'site/mohila_day_care_centers_national';
+
 
 #6-12 years children routes
 $route['six-to-twelve-children-day-care'] = 'site/six_to_twelve_children_day_care';

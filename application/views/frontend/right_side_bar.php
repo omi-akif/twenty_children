@@ -58,7 +58,7 @@
          <ul>
          <li><a href="<?=base_url('day-care-centers')?>">প্রকল্পের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
             <li><a href="<?=base_url('day-care-centers-under-mohila')?>">মহিলা বিষয়ক অধিদপ্তরের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
-            <li><a href="">জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
+            <li><a href="<?=base_url('day-care-centers-national-under-mohila')?>">জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
          </ul>
          </div>
       </div>
