@@ -120,19 +120,19 @@
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
                      <li><a href="<?=base_url('twelve-to-thirty-children-day-care')?>">দিবাকালীন যত্ন</li>
-                     <li><a href="<?=base_url('twelve-to-thirty-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
-                     <li><a href="<?=base_url('twelve-to-thirty-children-excitement')?>">প্রারম্ভিকপ্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url();?>assets/pdfs/food_nutrition_12_30_month.pdf">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url()?>assets/pdfs/before_primary_education_12_30_month.pdf">প্রারম্ভিকপ্রারম্ভিক উদ্দীপনা</li>
                      <li><a href="<?=base_url('twelve-to-thirty-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
                      <li><a href="<?=base_url('twelve-to-thirty-children-health-improvement')?>">শারীরিক বিকাশ</li>
                      <li><a href="<?=base_url('twelve-to-thirty-children-mental-improvement')?>">মানসিক বিকাশ</li>
-                     <li><a href="<?=base_url('twelve-to-thirty-children-curricular')?>">চিত্তোবিনোদনচিত্তোবিনোদন</li>
+                     <li><a href="<?=base_url('twelve-to-thirty-children-curricular')?>">চিত্তোবিনোদন</li>
                   </ul>
                </td>
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
                      <li><a href="<?=base_url('two-to-four-years-children-day-care')?>">দিবাকালীন যত্ন</li>
-                     <li><a href="<?=base_url('two-to-four-years-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
-                     <li><a href="<?=base_url('two-to-four-years-children-excitement')?>">প্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url()?>assets/pdfs/food_nutrition_2_4_years.pdf">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url()?>assets/pdfs/before_primary_education_2_4_years.pdf">প্রারম্ভিক উদ্দীপনা</li>
                      <li><a href="<?=base_url('two-to-four-years-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
                      <li><a href="<?=base_url('two-to-four-years-children-health-improvement')?>">শারীরিক বিকাশ</li>
                      <li><a href="<?=base_url('two-to-four-years-children-mental-improvement')?>">মানসিক বিকাশ</li>
@@ -142,8 +142,8 @@
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
                      <li><a href="<?=base_url('four-to-six-years-children-day-care')?>">দিবাকালীন যত্ন</li>
-                     <li><a href="<?=base_url('four-to-six-years-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
-                     <li><a href="<?=base_url('four-to-six-years-children-excitement')?>">প্রারম্ভিক উদ্দীপনা</li>
+                     <li><a href="<?=base_url()?>assets/pdfs/food_nutrition_4_6_years.pdf">খাদ্য ও পুষ্টি</li>
+                     <li><a href="<?=base_url()?>assets/pdfs/before_primary_education_4_6_years.pdf">প্রারম্ভিক উদ্দীপনা</li>
                      <li><a href="<?=base_url('four-to-six-years-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
                      <li><a href="<?=base_url('four-to-six-years-children-health-improvement')?>">শারীরিক বিকাশ</li>
                      <li><a href="<?=base_url('four-to-six-years-children-mental-improvement')?>">মানসিক বিকাশ</li>

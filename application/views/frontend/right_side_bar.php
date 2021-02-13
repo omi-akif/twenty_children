@@ -10,7 +10,7 @@
                <li><a href="<?=base_url();?>assets/pdfs/faq.pdf">শিশু অধিকার সনদ প্রতিপালন নির্দেশিকা</a></li>
                <li><a href="javascript:void()">প্রাথমিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>
                <li><a href="<?=base_url();?>assets/pdfs/curriculum.pdf">শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম</a></li>
-               <li><a href="">শিশু খাদ্য ও পুষ্টি নির্দেশিকা</a></li>
+               <li><a href="<?=base_url();?>assets/pdfs/nutrition_instruction.pdf">শিশু খাদ্য ও পুষ্টি নির্দেশিকা</a></li>
                <li><a href="">মানসিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>
                <li><a href="">প্রশিক্ষণ ম্যানুয়াল</a></li>
                <li><a href="<?=base_url();?>assets/pdfs/faq.pdf">জরিপ প্রশ্নমালা</a></li>
