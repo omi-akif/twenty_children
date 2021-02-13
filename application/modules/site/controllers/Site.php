@@ -564,7 +564,7 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout   
       }
 
-      public function twelve_to_thirty_children_health_improvement()
+      public function twelve_to_thirty_children_health_care()
       {
          $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
          $this->data['subview'] = 'twelve_to_thirty_children_health_improvement'; #day_care_centers_under_mohila.php
