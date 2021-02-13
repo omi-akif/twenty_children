@@ -287,27 +287,28 @@ class Site2 extends Frontend_Controller {
          }
 
          if($this->input->post('hide_app_info') == '22222'){
+            // exit('ali');
 
             // Application Form
-            $this->form_validation->set_rules('day_cares_id', 'Day Cares Id', 'required|trim');
-            // $this->form_validation->set_rules('child_name', 'Child name', 'required|trim');
+            // $this->form_validation->set_rules('day_cares_id', 'Day Cares Id', 'required|trim');
+            // // $this->form_validation->set_rules('child_name', 'Child name', 'required|trim');
 
-            // If file selected
-            if(@$_FILES['userfile']['size'] > 0){
-               $this->form_validation->set_rules('userfile', '', 'callback_file_check');
-            }
+            // // If file selected
+            // if(@$_FILES['userfile']['size'] > 0){
+            //    $this->form_validation->set_rules('userfile', '', 'callback_file_check');
+            // }
 
-            // If Immunization selected
-            if(@$_FILES['userfile1']['size'] > 0){
-               $this->form_validation->set_rules('userfile1', '', 'callback_file_check');
-            }
+            // // If Immunization selected
+            // if(@$_FILES['userfile1']['size'] > 0){
+            //    $this->form_validation->set_rules('userfile1', '', 'callback_file_check');
+            // }
 
-            //Validate and input data
-            if ($this->form_validation->run() == true) {
+            // //Validate and input data
+            // if ($this->form_validation->run() == true) {
 
             // Dynamic DB Name
-               $day_care_info = $this->Common_model->get_row('day_cares', $this->input->post('day_cares_id'));
-               $this->Site_model->loadCustomerDatabase($day_care_info->database_name);
+               // $day_care_info = $this->Common_model->get_row('day_cares', $this->input->post('day_cares_id'));
+               // $this->Site_model->loadCustomerDatabase($day_care_info->database_name);
 
 
                //Registration table
@@ -317,6 +318,7 @@ class Site2 extends Frontend_Controller {
                   'parents_id'   => $this->userSessID,
                   'created'      => date('Y-m-d H:i:s'),        
                   );
+               // print_r($registrations_data_);exit('ali');
                $registrations_data = array_merge($registrations_data, $registrations_data_);
                // echo "<pre>";
                // print_r($registrations_data);
@@ -436,7 +438,7 @@ class Site2 extends Frontend_Controller {
                $this->session->set_flashdata('success', 'আপনার আবেদনটি সম্পন্ন হয়েছে। ধন্যবাদ');
                redirect('my-profile');
             }
-         }
+         // }
 
          // Dropdown
          $this->data['day_cares'] = $this->Common_model->get_daycares(); 
