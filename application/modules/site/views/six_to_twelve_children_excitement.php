@@ -1,21 +1,4 @@
-<style type="text/css">
-   .carousel-indicators li{ display: none; }
 
-   table,th, td{
-        padding: 10px;
-        border: 1px solid black;
-        border-collapse: collapse;
-
-        text-align: center;
-        vertical-align: center;
-      }
-
-   .crop {
-        width: 100%;
-        height: 150px;
-        overflow: hidden;
-    }
-</style>
 <div class="row">
    <?php $this->load->view('frontend/right_side_bar'); ?>   
    

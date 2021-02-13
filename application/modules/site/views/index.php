@@ -2,8 +2,8 @@
    .carousel-indicators li{ display: none; }
 
    table,th, td{
-        padding: 10px;
-        border: 1px solid black;
+        padding-right: 10px;
+        border: 0px solid black;
         border-collapse: collapse;
 
         text-align: center;
@@ -14,6 +14,10 @@
         width: 100%;
         height: 150px;
         overflow: hidden;
+    }
+
+    .main-content {
+          min-height: 910px;
     }
 </style>
 <div class="row">
@@ -94,10 +98,14 @@
       <section class="project">
          <!-- <h4 class="heading-int">দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প</h4> -->
 
+         <?php $this->load->view('children_food')?>
+
+          <?php /* ?>
+
          <div class="item crop">
             <img src="<?=base_url();?>assets/images/home_page/children.png" alt="children" style="width:100%; height: 200px;">
          </div>
-
+        
          <table style="width:100%">
             <tr>
                <th>প্রারম্ভিক উদ্দীপনা পর্যায়ে শিশুর সেবা ৬ মাস -১২ মাস</th>
@@ -108,7 +116,7 @@
             <tr>
                <td>
                   <ul style="padding-left:5px; margin-left:20px; text-align: left">
-                     <li><a href="<?=base_url('six-to-twelve-children-day-care')?>">দিবাকালীন যত্ন</li>
+                     <li><a href="<?=base_url('six-to-twelve-children-day-care')?>"> দিবাকালীন যত্ন</li>
                      <li><a href="<?=base_url('six-to-twelve-children-food-nutrition')?>">খাদ্য ও পুষ্টি</li>
                      <li><a href="<?=base_url('six-to-twelve-children-excitement')?>">প্রারম্ভিক উদ্দীপনা</li>
                      <li><a href="<?=base_url('six-to-twelve-children-health-care')?>">প্রাথমিক স্বাস্থ্য সেবা</li>
@@ -152,6 +160,7 @@
                </td>
             </tr>
          </table>
+         <?php */ ?>
       </section>
 
       <br>

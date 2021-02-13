@@ -6,14 +6,13 @@
          <div class="pdln" id="marquee4">
             <ul>
                <li><a href="<?=base_url('admission-procedure')?>">শিশু নির্বাচন ও ভর্তি নির্দেশিকা</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/sample.pdf">কোভিড-১৯ সংক্রমন প্রতিরোধ নির্দেশিকা</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/faq.pdf">শিশু অধিকার সনদ প্রতিপালন নির্দেশিকা</a></li>
+               <li><a href="<?=base_url('covid-19');?>">কোভিড-১৯ সংক্রমন প্রতিরোধ নির্দেশিকা</a></li>
+               <li><a href="<?=base_url('children-rights');?>">শিশু অধিকার সনদ প্রতিপালন নির্দেশিকা</a></li>
                <li><a href="javascript:void()">প্রাথমিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/curriculum.pdf">শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/nutrition_instruction.pdf">শিশু খাদ্য ও পুষ্টি নির্দেশিকা</a></li>
-               <li><a href="">মানসিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>
-               <li><a href="">প্রশিক্ষণ ম্যানুয়াল</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/faq.pdf">জরিপ প্রশ্নমালা</a></li>
+               <li><a href="<?=base_url('children-curriculum');?>">শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম</a></li>
+               <li><a href="<?=base_url('nutrition-instruction');?>">শিশুর খাদ্য ও পুষ্টি নির্দেশিকা</a></li>
+               <li><a href="javascript:void()">মানসিক স্বাস্থ্য সেবা নির্দেশিকা</a></li>
+               <li><a href="javascript:void()">প্রশিক্ষণ ম্যানুয়াল</a></li>               
             </ul>
          </div>
       </div>
@@ -41,11 +40,13 @@
          <div class="pdln" id="marquee4">
             <ul>
                <li><a href="javascript:void()">অভিভাবক তথ্য হ্যান্ডবুক</a></li>
-               <li><a href="<?=base_url();?>assets/pdfs/vaccine_child.pdf">শিশুর টিকাদান</a></li>
+               <li><a href="<?=base_url('children-vaccine');?>">শিশুর টিকাদান</a></li>
+               <li><a href="<?=base_url('questions');?>">জরিপ প্রশ্নমালা</a></li>
                <li><a href="javascript:void()">শিশুর জন্ম নিবন্ধন</a></li>
                <li><a href="javascript:void()">শিশু তালিকাভুক্তির আবেদন</a></li>
                <li><a href="javascript:void()">শিশু ভর্তি ফরম</a></li>
-               <li><a href="javascript:void()">ভর্তুকি ফরম</a></li>
+               <li><a href="<?=base_url('subsidary');?>">ভর্তুকি ফরম</a></li>
+               <li><a href="javascript:void()">শিশু ভর্তি প্রসেস</a></li>               
             </ul>
          </div>
       </div>
@@ -58,7 +59,7 @@
          <ul>
          <li><a href="<?=base_url('day-care-centers')?>">প্রকল্পের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
             <li><a href="<?=base_url('day-care-centers-under-mohila')?>">মহিলা বিষয়ক অধিদপ্তরের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
-            <li><a href="">জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
+            <li><a href="javascript:void()">জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ</a></li>
          </ul>
          </div>
       </div>

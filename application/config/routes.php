@@ -64,6 +64,16 @@ $route['day-care-details/(:any)'] 		= 'site/day_care_details/$1';
 $route['day-care-centers'] 		= 'site/day_care_centers'; #Day Care Centers
 $route['day-care-centers-under-mohila'] = 'site/mohila_day_care_centers';
 
+$route['covid-19'] = 'site/covid_19';
+$route['children-rights'] = 'site/children_rights';
+$route['children-health-service'] = 'site/children_health_service';
+$route['children-curriculum'] = 'site/children_curriculum';
+$route['nutrition-instruction'] = 'site/nutrition_instruction';
+$route['questions'] = 'site/questions';
+$route['children-vaccine'] = 'site/children_vaccine';
+$route['subsidary'] = 'site/subsidary';
+
+
 #6-12 years children routes
 $route['six-to-twelve-children-day-care'] = 'site/six_to_twelve_children_day_care';
 $route['six-to-twelve-children-food-nutrition']  = 'site/six_to_twelve_children_food_nutrition';

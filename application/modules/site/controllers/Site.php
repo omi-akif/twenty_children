@@ -535,7 +535,8 @@ class Site extends Frontend_Controller {
       public function twelve_to_thirty_children_day_care()
       {
          $this->data['meta_title'] = "Children who are between 6 to 12 years age food nutrition";
-         $this->data['subview'] = 'twelve_to_thirty_children_day_care'; #day_care_centers_under_mohila.php
+         // $this->data['subview'] = 'twelve_to_thirty_children_day_care'; #day_care_centers_under_mohila.php
+         $this->data['subview'] = 'under_construction';
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
       }
 
@@ -928,5 +929,53 @@ class Site extends Frontend_Controller {
          } else {
             return TRUE;
          }
-      }   
+      }  
+
+      public function covid_19(){
+         $this->data['meta_title'] = 'কোভিড-১৯ সংক্রমন প্রতিরোধ নির্দেশিকা';
+         $this->data['subview'] = 'covid_19';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function children_rights(){
+         $this->data['meta_title'] = 'শিশু অধিকার সনদ প্রতিপালন নির্দেশিকা';
+         $this->data['subview'] = 'children_rights';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function children_health_service(){
+         $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
+         $this->data['subview'] = 'children_health_service';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function children_curriculum(){
+         $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
+         $this->data['subview'] = 'children_curriculum';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function nutrition_instruction(){
+         $this->data['meta_title'] = 'শিশু খাদ্য ও পুষ্টি নির্দেশিকা';
+         $this->data['subview'] = 'nutrition_instruction';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function questions(){
+         $this->data['meta_title'] = 'জরিপ প্রশ্নমালা';
+         $this->data['subview'] = 'questions';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function children_vaccine(){
+         $this->data['meta_title'] = 'শিশুর টিকাদান';
+         $this->data['subview'] = 'children_vaccine';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function subsidary(){
+         $this->data['meta_title'] = 'ভর্তুকি ফরম';
+         $this->data['subview'] = 'subsidary';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
    }
