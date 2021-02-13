@@ -120,7 +120,11 @@
                   </tbody>
                </table> 
             </div>
-         </div> <!-- /home -->
+         </div>
+
+         												 <!-- /home -->
+
+
 
          <div id="menu1" class="tab-pane fade">
             <div class="col-md-12" style="background-color: #fff;padding-top:30px;">
@@ -219,14 +223,15 @@
 
 
           <div id="menu2" class="tab-pane fade">
-            <form action="<?=base_url('my-profile')?>" method="post" enctype="multipart/form-data" id="jsvalidation" style="font-family: 'arial'">
+
+            <form action="<?=base_url('site/site2/my_profile')?>" method="post" enctype="multipart/form-data" id="jsvalidation" style="font-family: 'arial'">
 
                <div><?php //echo validation_errors(); ?></div>
                <div class="col-md-12" style="background: #fff;padding-top:30px;">
                   	<!-- <h2 align="center">শিশু তালিকা ভুক্তির আবেদন</h2> -->
                   <fieldset class="scheduler-border">
                      <legend class="scheduler-border">সাধারণ তথ্য</legend>
-                    <!--  <div class="row form-row">
+                  <div class="row form-row">
                         <div class="col-md-12">
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
@@ -237,22 +242,21 @@
                               ?>
                            </div>
                         </div>               
-                     </div> -->
-
+                     </div> 
                      <div class="row form-row">
                         <div class="col-md-6">
                            <div class="form-group">
                               <label>১. আবেদনকারীর নাম</label>
-                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              <input type="text" name="registrations[applicant_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
                            </div>
                         </div>
  
                         <div class="col-md-6">
                            <div class="form-group">
                               <label>২. আবেদনকারীর সাথে শিশুর সম্পর্ক </label><br>
-                              <input type="radio" name="members[gender]" value="Male" <?=set_value('gender')=='Male'?'checked':'checked';?>> মা 
-                              <input type="radio" name="members[gender]" value="Female" <?=set_value('gender')=='Female'?'':'';?>> বাবা
-                               <input type="radio" name="members[gender]" value="Female" <?=set_value('gender')=='Female'?'':'';?>> অন্যান্য
+                              <input type="radio" name="registrations[applicant_relation]" value="Mother" <?=set_value('applicant_relation')=='Mother'?'checked':'checked';?>> মা 
+                              <input type="radio" name="registrations[applicant_relation]" value="Father" <?=set_value('applicant_relation')=='Father'?'':'';?>> বাবা
+                               <input type="radio" name="registrations[applicant_relation]" value="Guardian" <?=set_value('applicant_relation')=='Guardian'?'':'';?>> অন্যান্য
                            </div>
                         </div>
                       </div>
@@ -262,44 +266,44 @@
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>নাম</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_name]" value="<?=set_value('child_mother_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>জন্ম তারিখ</label>
-	                              <input type="date" name="members[child_dob]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
+	                              <input type="date" name="registrations[child_mother_dob]" value="<?=set_value('child_mother_dob')?>" class="form-control" placeholder="" autocomplete="off">
 	                           </div>
 	                        </div>  
 
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জাতীয় পরিচয়পত্রের নম্বর</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_mother_national_no]" value="<?=set_value('child_mother_national_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>ই-মেইল আইডি</label>
-	                              <input type="text" name="members[child_height]" value="<?=set_value('child_height')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_email]" value="<?=set_value('child_mother_email')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>বাসার ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_parmanent_ph_no]" value="<?=set_value('child_mother_parmanent_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>মবাইল নম্বর</label>
-	                              <input type="text" name="members[birth_mark]" value="<?=set_value('birth_mark')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_ph_no]" value="<?=set_value('child_mother_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
                           	<div class="col-md-12">
                         		<div class="form-group">
                               		<label>বাসার ঠিকানা</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_mother_permanent_address]" value="<?=set_value('child_mother_permanent_address')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                         </div> 
@@ -309,44 +313,44 @@
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>নাম</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_name]" value="<?=set_value('child_father_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>জন্ম তারিখ</label>
-	                              <input type="date" name="members[child_dob]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
+	                              <input type="date" name="registrations[child_father_dob]" value="<?=set_value('child_father_dob')?>" class="form-control" placeholder="" autocomplete="off">
 	                           </div>
 	                        </div>  
 
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জাতীয় পরিচয়পত্রের নম্বর</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_father_national_no]" value="<?=set_value('child_father_national_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>ই-মেইল আইডি</label>
-	                              <input type="text" name="members[child_height]" value="<?=set_value('child_height')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_email]" value="<?=set_value('child_father_email')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>বাসার ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_permanent_address]" value="<?=set_value('child_father_permanent_address')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>মবাইল নম্বর</label>
-	                              <input type="text" name="members[birth_mark]" value="<?=set_value('birth_mark')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_ph_no]" value="<?=set_value('child_father_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
                           	<div class="col-md-12">
                         		<div class="form-group">
                               		<label>বাসার ঠিকানা</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_father_permanent_address]" value="<?=set_value('child_father_permanent_address')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                         </div> 
@@ -356,33 +360,33 @@
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>নাম</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_parents_name]" value="<?=set_value('child_parents_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>জন্ম তারিখ</label>
-	                              <input type="date" name="members[child_dob]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
+	                              <input type="date" name="registrations[child_parents_dob]" value="<?=set_value('child_parents_dob')?>" class="form-control" placeholder="" autocomplete="off">
 	                           </div>
 	                        </div>  
 
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জাতীয় পরিচয়পত্রের নম্বর</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_parents_national_no]" value="<?=set_value('child_parents_national_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>ফোন (বাসা)</label>
-	                              <input type="text" name="members[birth_mark]" value="<?=set_value('birth_mark')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_parents_ph_no]" value="<?=set_value('child_parents_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
                           	<div class="col-md-12">
                         		<div class="form-group">
                               		<label>বাসার ঠিকানা</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_parents_present_address]" value="<?=set_value('child_parents_present_address')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                         </div> 
@@ -404,14 +408,14 @@
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>পেশা</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_work_name]" value="<?=set_value('child_mother_work_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>পেশার ধরণঃ</label><br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> ফুল্টাইম
-	                              <input type="checkbox" name="members[penta]" value="1"> হাফটাইম
+	                              <input type="checkbox" name="registrations[child_mother_work_type]" value="1"> ফুল্টাইম
+	                              <input type="checkbox" name="registrations[child_mother_work_type]" value="1"> হাফটাইম
 	                            </div>
                            </div>
                        </div>
@@ -419,52 +423,47 @@
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>পদবী</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_mother_designation]" value="<?=set_value('child_mother_designation')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>প্রতিষ্টাহ্নের নাম</label>
-	                              <input type="text" name="members[child_height]" value="<?=set_value('child_height')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_working_institute]" value="<?=set_value('child_mother_working_institute')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
-	                              <label>বাসার ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
+	                              <label>প্রতিষ্টাহ্নের ফোন নম্বর(যদি থাকে)</label>
+	                              <input type="text" name="registrations[child_mother_work_ph_no]" value="<?=set_value('child_mother_work_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                         <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>প্রতিষ্টাহ্নের ঠিকানা</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_working_place]" value="<?=set_value('child_mother_working_place')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
-	                         <div class="col-md-6">
-	                           <div class="form-group">
-	                              <label>প্রতিষ্টাহ্নের ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
-	                           </div>
-	                        </div>
+	                         
 	                        
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>করমস্থলের কত্রিপক্ষের নাম ও পদবী</label>
-	                              <input type="text" name="members[birth_mark]" value="<?=set_value('birth_mark')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_mother_work_md]" value="<?=set_value('child_mother_work_md')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
-                          	<div class="col-md-12">
+                          	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>করমস্থলের নিয়ন্ত্রণকারী কত্রিপক্ষের ঠিকানা</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_mother_work_md_add]" value="<?=set_value('child_mother_work_md_add')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-8">
 	                           <div class="form-group">
 	                              <label>প্রতিষ্ঠানের ধরণঃ</label>
-	                              <input type="checkbox" name="members[bcg]" value="1"> সরকারি
-	                              <input type="checkbox" name="members[penta]" value="1"> বেসরকারি
-	                              <input type="checkbox" name="members[penta]" value="1"> অন্যান্য
+	                              <input type="checkbox" name="registrations[child_mother_working_institute_type]" value="1"> সরকারি
+	                              <input type="checkbox" name="registrations[child_mother_working_institute_type]" value="1"> বেসরকারি
+	                              <input type="checkbox" name="registrations[child_mother_working_institute_type]" value="1"> অন্যান্য
 	                            </div>
                            </div>
                         </div> 
@@ -473,14 +472,14 @@
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>পেশা</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_work_name]" value="<?=set_value('child_father_work_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>পেশার ধরণঃ</label><br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> ফুল্টাইম
-	                              <input type="checkbox" name="members[penta]" value="1"> হাফটাইম
+	                              <input type="checkbox" name="registrations[child_father_work_type]" value="1"> ফুল্টাইম
+	                              <input type="checkbox" name="registrations[child_father_work_type]" value="1"> হাফটাইম
 	                            </div>
                            </div>
 	                       </div>
@@ -489,52 +488,40 @@
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>পদবী</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_father_designation]" value="<?=set_value('child_father_designation')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>প্রতিষ্টাহ্নের নাম</label>
-	                              <input type="text" name="members[child_height]" value="<?=set_value('child_height')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_working_institute]" value="<?=set_value('child_father_working_institute')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
-	                              <label>বাসার ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
-	                           </div>
-	                        </div>
-	                         <div class="col-md-6">
-	                           <div class="form-group">
-	                              <label>প্রতিষ্টাহ্নের ঠিকানা</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
-	                           </div>
-	                        </div>
-	                         <div class="col-md-6">
-	                           <div class="form-group">
 	                              <label>প্রতিষ্টাহ্নের ফোন নম্বর(যদি থাকে)</label>
-	                              <input type="text" name="members[child_weight]" value="<?=set_value('child_weight')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_work_ph_no]" value="<?=set_value('child_father_work_ph_no')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>করমস্থলের কত্রিপক্ষের নাম ও পদবী</label>
-	                              <input type="text" name="members[birth_mark]" value="<?=set_value('birth_mark')?>" class="form-control" placeholder="">
+	                              <input type="text" name="registrations[child_father_work_md]" value="<?=set_value('child_father_work_md')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
                           	<div class="col-md-12">
                         		<div class="form-group">
                               		<label>করমস্থলের নিয়ন্ত্রণকারী কত্রিপক্ষের ঠিকানা</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="registrations[child_father_work_md_add]" value="<?=set_value('child_father_work_md_add')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<div class="col-md-8">
 	                           <div class="form-group">
 	                              <label>প্রতিষ্ঠানের ধরণঃ</label>
-	                              <input type="checkbox" name="members[bcg]" value="1"> সরকারি
-	                              <input type="checkbox" name="members[penta]" value="1"> বেসরকারি
-	                              <input type="checkbox" name="members[penta]" value="1">অন্যান্য
+	                              <input type="checkbox" name="registrations[child_father_working_institute_type]" value="1"> সরকারি
+	                              <input type="checkbox" name="registrations[child_father_working_institute_type]" value="2"> বেসরকারি
+	                              <input type="checkbox" name="registrations[child_father_working_institute_type]" value="3">অন্যান্য
 	                            </div>
                            </div>
                         </div>
@@ -546,28 +533,42 @@
                        	<div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>৮. আপনি কতজন শিশু ভর্তি করতে আগ্রহী?</label><br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> ০১ জন
-	                              <input type="checkbox" name="members[penta]" value="1"> ০২ জন
+	                              <input type="checkbox" name="registrations[child_number]" value="1"> ০১ জন
+	                              <input type="checkbox" name="registrations[child_number]" value="2"> ০২ জন
 	                            </div>
                            </div>
                            <div class="col-md-8">
 	                           <div class="form-group">
 	                              <label>৯. আপনি কোন বয়স গ্রুপে শিশুকে ভর্তি করতে আগ্রহী?</label><br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> প্রারম্ভিক পর্যায় (৬ মাস - ১২ মাস)<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> প্রাক-প্রারম্ভিক পর্যায় (১২ মাস - ৩০মাস)<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> প্রারম্ভিক পর্যায় (৩০ মাস - ৪৮ মাস)<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> প্রাক-প্রাথমিক স্কুল পর্যায় (৪ বছর - ৬ বছর)<br>
+	                              <input type="checkbox" name="registrations[child_admit_interest]" value="1"> প্রারম্ভিক পর্যায় (৬ মাস - ১২ মাস)<br>
+	                              <input type="checkbox" name="registrations[child_admit_interest]" value="2"> প্রাক-প্রারম্ভিক পর্যায় (১২ মাস - ৩০মাস)<br>
+	                              <input type="checkbox" name="registrations[child_admit_interest]" value="3"> প্রারম্ভিক পর্যায় (৩০ মাস - ৪৮ মাস)<br>
+	                              <input type="checkbox" name="registrations[child_admit_interest]" value="4"> প্রাক-প্রাথমিক স্কুল পর্যায় (৪ বছর - ৬ বছর)<br>
 	                            </div>
                            </div>
 
                            <div class="col-md-8">
                               <div class="form-group">
                                  <label>১০. এই শিশুর জন্য আপনার কখন শিশু দিবাযত্ন কেন্দ্র প্রোয়োজন হবে?</label>
-                                  <input class="col-md-6" type="date" name="members[child_dob]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
+                                  <input class="col-md-6" type="date" name="registrations[child_doj]" value="<?=set_value('child_doj')?>" class="form-control" placeholder="" autocomplete="off">
                               </div>
                            </div>
 
-                        <div class="col-md-12">
+                       
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <?php echo form_error('day_cares_id'); ?>
+                              <label>১১. নিম্নের কোন কেন্দ্রে শিশু ভর্তি করতে চান?</label>
+                             <!--  <label>ডে কেয়ার সেন্টার নাম</label> -->
+                              <?php 
+                              $more_attr = 'class="form-control" ';
+                              echo form_dropdown('day_cares_id', $day_cares, set_value('day_cares_id'), $more_attr);
+                              ?>
+                           </div>
+                        </div>               
+                      
+
+                       <!--  <div class="col-md-12">
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
                               <label>১১. নিম্নের কোন কেন্দ্রে শিশু ভর্তি করতে চান?</label>
@@ -576,37 +577,37 @@
                               	<label>ঢাকার ১০ টি</label>
                               	<div class="form-group">
 	                              <br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> ধান্মন্ডি<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> মতিঝিল<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> নির্বাচন কমিশন<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> রায়ের বাজার<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> কাওরান বাজার<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> মুগদা<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> পল্লবী<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> সায়েদাবাদ<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> মহাখালী<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> আশুলিয়া<br>
+	                              <input type="checkbox" name="" value="1"> ধান্মন্ডি<br>
+	                              <input type="checkbox" name="" value="1"> মতিঝিল<br>
+	                              <input type="checkbox" name="" value="1"> নির্বাচন কমিশন<br>
+	                              <input type="checkbox" name="" value="1"> রায়ের বাজার<br>
+	                              <input type="checkbox" name="" value="1"> কাওরান বাজার<br>
+	                              <input type="checkbox" name="" value="1"> মুগদা<br>
+	                              <input type="checkbox" name="" value="1"> পল্লবী<br>
+	                              <input type="checkbox" name="" value="1"> সায়েদাবাদ<br>
+	                              <input type="checkbox" name="" value="1"> মহাখালী<br>
+	                              <input type="checkbox" name="" value="1"> আশুলিয়া<br>
 	                            </div>
                               </div>
                               <div class="col-md-6">
                               	<label>ঢাকার বাহিরে ১০ টি</label>
                               	<div class="form-group">
 	                              <br>
-	                              <input type="checkbox" name="members[bcg]" value="1"> রংপুর<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> গোপাল্গঞ্জ<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> গাজীপুর<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> কক্সবাজার<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> নওগাঁ<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> গাইবান্ধা<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> ভোলা<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> টাঙ্গাইল<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> নোয়াখালী<br>
-	                              <input type="checkbox" name="members[penta]" value="1"> চাঁদপুর<br>
+	                              <input type="checkbox" name="" value="1"> রংপুর<br>
+	                              <input type="checkbox" name="" value="1"> গোপাল্গঞ্জ<br>
+	                              <input type="checkbox" name="" value="1"> গাজীপুর<br>
+	                              <input type="checkbox" name="" value="1"> কক্সবাজার<br>
+	                              <input type="checkbox" name="" value="1"> নওগাঁ<br>
+	                              <input type="checkbox" name="" value="1"> গাইবান্ধা<br>
+	                              <input type="checkbox" name="" value="1"> ভোলা<br>
+	                              <input type="checkbox" name="" value="1"> টাঙ্গাইল<br>
+	                              <input type="checkbox" name="" value="1"> নোয়াখালী<br>
+	                              <input type="checkbox" name="" value="1"> চাঁদপুর<br>
 	                            </div>
                               </div>
                              </div>
                            </div>
-                        </div>               
+                        </div>     -->           
                      </div>
                  	 </fieldset>
 
@@ -630,7 +631,7 @@
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জন্ম নিবন্ধন নম্বর</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="members[birth_certificate_no]" value="<?=set_value('birth_certificate_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                         </div> 
@@ -652,7 +653,7 @@
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জন্ম নিবন্ধন নম্বর</label>
-                              		<input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+                              		<input type="text" name="members[birth_certificate_no]" value="<?=set_value('birth_certificate_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<input type="hidden" name="hide_app_info" value="22222">
