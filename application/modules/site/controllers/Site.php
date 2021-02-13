@@ -452,7 +452,8 @@ class Site extends Frontend_Controller {
 
 
       public function success()
-      {   
+      { 
+
       //view
          $this->data['meta_title'] = 'Success';
          $this->data['subview'] = 'success';
@@ -469,7 +470,12 @@ class Site extends Frontend_Controller {
 
       public function mohila_day_care_centers()
       {
-
+         $this->db->select('*');  
+         $this->db->from('day_cares_others');  
+         $this->db->where('type_id',1);  
+         $this->data['results'] = $this->db->get()->result();
+         // print_r($result);
+         // exit;  
          // echo "hello"; 
          // exit;
          $this->data['meta_title'] = "Care Center Supervision under Mohila Bishoyok's supervision";
@@ -477,6 +483,23 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
          
       }
+
+      public function mohila_day_care_centers_national(){
+
+         $this->db->select('*');  
+         $this->db->from('day_cares_others');  
+         $this->db->where('type_id',2);  
+         $this->data['results'] = $this->db->get()->result();
+         // print_r($result);
+         // exit;  
+         // echo "hello"; 
+         // exit;
+         $this->data['meta_title'] = "Care Center Supervision under Mohila Bishoyok's supervision";
+         $this->data['subview'] = 'mohila_day_care_centers_national'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+
+      }
+
 
       public function six_to_twelve_children_day_care()
       {
