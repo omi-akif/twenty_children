@@ -166,49 +166,45 @@
                     
                         <tr>
                            <td><?=$sl?></td>
-                           <td><?=date('Y-m-d', strtotime($row->created))?></td>
-                           <td><?=$this->Site_model->get_daycare_name($row->day_cares_id)?></td>
-                           <td><?=$row->child_name?></td>
+                           <td><?=@date('Y-m-d', strtotime($row->created))?></td>
+                           <td><?=@$this->Site_model->get_daycare_name($row->day_cares_id)?></td>
+                           <td><?=@$row->child_name?></td>
                            <td> 
+                           		<?php if($row->status==1&&$row->is_applied==0){ ?>
+                           			<!-- <button type="button" class="btn btn-success btn-xs">অ্যাকশন</button> -->
+                           			<a href="<?=base_url('new-application/'.$row->id)?>" class="btn btn-success btn-xs">ভর্তির আবেদন করুন</a>
+                           			<?php /*
                               <div class="btn-group">
                                  <button type="button" class="btn btn-success btn-xs">অ্যাকশন</button>
                                  <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                  </button>
+
                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="javascript:void()" data-id="<?=$row->ud_table_id?>" onclick="func_details(<?=$row->ud_table_id?>)">বিস্তারিত</a></li>
+                                    <li><a href="<?=base_url('new-application/'.$row->id)?>">ভর্তির আবেদন করুন</a></li>
+                                    <!-- <li><a href="javascript:void()" data-id="<?=$row->ud_table_id?>" onclick="func_details(<?=$row->ud_table_id?>)">বিস্তারিত</a></li> -->
                                     <!-- <li><a href="<?=base_url('my-profile/edit/'.$row->id)?>">সংশোধন করুন</a></li> -->
                                  </ul>
                               </div>
+                              */ ?>
+                             <?php }elseif ($row->status==0) {?>
+                             	<p align="center" style="font-size: 12px;color: blue ">আবেদনটি অপেক্ষমান রয়েছে</p>
+                             <?php }elseif ($row->is_applied==1) {?>
+                             	<p align="center" style="font-size: 12px;color: green ">ইতিমধ্যে আবেদন করেছেন </p>
+                             <?php }else {?>
+                             	<p align="center" style="font-size: 12px;color: red ">পরিসমাপ্তি</p>
+                             <?php }?>
                            </td>
                         </tr>
                      
                      <?php }}else{ ?>
+                        
                         <tr>
-                           <td>১</td>
-                           <td>১১-০২-২০২১</td>
-                           <td>ধানমন্ডি</td>
-                           <td>মাফিজুর</td>
-                           <td> 
-                              <div class="btn-group">
-                                 <button type="button" class="btn btn-success btn-xs">অ্যাকশন</button>
-                                 <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                    <span class="caret"></span>
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                 </button>
-                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="<?=base_url('site/site2/newapplication')?>" onclick="">বিস্তারিত</a></li>
-                                    <!-- <li><a href="<?=base_url('my-profile/edit/'.$row->id)?>">সংশোধন করুন</a></li> -->
-                                 </ul>
-                              </div>
-                           </td>
-                        </tr>
-                        <!-- <tr>
                            <td colspan="5" style="text-align: center;">
                               কোন আবেদন পাওয়া যাইনি
                            </td>
-                        </tr> -->   
+                        </tr>   
 
                      <?php } ?>   
                      </tbody>

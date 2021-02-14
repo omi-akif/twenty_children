@@ -32,7 +32,14 @@ class Site_model extends MY_Model {
             return false;
         }
     }
-
+    public function edit_member($table, $id, $field, $data) {
+        $this->db->where($field, $id);
+        if ($this->db->update($table, $data)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     public function last_insert_id(){
       return $this->customDB->insert_id();
    }
@@ -91,7 +98,7 @@ class Site_model extends MY_Model {
         return $query;
     }
 
-    public function get_application($userID) {
+    public function get_application($userID=null,$memberID=null) {
       // $app_list = $this->count_application($userID);
       // $query = [];
       // foreach ($app_list as $item) {
@@ -103,12 +110,16 @@ class Site_model extends MY_Model {
          $this->db->from("daycares_main.users_daycares ud");
          // $this->db->from("demo_daycare.users_daycares ud");         
          $this->db->join("daycares_1.members dm", "dm.id = ud.member_id", 'LEFT');
-         $this->db->where("dm.status", 0);
-         $this->db->where("dm.is_applied", 0);
+         // $this->db->where("dm.status", 0);
+         // $this->db->where("dm.is_applied",0);
+         if(!empty($userID))
          $this->db->where("ud.user_id", $userID);
+         if(!empty($memberID))
+         $this->db->where("dm.id", $memberID);
          $this->db->where("ud.daycare_id", 1);
          // $this->db->where("ud.id", $item->id);
          $query = $this->db->get()->result();
+         // print_r($query);exit('mafiz');
          // echo $this->db->last_query(); exit();        
       // }
       return $query;

@@ -444,7 +444,7 @@ class Site extends Frontend_Controller {
          // Load View
          $this->data['method'] = 'my_profile'; 
          $this->data['meta_title'] = 'প্রোফাইল';                
-         $this->data['subview'] = 'my_profile';
+         $this->data['subview'] = 'childenroll_form';
          // $this->data['subview'] = 'childenroll_form';
          $this->data['edit'] = $edit == 'edit' ? true : false;
          $this->load->view('frontend/_layout_main', $this->data);
@@ -463,7 +463,10 @@ class Site extends Frontend_Controller {
          $this->data['info'] = $this->Common_model->get_user_details($this->userSessID);
          // Application List
          // $this->data['results'] = $this->Site_model->get_application_data($this->userSessID);
-         $this->data['results'] = $this->Site_model->get_application($this->userSessID);
+         $this->data['results'] = $this->Site_model->get_application(null,$id);
+         // echo $this->db->last_query(); exit;
+
+         $this->data['member_id'] = $id;
 
          // echo '<pre>';
          // print_r($this->data['results']); exit;
