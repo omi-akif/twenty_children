@@ -13,7 +13,10 @@
    <link href="<?=base_url();?>fwedget/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+   <!-- <link href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet"> -->
+
    <link href="<?=base_url();?>fwedget/css/style.css" rel="stylesheet">
+
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -21,12 +24,18 @@
    <script src="<?=base_url();?>fwedget/js/bootstrap.min.js"></script>   
    <script src="<?=base_url();?>fwedget/plugins/jquery-validation/dist/jquery.validate.js">
    </script>
+   <!-- <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>  -->
    <script type="text/javascript">var hostname='<?php echo base_url();?>';</script>
 
    <style type="text/css">
       .topright{text-align: right;border: 0px solid red;padding-right: 1px;color: white;width: 266px;}
       .topright a{color: white; font-size: 13px;}
    </style>
+   <script type="text/javascript">
+      // $(document).ready( function () {
+      //     $('#myTable').DataTable();
+      // } );
+   </script>
 </head>
 
 <body>
@@ -64,7 +73,7 @@
                <div class="row">
                   <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
                      <a href="<?=base_url();?>">
-                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3_13.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
+                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3.png" alt="logo" style="height: 170px; display: block;margin-left: auto;margin-right: auto;">
                      </a>
                   </div>
                   <!-- <div class="col-md-3" style="border:0px solid green;margin: 5px 0;">
@@ -88,7 +97,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-ex1-collapse" >
                            <ul class="nav navbar-nav pull-left">
-                              <li style="margin-top:3px; color: red;text-shadow: 2px 2px 7px #ccc;font-style: italic;">শিশুর প্রারম্ভিক বিকাশ, মূল্যবান, যত্নবান, সুরক্ষিত </li>
+                              <li style="margin-top: 3px;color: white;font-style: italic;font-weight: bold;">শিশুর প্রারম্ভিক বিকাশ, মূল্যবান, যত্নবান, সুরক্ষিত </li>
                            </ul>
 
                            <ul class="nav navbar-nav pull-right">

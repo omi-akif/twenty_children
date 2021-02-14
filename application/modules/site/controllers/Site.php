@@ -40,6 +40,37 @@ class Site extends Frontend_Controller {
       $this->load->view('frontend/_layout_main', $this->data);
    }
 
+   
+   public function shishu_academy_district()
+   {   
+      //view
+      $this->data['meta_title'] = 'বাংলাদেশ শিশু একাডেমী জেলা শাখা সমূহ';
+      $this->data['subview'] = 'shishu_academy_district'; #Name of the file
+      $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+   }
+
+   public function shishu_academy_upazila()
+   {   
+      //view
+      $this->data['meta_title'] = 'বাংলাদেশ শিশু একাডেমী উপজেলা শাখা সমূহ';
+      $this->data['subview'] = 'shishu_academy_upazila'; #Name of the file
+      $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+   }
+
+   public function entertainment()
+      {
+         $this->data['meta_title'] = "চিত্তোবিনোদন";
+         $this->data['subview'] = 'entertainment'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+      }
+
+    public function child_law()
+      {
+         $this->data['meta_title'] = "শিশু দিবাযত্ন কেন্দ্র পরিচালনার প্রয়োজনীয় আইনসমূহ";
+         $this->data['subview'] = 'child_law'; #day_care_centers_under_mohila.php
+         $this->load->view('frontend/_layout_main', $this->data); #Main Layout
+      }  
+
    public function admission_procedure()
    {
       //Method for admission
@@ -697,7 +728,7 @@ class Site extends Frontend_Controller {
          // exit;  
          // echo "hello"; 
          // exit;
-         $this->data['meta_title'] = "Care Center Supervision under Mohila Bishoyok's supervision";
+         $this->data['meta_title'] = "মহিলা বিষয়ক অধিদপ্তরের আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ";
          $this->data['subview'] = 'day_care_centers_under_mohila'; #day_care_centers_under_mohila.php
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
          
@@ -713,7 +744,7 @@ class Site extends Frontend_Controller {
          // exit;  
          // echo "hello"; 
          // exit;
-         $this->data['meta_title'] = "Care Center Supervision under Mohila Bishoyok's supervision";
+         $this->data['meta_title'] = "জাতীয় মহিলা সংস্থার আওতাধীন শিশু দিবাযত্ন কেন্দ্রসমূহ";
          $this->data['subview'] = 'mohila_day_care_centers_national'; #day_care_centers_under_mohila.php
          $this->load->view('frontend/_layout_main', $this->data); #Main Layout
 
@@ -1191,9 +1222,45 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data);
       }
 
+      public function children_activiy(){
+         $this->data['meta_title'] = 'শিশুর শারীরিক বিকাশ ও শারীরিক ক্রিয়াকলাপের নির্দেশিকা';
+         $this->data['subview'] = 'children_activiy';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function primary_health(){
+         $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
+         $this->data['subview'] = 'primary_health';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function parents_hand_book(){
+         $this->data['meta_title'] = 'অভিভাবক তথ্য হ্যান্ডবুক';
+         $this->data['subview'] = 'parents_hand_book';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function stop_crime(){
+         $this->data['meta_title'] = 'অভিভাবক তথ্য হ্যান্ডবুক';
+         $this->data['subview'] = 'stop_crime';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }      
+
       public function children_curriculum(){
          $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
          $this->data['subview'] = 'children_curriculum';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function child_rights_certificats(){
+         $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
+         $this->data['subview'] = 'child_rights_certificats';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function child_pre_education(){
+         $this->data['meta_title'] = 'শিশুর প্রাক- প্রারম্ভিক শিক্ষা পাঠ্যক্রম';
+         $this->data['subview'] = 'child_pre_education';
          $this->load->view('frontend/_layout_main', $this->data);
       }
 
@@ -1203,9 +1270,27 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data);
       }
 
+      public function admission_form(){
+         $this->data['meta_title'] = 'শিশু খাদ্য ও পুষ্টি নির্দেশিকা';
+         $this->data['subview'] = 'admission_form';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function enrollment_application(){
+         $this->data['meta_title'] = '';
+         $this->data['subview'] = 'enrollment_application';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
       public function questions(){
          $this->data['meta_title'] = 'জরিপ প্রশ্নমালা';
          $this->data['subview'] = 'questions';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function general_question(){
+         $this->data['meta_title'] = 'সাধারন প্রশ্নবলী';
+         $this->data['subview'] = 'general_question';
          $this->load->view('frontend/_layout_main', $this->data);
       }
 

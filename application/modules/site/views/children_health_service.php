@@ -3,7 +3,7 @@
    
    <div class="col-md-9 main-content">
 
-      <embed src="<?=base_url('assets/pdfs/curriculum.pdf')?>" type="application/pdf" width="100%" height="900px" />
+      <embed src="<?=base_url('assets/pdfs/child-mental-health.pdf')?>" type="application/pdf" width="100%" height="900px" />
 
    </div>   
 </div>

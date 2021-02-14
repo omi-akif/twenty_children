@@ -38,6 +38,22 @@
    .button5 {background-color: #555555;} /* Black */
    /*.galance a{font-size: 30px; font-family: "arial"}
    .galance a:hover{text-decoration: none; color: white; }*/
+
+   .button_btn {
+     /*background-color: #4CAF50;  Green */
+     border: none;
+     color: white;
+     padding: 5px 5px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     height: 45px;
+     margin: 15px 0 0px 0;
+     cursor: pointer;
+     display: block;
+   }
+
+   /*a:hover .button_btn{}*/
 </style>
 <div class="row">
    <?php $this->load->view('frontend/right_side_bar'); ?>   
@@ -99,6 +115,120 @@
          </div>
       </section>  
 
+
+      <section class="project">
+
+      <!-- <a href="<?=base_url('at-a-galance')?>" class="button button3" style="font-size: 30px; font-family: arial;">At A Galance: 20 New Child Day Care  Centres</a> -->
+
+         <!-- <h4 class="heading-int">দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প</h4> -->
+
+         <?php $this->load->view('children_food')?>
+
+<style type="text/css">
+  h5{ font-weight: bold;
+    /* border-bottom: 5px solid red; */
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-bottom: 3px;}
+    p{margin-top: 10px;}
+</style>
+
+         <br>
+
+         <div class="row">
+           <div class="col-md-4">
+             <h5 >সাধারণ যত্ন</h5>
+             <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
+             <p>খাবার খাওয়ানো, ঘুমনো, দাঁত ব্রাশ, টয়লেট ট্রেনিং, হাত ধোয়া, নখ কাঁটা ও পরিষ্কার পরিচ্ছন্নতা </p>
+           </div>
+           <div class="col-md-4">
+             <h5>প্রাথমিক স্বাস্থ্যসেবা</h5>
+             <span style="width: 45px; height: 5px; background-color: green; display: block; padding-bottom: 5px;"></span>
+             <p>জরুরী স্বাস্থ্য সেবা, টিকাদান, চোঁখ, কান ও দাঁত ও ত্বকের যত্ন এবং কৃমি নিয়ন্ত্রন</p>
+           </div>
+           <div class="col-md-4">
+             <h5>প্রাক-প্রাথমিক শিক্ষা</h5>
+             <span style="width: 45px; height: 5px; background-color: blue; display: block; padding-bottom: 5px;"></span>
+             <p>সামাজিক, মানসিক, আবেগীক, ভাষাগত ও বুদ্ধিবৃত্তিক</p>
+           </div>
+          </div>
+
+          <div class="row">
+           <div class="col-md-4">
+             <h5 >খাদ্য ও পুষ্টি</h5>
+             <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
+             <p>সুষম খাবার, ষ্টান্ডিং, কম ওজন, বেশী ওজন</p>
+           </div>
+           <div class="col-md-4">
+             <h5>শারিরীক বিকাশ</h5>
+             <span style="width: 45px; height: 5px; background-color: green; display: block; padding-bottom: 5px;"></span>
+             <p>ওজন উচ্চতা, সুক্ষ ও বৃহৎ পেশী সঞ্চালন</p>
+           </div>
+           <div class="col-md-4">
+             <h5>মানসিক বিকাশ</h5>
+             <span style="width: 45px; height: 5px; background-color: blue; display: block; padding-bottom: 5px;"></span>
+             <p>জ্ঞানীয়, আবেগ নিয়ন্ত্রন, সামাজিক দক্ষতা, ভাষাগত দক্ষতা ও মননশীলতা</p>
+           </div>
+         </div>
+
+         <div class="row">
+           <div class="col-md-4">
+             <h5 >চিত্ত বিনোদন</h5>
+             <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
+             <p>ছবি আঁকা, গান, নাচ, গল্প, ছড়া, টিভি দেখা, খেলাধুলা</p>
+           </div>
+           <div class="col-md-4">
+             <h5>নিরাপত্তা ও অধিকার</h5>
+             <span style="width: 45px; height: 5px; background-color: green; display: block; padding-bottom: 5px;"></span>
+             <p>শিশু অধিকার, জরুরী পরিস্থিতি,অষৈম্যমূলক আচরন </p>
+           </div>
+           <div class="col-md-4">
+             <h5>প্রকৃতি এবং বিনোদন</h5>
+             <span style="width: 45px; height: 5px; background-color: blue; display: block; padding-bottom: 5px;"></span>
+             <p>প্রকৃতিতে হাঁটা, পরীক্ষামূলক শিক্ষা, প্রকৃতির জীবনচক্র জানা</p>
+           </div>
+         </div>
+
+         <div class="row">
+           <div class="col-md-4">
+             <h5 >শিল্প ও সংস্কৃতি</h5>
+             <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
+             <p>শিশু একাডেমী, মিউজিয়াম, প্রত্নতত্ত্ব</p>
+           </div>
+     <!--      </div>
+
+          <div class="row"> -->
+           <div class="col-md-2">
+            <a href="<?=base_url('stop-crime')?>" class="button_btn button2"  style="text-decoration: none;line-height: 18px;color:white; ">শিশু নির্যাতন বন্ধ করুন</a>
+           </div>
+           <div class="col-md-2">
+             <a href="<?=base_url('child-rights-certificats')?>" class="button_btn button3"  style="text-decoration: none;line-height: 18px;color:white; ">শিশু অধিকার সনদ প্রতিপালন</a>
+           </div>
+           <div class="col-md-2">
+              <a href="<?=base_url('at-a-galance')?>" class="button_btn button5" style="text-decoration: none; background-color: #6464d6; color:white; padding: 15px auto !important; ">একনজরে</a> 
+           </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- <section class="introduce">
          <h4 class="heading-int">ভূমিকা</h4>
          <p>
@@ -114,13 +244,6 @@
          </p>
       </section> -->
 
-      <section class="project">
-
-      <a href="<?=base_url('at-a-galance')?>" class="button button3" style="font-size: 30px; font-family: arial;">At A Galance: 20 New Child Day Care  Centres</a>
-
-         <!-- <h4 class="heading-int">দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প</h4> -->
-
-         <?php $this->load->view('children_food')?>
 
           <?php /* ?>
 

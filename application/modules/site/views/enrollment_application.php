@@ -3,7 +3,7 @@
    
    <div class="col-md-9 main-content">
 
-      <embed src="<?=base_url('assets/pdfs/child-rights-instruction.pdf')?>" type="application/pdf" width="100%" height="900px" />
+      <embed src="<?=base_url('assets/pdfs/enrollment_application.pdf')?>" type="application/pdf" width="100%" height="900px" />
 
    </div>   
 </div>

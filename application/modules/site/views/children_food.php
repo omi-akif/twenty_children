@@ -23,7 +23,7 @@ i{color: red;font-size: 11px !important;}
            <li><a href="<?=base_url('six-to-twelve-children-health-care')?>"><i class="fa fa-square" aria-hidden="true"></i> প্রাথমিক স্বাস্থ্য সেবা</li>
            <li><a href="<?=base_url('six-to-twelve-children-health-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> শারীরিক বিকাশ</li>
            <li><a href="<?=base_url('six-to-twelve-children-mental-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> মানসিক বিকাশ</li>
-           <li><a href="<?=base_url('six-to-twelve-children-curricular')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>
+           <li><a href="<?=base_url('entertainment')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>           
           </ul>
         </div>  
      </td>
@@ -39,7 +39,7 @@ i{color: red;font-size: 11px !important;}
            <li><a href="<?=base_url('twelve-to-thirty-children-health-care')?>"><i class="fa fa-square" aria-hidden="true"></i> প্রাথমিক স্বাস্থ্য সেবা</li>
            <li><a href="<?=base_url('twelve-to-thirty-children-health-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> শারীরিক বিকাশ</li>
            <li><a href="<?=base_url('twelve-to-thirty-children-mental-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> মানসিক বিকাশ</li>
-           <li><a href="<?=base_url('twelve-to-thirty-children-curricular')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>
+           <li><a href="<?=base_url('entertainment')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>      
           </ul>
         </div>  
      </td>
@@ -55,7 +55,7 @@ i{color: red;font-size: 11px !important;}
            <li><a href="<?=base_url('two-to-four-years-children-health-care')?>"><i class="fa fa-square" aria-hidden="true"></i> প্রাথমিক স্বাস্থ্য সেবা</li>
            <li><a href="<?=base_url('two-to-four-years-children-health-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> শারীরিক বিকাশ</li>
            <li><a href="<?=base_url('two-to-four-years-children-mental-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> মানসিক বিকাশ</li>
-           <li><a href="<?=base_url('two-to-four-years-children-curricular')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>
+           <li><a href="<?=base_url('entertainment')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>      
           </ul>
         </div> 
      </td>
@@ -71,7 +71,7 @@ i{color: red;font-size: 11px !important;}
            <li><a href="<?=base_url('four-to-six-years-children-health-care')?>"><i class="fa fa-square" aria-hidden="true"></i> প্রাথমিক স্বাস্থ্য সেবা</li>
            <li><a href="<?=base_url('four-to-six-years-children-health-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> শারীরিক বিকাশ</li>
            <li><a href="<?=base_url('four-to-six-years-children-mental-improvement')?>"><i class="fa fa-square" aria-hidden="true"></i> মানসিক বিকাশ</li>
-           <li><a href="<?=base_url('four-to-six-years-children-curricular')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>
+           <li><a href="<?=base_url('entertainment')?>"><i class="fa fa-square" aria-hidden="true"></i> চিত্তোবিনোদন</li>      
           </ul>
         </div> 
      </td>

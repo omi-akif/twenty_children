@@ -73,10 +73,27 @@ $route['children-health-service'] = 'site/children_health_service';
 $route['children-curriculum'] = 'site/children_curriculum';
 $route['nutrition-instruction'] = 'site/nutrition_instruction';
 $route['questions'] = 'site/questions';
+$route['general-question'] = 'site/general_question';
 $route['children-vaccine'] = 'site/children_vaccine';
 $route['subsidary'] = 'site/subsidary';
 
 $route['at-a-galance'] = 'site/at_galance';
+$route['child-law'] = 'site/child_law';
+$route['primary-health'] = 'site/primary_health';
+$route['parents-hand-book'] = 'site/parents_hand_book';
+$route['stop-crime'] = 'site/stop_crime';
+$route['children-activiy'] = 'site/children_activiy';
+$route['admission-form'] = 'site/admission_form';
+$route['enrollment-application'] = 'site/enrollment_application';
+
+$route['child-rights-certificats'] = 'site/child_rights_certificats';
+$route['child-pre-education'] = 'site/child_pre_education';
+
+
+
+$route['shishu-academy-district'] = 'site/shishu_academy_district';
+$route['shishu-academy-upazila'] = 'site/shishu_academy_upazila';
+$route['entertainment'] = 'site/entertainment';
 
 #6-12 years children routes
 $route['six-to-twelve-children-day-care'] = 'site/six_to_twelve_children_day_care';

@@ -97,6 +97,7 @@ body {
 	border-bottom: 1px dotted black;
 	margin: 1px;
 	font-size: 13px;
+  color: black;
 
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
@@ -168,7 +169,7 @@ img.introduce-image{
      text-align: center;
      font-weight: bold;    
      padding: 5px;
-     background-color: #ccc;
+     background-color: black;
   }
 
   .footer p{
