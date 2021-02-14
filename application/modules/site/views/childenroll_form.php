@@ -557,7 +557,7 @@
                               <label>১১. নিম্নের কোন কেন্দ্রে শিশু ভর্তি করতে চান?</label>
                              <!--  <label>ডে কেয়ার সেন্টার নাম</label> -->
                               <?php 
-                              $more_attr = 'class="form-control" ';
+                              $more_attr = 'class="form-control" required';
                               echo form_dropdown('day_cares_id', $day_cares, set_value('day_cares_id'), $more_attr);
                               ?>
                            </div>

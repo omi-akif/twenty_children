@@ -468,6 +468,7 @@ class Site extends Frontend_Controller {
 
          $this->data['member_id'] = $id;
 
+
          // echo '<pre>';
          // print_r($this->data['results']); exit;
 
