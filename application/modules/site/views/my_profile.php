@@ -160,9 +160,9 @@
                     
                         <tr>
                            <td><?=$sl?></td>
-                           <td><?=date('Y-m-d', strtotime($row->created))?></td>
-                           <td><?=$this->Site_model->get_daycare_name($row->day_cares_id)?></td>
-                           <td><?=$row->child_name?></td>
+                           <td><?=@date('Y-m-d', strtotime($row->created))?></td>
+                           <td><?=@$this->Site_model->get_daycare_name($row->day_cares_id)?></td>
+                           <td><?=@$row->child_name?></td>
                            <td> 
                               <div class="btn-group">
                                  <button type="button" class="btn btn-success btn-xs">অ্যাকশন</button>
@@ -171,7 +171,8 @@
                                     <span class="sr-only">Toggle Dropdown</span>
                                  </button>
                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="javascript:void()" data-id="<?=$row->ud_table_id?>" onclick="func_details(<?=$row->ud_table_id?>)">বিস্তারিত</a></li>
+                                    <li><a href="<?=base_url('new-application/'.$row->id)?>">ভর্তির আবেদন করুন</a></li>
+                                    <!-- <li><a href="javascript:void()" data-id="<?=$row->ud_table_id?>" onclick="func_details(<?=$row->ud_table_id?>)">বিস্তারিত</a></li> -->
                                     <!-- <li><a href="<?=base_url('my-profile/edit/'.$row->id)?>">সংশোধন করুন</a></li> -->
                                  </ul>
                               </div>
