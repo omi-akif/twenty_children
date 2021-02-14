@@ -5,6 +5,8 @@
 	h5{font-family: 'Kalpurush', sans-serif; text-align: left; font-weight: bold; font-size:16px;}
 </style>
 <div class="row">
+	<?php $this->load->view('frontend/right_side_bar'); ?>   
+	
    <div class="col-md-9 main-content" style="padding: 15px 15px 15px 15px"> 
       <!-- <div class="col-md-10 col-sm-6 col-md-offset-1 col-sm-offset-1" style="border: 1px solid"> -->
       <!-- <ul class="nav nav-tabs">
@@ -177,7 +179,7 @@
                                  </button>
                                  <ul class="dropdown-menu" role="menu">
                                     <li><a href="javascript:void()" data-id="<?=$row->ud_table_id?>" onclick="func_details(<?=$row->ud_table_id?>)">বিস্তারিত</a></li>
-                                    <li><a href="<?=base_url('my-profile/edit/'.$row->id)?>">সংশোধন করুন</a></li> -->
+                                    <li><a href="<?=base_url('my-profile/edit/'.$row->id)?>">সংশোধন করুন</a></li>
                                  </ul>
                               </div>
                            </td>
@@ -707,5 +709,5 @@
 
       </div>
 
-      <?php $this->load->view('frontend/right_side_bar'); ?>   
+      
    </div>

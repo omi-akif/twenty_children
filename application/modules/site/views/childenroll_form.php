@@ -231,7 +231,7 @@
                   	<!-- <h2 align="center">শিশু তালিকা ভুক্তির আবেদন</h2> -->
                   <fieldset class="scheduler-border">
                      <legend class="scheduler-border">সাধারণ তথ্য</legend>
-                  <div class="row form-row">
+                  <!-- <div class="row form-row">
                         <div class="col-md-12">
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
@@ -242,7 +242,7 @@
                               ?>
                            </div>
                         </div>               
-                     </div> 
+                     </div>  -->
                      <div class="row form-row">
                         <div class="col-md-6">
                            <div class="form-group">
@@ -640,20 +640,20 @@
 	                        <div class="col-md-12">
 	                           <div class="form-group">
 	                              <label>নাম</label>
-	                              <input type="text" name="members[child_name]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
+	                              <input type="text" name="members[child_name_2]" value="<?=set_value('child_name')?>" class="form-control" placeholder="">
 	                           </div>
 	                        </div>
 	                        <div class="col-md-6">
 	                           <div class="form-group">
 	                              <label>শিশুর জন্ম তারিখ</label>
-	                              <input type="date" name="members[child_dob]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
+	                              <input type="date" name="members[child_dob_2]" value="<?=set_value('child_dob')?>" class="form-control" placeholder="" autocomplete="off">
 	                           </div>
 	                        </div>  
 
                         	<div class="col-md-6">
                         		<div class="form-group">
                               		<label>জন্ম নিবন্ধন নম্বর</label>
-                              		<input type="text" name="members[birth_certificate_no]" value="<?=set_value('birth_certificate_no')?>" class="form-control" placeholder="">
+                              		<input type="text" name="members[birth_certificate_no_2]" value="<?=set_value('birth_certificate_no')?>" class="form-control" placeholder="">
                            		</div>
                           	</div>
                           	<input type="hidden" name="hide_app_info" value="22222">

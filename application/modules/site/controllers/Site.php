@@ -450,6 +450,224 @@ class Site extends Frontend_Controller {
          $this->load->view('frontend/_layout_main', $this->data);
       }
 
+      public function newapplication($id)
+      {
+
+         if (!$this->ion_auth->logged_in()):
+            redirect('login');
+         endif;
+
+         // User Info
+         $this->data['user_info'] = $this->Site_model->get_info($this->userSessID);
+         // Basic
+         $this->data['info'] = $this->Common_model->get_user_details($this->userSessID);
+         // Application List
+         // $this->data['results'] = $this->Site_model->get_application_data($this->userSessID);
+         $this->data['results'] = $this->Site_model->get_application($this->userSessID);
+
+         // echo '<pre>';
+         // print_r($this->data['results']); exit;
+
+         // Update Basic Info
+         if($this->input->post('hide_update_info') == '11111'){
+
+            $this->form_validation->set_rules('first_name', 'first name', 'required|trim');
+
+            // update the password if it was posted
+            if ($this->input->post('password')){
+               $this->form_validation->set_rules('password', $this->lang->line('edit_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
+               $this->form_validation->set_rules('password_confirm', $this->lang->line('edit_user_validation_password_confirm_label'), 'required');
+            }
+
+
+            //Validate and input data
+            if ($this->form_validation->run() == true) {
+               $form_data = array(
+                  'first_name'   => $this->input->post('first_name'),
+                  'last_name'    => $this->input->post('last_name'),
+                  'phone'        => $this->input->post('phone'),
+                  'gender'       => $this->input->post('gender')     
+                  );
+
+               // update the password if it was posted
+               if ($this->input->post('password')){
+                  $data['password'] = $this->input->post('password');
+                  // check to see if we are updating the user
+                  $this->ion_auth->update($this->userSessID, $data);
+               }
+
+               $this->Common_model->edit('users', $this->userSessID, 'id', $form_data);
+               // Message
+               $this->session->set_flashdata('success', 'আপনার প্রোফাইল সংশোধন  হয়েছে। ধন্যবাদ');
+               redirect('my-profile');
+            }
+         }
+
+         if($this->input->post('hide_app_info') == '22222'){
+
+            // Application Form
+            $this->form_validation->set_rules('day_cares_id', 'Day Cares Id', 'required|trim');
+            // $this->form_validation->set_rules('child_name', 'Child name', 'required|trim');
+
+            // If file selected
+            if(@$_FILES['userfile']['size'] > 0){
+               $this->form_validation->set_rules('userfile', '', 'callback_file_check');
+            }
+
+            // If Immunization selected
+            if(@$_FILES['userfile1']['size'] > 0){
+               $this->form_validation->set_rules('userfile1', '', 'callback_file_check');
+            }
+
+            //Validate and input data
+            if ($this->form_validation->run() == true) {
+
+            // Dynamic DB Name
+               $day_care_info = $this->Common_model->get_row('day_cares', $this->input->post('day_cares_id'));
+               $this->Site_model->loadCustomerDatabase($day_care_info->database_name);
+
+
+               //Registration table
+               $registrations_data  = $_POST['registrations'];
+               $registrations_data_ = array(
+                  'day_cares_id' => $this->input->post('day_cares_id'),
+                  'parents_id'   => $this->userSessID,
+                  'created'      => date('Y-m-d H:i:s')
+                  );
+               $registrations_data = array_merge($registrations_data, $registrations_data_);
+               // echo "<pre>";
+               // print_r($registrations_data);
+               // echo "</pre>";
+               $this->Site_model->save_other_db('registrations', $registrations_data);
+               $insert_id = $this->Site_model->last_insert_id();
+
+               //Member table 
+               $members_data  = $_POST['members'];
+               $members_data_ = array(
+                  'parents_id'         => $this->userSessID,
+                  'registrations_id'   => $insert_id,
+                  'member_types_id'    => 1,
+                  'day_cares_id'       => $this->input->post('day_cares_id'),
+                  'created'            => date('Y-m-d H:i:s'),      
+                  'status'             => 1,
+                  'is_applied'         => 1       
+                  );
+               $members_data = array_merge($members_data, $members_data_);
+
+               // Image Upload
+               if($_FILES['userfile']['size'] > 0){
+                  $new_file_name = time().'-'.$_FILES["userfile"]['name'];
+                  $config['allowed_types']= 'jpg|png|jpeg';
+                  $config['upload_path']  = $this->img_path;
+                  $config['file_name']    = $new_file_name;
+                  $config['max_size']     = 600;
+
+                  $this->load->library('upload', $config);
+                  //upload file to directory
+                  if($this->upload->do_upload()){
+                     $uploadData = $this->upload->data();
+                     $config = array(
+                        'source_image' => $uploadData['full_path'],
+                        'new_image' => $this->img_path,
+                        'maintain_ratio' => TRUE,
+                        'width' => 300,
+                        'height' => 300
+                        );
+                     $this->load->library('image_lib',$config);
+                     $this->image_lib->initialize($config);
+                     $this->image_lib->resize();
+
+                     $uploadedFile = $uploadData['file_name'];
+                     // print_r($uploadedFile);
+                  }else{
+                     $this->data['message'] = $this->upload->display_errors();
+                  }
+               }
+
+
+               // Immunization Image Upload
+               if($_FILES['userfile1']['size'] > 0){
+                  $new_file_name = time().'-'.$_FILES["userfile"]['name'];
+                  $config['allowed_types']= 'jpg|png|jpeg';
+                  $config['upload_path']  = $this->img_path;
+                  $config['file_name']    = $new_file_name;
+                  $config['max_size']     = 600;
+
+                  $this->load->library('upload', $config);
+                  //upload file to directory
+                  if($this->upload->do_upload('userfile1')){
+                     $uploadData = $this->upload->data();
+                     $config = array(
+                        'source_image' => $uploadData['full_path'],
+                        'new_image' => $this->img_path,
+                        'maintain_ratio' => TRUE,
+                        'width' => 300,
+                        'height' => 300
+                        );
+                     $this->load->library('image_lib',$config);
+                     $this->image_lib->initialize($config);
+                     $this->image_lib->resize();
+
+                     $uploadedFile = $uploadData['file_name'];
+                     // print_r($uploadedFile);
+                  }else{
+                     $this->data['message'] = $this->upload->display_errors();
+                  }
+               }
+
+
+               if($_FILES['userfile']['size'] > 0){
+                  $members_data['image_file'] = $uploadedFile;
+               }
+
+               if($_FILES['userfile1']['size'] > 0){
+                  $members_data['immunization_file'] = $uploadedFile;
+               }
+
+               // echo "<pre>";
+               // print_r($members_data);
+               // echo "</pre>";
+               // exit;
+               $this->Site_model->save_other_db('members', $members_data);
+               $insert_member_id = $this->Site_model->last_insert_id();
+
+               // update user Day care
+               $user_daycare_data = array(
+                  'user_id'      => $this->userSessID,
+                  'daycare_id'   => $this->input->post('day_cares_id'),
+                  'member_id'    => $insert_member_id
+                  );
+               // $this->Site_model->edit_user('users', $this->userSessID, 'id', $user_data);
+               $this->Common_model->save('users_daycares', $user_daycare_data);
+
+
+               // Send Message
+               $dc_name = $this->Site_model->get_daycare_name($this->input->post('day_cares_id'));
+               $exp = explode(" ", $dc_name);
+               $daycare_name = $exp[0];
+               $user = $this->ion_auth->user()->row();
+               // $name = $this->input->post('first_name').' '.$this->input->post('last_name');
+               $mobile = '+88'.$user->phone;
+               $message = $daycare_name.' কেন্দ্রে,আপনার শিশু অপেক্ষমাণ তালিকাভুক্ত হয়েছে,ধন্যবাদ';
+               $this->send_sms($mobile, $message);
+
+               // Message
+               $this->session->set_flashdata('success', 'আপনার আবেদনটি সম্পন্ন হয়েছে। ধন্যবাদ');
+               redirect('my-profile');
+            }
+         }
+
+         // Dropdown
+         $this->data['day_cares'] = $this->Common_model->get_daycares(); 
+
+
+
+         $this->data['method'] = 'newapplication'; 
+         $this->data['meta_title'] = 'আবেদন';               
+         $this->data['subview'] = 'newapplication_form';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
 
       public function success()
       { 

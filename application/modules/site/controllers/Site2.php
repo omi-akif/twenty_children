@@ -306,9 +306,9 @@ class Site2 extends Frontend_Controller {
             // //Validate and input data
             // if ($this->form_validation->run() == true) {
 
-            Dynamic DB Name
-               $day_care_info = $this->Common_model->get_row('day_cares', $this->input->post('day_cares_id'));
-               $this->Site_model->loadCustomerDatabase($day_care_info->database_name);
+            // Dynamic DB Name
+            //    $day_care_info = $this->Common_model->get_row('day_cares', $this->input->post('day_cares_id'));
+            //    $this->Site_model->loadCustomerDatabase($day_care_info->database_name);
 
 
                //Registration table

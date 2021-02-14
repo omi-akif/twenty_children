@@ -28,7 +28,7 @@ $config['modules_locations'] = array(
 */
 
 if($_SERVER['HTTP_HOST'] === 'localhost'){
-    $config['base_url'] = 'http://localhost/daycare/';
+    $config['base_url'] = 'http://localhost/twenty_children/';
 }else{
     $config['base_url'] = 'http://173.212.223.213/demo/twenty_child_day_care_center/';
 }

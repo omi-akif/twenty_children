@@ -92,6 +92,30 @@ class Site_model extends MY_Model {
     }
 
     public function get_application($userID) {
+      // $app_list = $this->count_application($userID);
+      // $query = [];
+      // foreach ($app_list as $item) {
+         // $data_arr[$item->id] = $this->dc_applicant($item->database_name);
+         //$gtotal['application'] = $data_arr[$item->id]['total_application'];
+         // $dbName = $this->dc_db_name($item->daycare_id);
+         // $dbName = 'demo_'.$dbName;
+         $this->db->select("dm.*, ud.id as ud_table_id");
+         $this->db->from("daycares_main.users_daycares ud");
+         // $this->db->from("demo_daycare.users_daycares ud");         
+         $this->db->join("daycares_1.members dm", "dm.id = ud.member_id", 'LEFT');
+         $this->db->where("dm.status", 0);
+         $this->db->where("dm.is_applied", 0);
+         $this->db->where("ud.user_id", $userID);
+         $this->db->where("ud.daycare_id", 1);
+         // $this->db->where("ud.id", $item->id);
+         $query = $this->db->get()->result();
+         // echo $this->db->last_query(); exit();        
+      // }
+      return $query;
+    } 
+
+    /*
+    public function get_application($userID) {
       $app_list = $this->count_application($userID);
       $query = [];
       foreach ($app_list as $item) {
@@ -102,8 +126,8 @@ class Site_model extends MY_Model {
          $this->db->select("dm.*, ud.id as ud_table_id");
          $this->db->from("daycares_main.users_daycares ud");
          // $this->db->from("demo_daycare.users_daycares ud");         
-         $this->db->join("$dbName.members dm", "dm.id = ud.member_id");
-         // $this->db->where("dm.status", 0);
+         $this->db->join("$dbName.members dm", "dm.id = ud.member_id", 'LEFT');
+         $this->db->where("dm.status", 1);
          $this->db->where("ud.user_id", $userID);
          $this->db->where("ud.daycare_id", $item->daycare_id);
          $this->db->where("ud.id", $item->id);
@@ -112,6 +136,7 @@ class Site_model extends MY_Model {
       }
       return $query;
     } 
+    */
 
     public function count_application($userID) {      
       $this->db->select('*');
