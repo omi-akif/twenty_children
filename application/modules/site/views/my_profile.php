@@ -1,4 +1,5 @@
 <div class="row">
+   <?php $this->load->view('frontend/right_side_bar'); ?>
    <div class="col-md-9 main-content" style="padding: 15px 15px 15px 15px"> 
       <!-- <div class="col-md-10 col-sm-6 col-md-offset-1 col-sm-offset-1" style="border: 1px solid"> -->
       <ul class="nav nav-tabs">
@@ -542,5 +543,5 @@
 
       </div>
 
-      <?php $this->load->view('frontend/right_side_bar'); ?>   
+         
    </div>

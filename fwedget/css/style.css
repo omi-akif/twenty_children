@@ -55,7 +55,7 @@ body {
    color: white;
    font-weight: 700;
    font-size: 14px;
-   background-color: #1C413A;
+   background-color: black;
 }
 
 .pdln{
@@ -74,7 +74,7 @@ body {
    padding-right: 0px; 
    padding-top: 10px; 
    /*background: #f7e3c2; */
-   min-height: 1405px;
+   min-height: 920px;
 }
 
 .inner-content{
@@ -345,7 +345,7 @@ i.pull-left.fa.fa-envelope-o{
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin: 8px auto;
     border-right: 1px solid white;
 }

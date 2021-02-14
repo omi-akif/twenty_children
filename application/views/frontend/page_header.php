@@ -35,7 +35,7 @@
          <div class="col-md-12 fullbody">
             <div class="col-md-10 col-md-offset-1">
 
-               <div class="row" style="border-bottom: 1px solid #ccc; margin-top: 0px; margin-bottom: 10px; background-color: #000;">
+               <div class="row" style="border-bottom: 1px solid #ccc; margin-top: 0px; margin-bottom: 10px; background-color: #000;margin-left: -30px !important;margin-right: -30px !important;">
                   <div class="col-md-1" style="text-align: left;padding-left: 3px;border: 0px solid red;">
                      <img src="<?=base_url();?>fwedget/images/govt-logo.png" alt="logo" style="float:left; height: 35px;margin-top: 3px;">
                   </div>
@@ -64,7 +64,7 @@
                <div class="row">
                   <div class="col-md-offset-1 col-md-12 col-sm-12" style="border:0px solid red;margin: 5px 0;">
                      <a href="<?=base_url();?>">
-                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/daycare-banner.jpg" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
+                        <img class="img-responsive" src="<?=base_url();?>fwedget/images/logo-final3_13.png" alt="logo" style="height: 150px; display: block;margin-left: auto;margin-right: auto;">
                      </a>
                   </div>
                   <!-- <div class="col-md-3" style="border:0px solid green;margin: 5px 0;">
