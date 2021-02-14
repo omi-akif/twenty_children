@@ -224,7 +224,7 @@
 
           <div id="menu2" class="tab-pane fade">
 
-            <form action="<?=base_url('site/site2/my_profile')?>" method="post" enctype="multipart/form-data" id="jsvalidation" style="font-family: 'arial'">
+            <form action="<?=base_url('my-profile')?>" method="post" enctype="multipart/form-data" id="jsvalidation" style="font-family: 'arial'">
 
                <div><?php //echo validation_errors(); ?></div>
                <div class="col-md-12" style="background: #fff;padding-top:30px;">
@@ -232,6 +232,7 @@
                   <fieldset class="scheduler-border">
                      <legend class="scheduler-border">সাধারণ তথ্য</legend>
                   <div class="row form-row">
+                     <?php /*
                         <div class="col-md-12">
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
@@ -242,6 +243,7 @@
                               ?>
                            </div>
                         </div>               
+                        */ ?>
                      </div> 
                      <div class="row form-row">
                         <div class="col-md-6">

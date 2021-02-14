@@ -286,7 +286,7 @@ class Site extends Frontend_Controller {
          }
 
          if($this->input->post('hide_app_info') == '22222'){
-
+            
             // Application Form
             $this->form_validation->set_rules('day_cares_id', 'Day Cares Id', 'required|trim');
             // $this->form_validation->set_rules('child_name', 'Child name', 'required|trim');
@@ -300,6 +300,7 @@ class Site extends Frontend_Controller {
             if(@$_FILES['userfile1']['size'] > 0){
                $this->form_validation->set_rules('userfile1', '', 'callback_file_check');
             }
+            
 
             //Validate and input data
             if ($this->form_validation->run() == true) {
@@ -444,8 +445,8 @@ class Site extends Frontend_Controller {
          // Load View
          $this->data['method'] = 'my_profile'; 
          $this->data['meta_title'] = 'প্রোফাইল';                
-         $this->data['subview'] = 'my_profile';
-         // $this->data['subview'] = 'childenroll_form';
+         // $this->data['subview'] = 'my_profile';
+         $this->data['subview'] = 'childenroll_form';
          $this->data['edit'] = $edit == 'edit' ? true : false;
          $this->load->view('frontend/_layout_main', $this->data);
       }
@@ -999,6 +1000,12 @@ class Site extends Frontend_Controller {
       public function subsidary(){
          $this->data['meta_title'] = 'ভর্তুকি ফরম';
          $this->data['subview'] = 'subsidary';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+       public function at_galance(){
+         $this->data['meta_title'] = 'At A Galance';
+         $this->data['subview'] = 'at_galance';
          $this->load->view('frontend/_layout_main', $this->data);
       }
    }

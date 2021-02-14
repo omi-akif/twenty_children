@@ -75,6 +75,7 @@ $route['questions'] = 'site/questions';
 $route['children-vaccine'] = 'site/children_vaccine';
 $route['subsidary'] = 'site/subsidary';
 
+$route['at-a-galance'] = 'site/at_galance';
 
 #6-12 years children routes
 $route['six-to-twelve-children-day-care'] = 'site/six_to_twelve_children_day_care';

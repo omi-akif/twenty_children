@@ -19,6 +19,25 @@
     .main-content {
           min-height: 910px;
     }
+
+    .button {
+     background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 10px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     margin: 5px 0 25px 0;
+     cursor: pointer;
+     display: block;
+   }
+   .button2 {background-color: #008CBA;} /* Blue */
+   .button3 {background-color: #f44336;} /* Red */ 
+   .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+   .button5 {background-color: #555555;} /* Black */
+   /*.galance a{font-size: 30px; font-family: "arial"}
+   .galance a:hover{text-decoration: none; color: white; }*/
 </style>
 <div class="row">
    <?php $this->load->view('frontend/right_side_bar'); ?>   
@@ -96,6 +115,9 @@
       </section> -->
 
       <section class="project">
+
+      <a href="<?=base_url('at-a-galance')?>" class="button button3" style="font-size: 30px; font-family: arial;">At A Galance: 20 New Child Day Care  Centres</a>
+
          <!-- <h4 class="heading-int">দিবাযত্ন কেন্দ্র স্থাপন প্রকল্প</h4> -->
 
          <?php $this->load->view('children_food')?>

@@ -86,8 +86,12 @@
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">
-                           <ul class="nav navbar-nav">
+                        <div class="collapse navbar-collapse navbar-ex1-collapse" >
+                           <ul class="nav navbar-nav pull-left">
+                              <li style="margin-top:3px; color: red;text-shadow: 2px 2px 7px #ccc;font-style: italic;">শিশুর প্রারম্ভিক বিকাশ, মূল্যবান, যত্নবান, সুরক্ষিত </li>
+                           </ul>
+
+                           <ul class="nav navbar-nav pull-right">
                               <li><a href="<?=base_url();?>">হোম <span class="sr-only">(current)</span></a></li>
                               <li><a href="<?=base_url()?>about-us">প্রকল্প প্রসঙ্গে</a></li>
                               <!-- <li><a href="<?=base_url()?>service">সেবা সমূহ</a></li> -->
