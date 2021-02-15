@@ -139,6 +139,7 @@
                      <i class="fa fa-users"></i> <span>Attendance</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
                   </a>
                   <ul class="treeview-menu">              
+                     <li><a href="<?=base_url('adminpanel/attendance/logfileupload');?>"><i class="fa fa-circle-o"></i> File Upload</a></li>
                      <li><a href="<?=base_url('adminpanel/attendance/today');?>"><i class="fa fa-circle-o"></i> Today Attendance</a></li>
                      <li><a href="<?=base_url('adminpanel/attendance/all');?>"><i class="fa fa-circle-o"></i> All Attendance</a></li>
                      <li><a href="<?=base_url('adminpanel/attendance/report');?>"><i class="fa fa-circle-o"></i> Attendance Report</a></li>

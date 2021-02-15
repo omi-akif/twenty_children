@@ -3,6 +3,8 @@
 	h5{font-family: 'Kalpurush', sans-serif; text-align: left; font-weight: bold; font-size:16px;}
 </style>
 <div class="row">
+	<?php $this->load->view('frontend/right_side_bar'); ?>
+
    <div class="col-md-9 main-content" style="padding: 15px 15px 15px 15px"> 
       <!-- <div class="col-md-10 col-sm-6 col-md-offset-1 col-sm-offset-1" style="border: 1px solid"> -->
       <ul class="nav nav-tabs">
@@ -122,7 +124,7 @@
             </div>
          </div>
 
-         												 <!-- /home -->
+       <!-- /home -->
 
 
 
@@ -227,8 +229,8 @@
                   	<!-- <h2 align="center">শিশু তালিকা ভুক্তির আবেদন</h2> -->
                   <fieldset class="scheduler-border">
                      <legend class="scheduler-border">সাধারণ তথ্য</legend>
-                  <!-- <div class="row form-row">
-                        <div class="col-md-12">
+                  <div class="row form-row">
+                        <!-- <div class="col-md-12">
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
                               <label>ডে কেয়ার সেন্টার নাম</label>
@@ -237,21 +239,24 @@
                               echo form_dropdown('day_cares_id', $day_cares, set_value('day_cares_id'), $more_attr);
                               ?>
                            </div>
-                        </div>               
+                        </div> -->              
                      <div class="row form-row">
                         <div class="col-md-6">
-                           </div>
-                        </div>
- 
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <label>২. আবেদনকারীর সাথে শিশুর সম্পর্ক </label><br>
-                              <input type="radio" name="registrations[applicant_relation]" value="Mother" <?=set_value('applicant_relation')=='Mother'?'checked':'checked';?>> মা 
-                              <input type="radio" name="registrations[applicant_relation]" value="Father" <?=set_value('applicant_relation')=='Father'?'':'';?>> বাবা
-                               <input type="radio" name="registrations[applicant_relation]" value="Guardian" <?=set_value('applicant_relation')=='Guardian'?'':'';?>> অন্যান্য
-                           </div>
-                        </div>
-                      </div>
+                             <div class="form-group">
+	                              <label>আবেদনকারীর নাম</label>
+	                              <input type="text" name="registrations[applicant_name]" value="<?=set_value('applicant_name')?>" class="form-control" placeholder="">
+	                           </div>
+	                       </div>
+
+	                        <div class="col-md-6">
+	                           <div class="form-group">
+	                              <label>২. আবেদনকারীর সাথে শিশুর সম্পর্ক </label><br>
+	                              <input type="radio" name="registrations[applicant_relation]" value="Mother" <?=set_value('applicant_relation')=='Mother'?'checked':'checked';?>> মা 
+	                              <input type="radio" name="registrations[applicant_relation]" value="Father" <?=set_value('applicant_relation')=='Father'?'':'';?>> বাবা
+	                               <input type="radio" name="registrations[applicant_relation]" value="Guardian" <?=set_value('applicant_relation')=='Guardian'?'':'';?>> অন্যান্য
+	                           </div>
+	                        </div>
+                      	</div>
 
 						<h5>৩. মাতার তথ্য</h5>
 						<div class="row form-row">
@@ -384,11 +389,6 @@
                         </div> 
 
                      	<br><br>
-
-
-
-                     
-
                         
                      </fieldset>
 
@@ -551,7 +551,7 @@
                            <div class="form-group">
                               <?php echo form_error('day_cares_id'); ?>
                               <label>১১. নিম্নের কোন কেন্দ্রে শিশু ভর্তি করতে চান?</label>
-                             <!--  <label>ডে কেয়ার সেন্টার নাম</label> -->
+                             <label>ডে কেয়ার সেন্টার নাম</label> -->
                               <?php 
                               $more_attr = 'class="form-control" required';
                               echo form_dropdown('day_cares_id', $day_cares, set_value('day_cares_id'), $more_attr);
@@ -677,7 +677,7 @@
 
       </div>
 
-      <?php $this->load->view('frontend/right_side_bar'); ?>   
+         
    </div>
 
 
