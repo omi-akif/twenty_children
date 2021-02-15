@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2021 at 06:11 AM
+-- Generation Time: Feb 14, 2021 at 01:58 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -19,513 +19,531 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `daycares_main`
+-- Database: `daycares_1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Table structure for table `attendances`
 --
 
-CREATE TABLE `contact` (
+CREATE TABLE `attendances` (
   `id` int(11) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `phone` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `display_home` tinyint(1) NOT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `title`, `address`, `phone`, `email`, `display_home`, `status`) VALUES
-(5, 'Main Branch', '19-B/2-C & 2-D, Block-F, 5th Floor, Ring Road, Shamoli, Dhaka-1207', '+880-1817000000', 'info@demo.com', 1, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `day_cares`
---
-
-CREATE TABLE `day_cares` (
-  `id` int(11) NOT NULL,
-  `title` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `area` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `officer_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `mobile_no` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `phone` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `latitude` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `longitude` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `database_name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL
+  `time` datetime DEFAULT NULL,
+  `device_id` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `members_id` int(11) NOT NULL,
+  `day_cares_id` int(11) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `day_cares`
+-- Dumping data for table `attendances`
 --
 
-INSERT INTO `day_cares` (`id`, `title`, `area`, `description`, `address`, `officer_name`, `mobile_no`, `phone`, `email`, `latitude`, `longitude`, `database_name`) VALUES
-(1, 'ধানমন্ডি শিশু দিবাযত্ন কেন্দ্র', 'পশ্চিম ধানমন্ডি, ধানমন্ডি, ঢাকা', 'test dhanmondi day care center', 'পশ্চিম ধানমন্ডি, ধানমন্ডি, ঢাকা', 'আইনুন নিশাত', '01977450000', '+0286598254', 'dhanmondi@gmail.com', '23.749793', '90.374470', 'daycares_1'),
-(2, 'মতিঝিল শিশু দিবাযত্ন কেন্দ্র', 'মতিঝিল, বাংলাদেশ ব্যাংক/সোনালী ব্যাংক প্রধান কার্যালয়ের আশপাশে, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_2'),
-(3, 'রায়ের বাজার শিশু দিবাযত্ন কেন্দ্র', 'রায়ের বাজার, শিকদার মেডিকেল কলেজের উওর-পশ্চিম পাশে, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_3'),
-(4, 'কমলাপুর শিশু দিবাযত্ন কেন্দ্র', 'কমলাপুর, কমলাপুর স্টেশনের পশ্চিম পাশে, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_4'),
-(5, 'মুগদা শিশু দিবাযত্ন কেন্দ্র', 'মুগদা (বাসাবোর কাছাকাছি), ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_5'),
-(6, 'পল্লবী শিশু দিবাযত্ন কেন্দ্র', 'বর্ধিত পল্লবী, পল্লবী, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_6'),
-(7, 'সায়েদাবাদ শিশু দিবাযত্ন কেন্দ্র', 'সায়েদাবাদ, সায়েদাবাদ বাসষ্টন্ডের পূর্ব পাশে, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_7'),
-(8, 'মহাখালী শিশু দিবাযত্ন কেন্দ্র', 'মহাখালী, আইসিডিডিআরবি হাসপাতালের আশে পাশে, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_8'),
-(9, 'আশুলিয়া শিশু দিবাযত্ন কেন্দ্র', 'পলাশবাড়ী আশুলিয়া, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_9'),
-(10, 'রংপুর শিশু দিবাযত্ন কেন্দ্র', 'কেরানীপাড়া (ডিসির মোড়), জেলা মহিলা বিষয়ক কর্মকর্তার আশেপাশে, রংপুর', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_10'),
-(11, 'গোপালগঞ্জ শিশু দিবাযত্ন কেন্দ্র', 'শিশুবন, পাঁচরিয়া, গোপালগঞ্জ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_11'),
-(12, 'গাজীপুর শিশু দিবাযত্ন কেন্দ্র', 'পশ্চিম জয়দেবপুর, ডিআইটি রোড (জেলা কার্যালয় সংলগ্ন), গাজীপুর', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_12'),
-(13, 'কক্সবাজার শিশু দিবাযত্ন কেন্দ্র', 'টেশপাড়া, কালুর দোকান, পাহাড়তলী রোড (জেলা অফিস সংলগ্ন), কক্সবাজার', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_13'),
-(14, 'নওগাঁ শিশু দিবাযত্ন কেন্দ্র', 'মুর্তির মোড়, নওগাঁ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_14'),
-(15, 'গাইবান্ধা শিশু দিবাযত্ন কেন্দ্র', 'দক্ষিণ ধানছড়া, গাইবান্ধা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_15'),
-(16, 'ভোলা শিশু দিবাযত্ন কেন্দ্র', 'কালিখোলা, ভোলা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_16'),
-(17, 'টাঙ্গাইল শিশু দিবাযত্ন কেন্দ্র', 'রেজিষ্ট্রিপাড়া/আকুর টাকুর পাড়া, টাঙ্গাইল ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_17'),
-(18, 'নোয়াখালী শিশু দিবাযত্ন কেন্দ্র', 'ফকিরপুর, মাইজদিকোর্ট, নোয়াখালী', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_18'),
-(19, 'চাঁদপুর শিশু দিবাযত্ন কেন্দ্র', 'চাঁদপুর জেলা শহর (জেলা প্রশাসক কার্যালয়ের আশেপাশে), চাঁদপুর', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_19'),
-(20, 'রামপুরা শিশু দিবাযত্ন কেন্দ্র', 'রামপুরা, ঢাকা', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'daycares_20');
+INSERT INTO `attendances` (`id`, `time`, `device_id`, `members_id`, `day_cares_id`, `created`, `updated`) VALUES
+(1, '2020-01-13 04:05:27', '1', 3, 1, '2020-01-13 00:00:00', '2020-01-13 00:00:00'),
+(2, '2020-01-13 10:18:04', '1', 4, 1, '2020-01-13 00:00:00', '2020-01-13 00:00:00'),
+(3, '2020-01-21 17:16:13', NULL, 3, 1, '2020-01-21 17:16:16', NULL),
+(4, '2020-01-25 17:43:44', NULL, 3, 1, '2020-01-25 17:43:48', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gallery`
+-- Table structure for table `budgets`
 --
 
-CREATE TABLE `gallery` (
+CREATE TABLE `budgets` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `image_file` varchar(100) NOT NULL,
-  `category_id` varchar(100) NOT NULL,
-  `url` varchar(255) NOT NULL,
-  `display_home` tinyint(1) NOT NULL,
+  `day_cares_id` int(11) NOT NULL,
+  `budget_types_id` int(11) NOT NULL,
+  `title` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `total_item_count` int(11) DEFAULT NULL,
+  `total_amount` double DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `budgets`
+--
+
+INSERT INTO `budgets` (`id`, `day_cares_id`, `budget_types_id`, `title`, `description`, `total_item_count`, `total_amount`, `created`, `updated`) VALUES
+(1, 1, 1, 'October 2019 Monthly Budget', NULL, 10, NULL, '2020-01-14 00:00:00', '2020-01-14 00:00:00'),
+(2, 1, 1, 'November 2019 Monthly Budget', 'November budget ', NULL, NULL, '2020-01-14 20:04:26', NULL),
+(7, 1, 2, 'Advance Bill January 2020', 'test', NULL, NULL, '2020-01-15 16:18:54', NULL),
+(5, 1, 1, 'test monthly', 'dddd', NULL, NULL, '2020-01-15 14:52:15', NULL),
+(6, 1, 2, 'Advance Bill December 2019', 'test', NULL, NULL, '2020-01-15 15:31:21', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `budget_items`
+--
+
+CREATE TABLE `budget_items` (
+  `id` int(11) NOT NULL,
+  `budgets_id` int(11) NOT NULL,
+  `item_name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sorting` tinyint(2) DEFAULT NULL,
+  `status` tinyint(2) DEFAULT NULL,
+  `item_count` int(11) DEFAULT NULL,
+  `amount` double DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `budget_items`
+--
+
+INSERT INTO `budget_items` (`id`, `budgets_id`, `item_name`, `sorting`, `status`, `item_count`, `amount`, `created`, `updated`) VALUES
+(1, 1, 'hand wash', NULL, NULL, 6, NULL, '2020-01-14 00:00:00', '2020-01-14 00:00:00'),
+(2, 1, 'Refil pack', NULL, NULL, 6, NULL, '2020-01-14 00:00:00', '2020-01-14 00:00:00'),
+(3, 2, 'হ্যান্ড ওয়াশ', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(4, 2, 'রিফিল প্যাক', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(5, 2, 'বেবি পাউডার (১০০ মি. গ্রা.)', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(6, 2, 'বেবি লোশন (১০০ মি. গ্রা.)', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(7, 2, 'বেবি শ্যাম্পু (১০০ মি. গ্রা.)', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(8, 2, 'বেবি সোপ (৪০ মি. গ্রা.)', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(9, 2, 'অলিভ অয়েল (৫০০ মি. গ্রা.)', NULL, NULL, 4, NULL, '2020-01-14 20:04:26', NULL),
+(10, 2, 'ভ্যাসলিন (১৫ মি. গ্রা.)', NULL, NULL, 3, NULL, '2020-01-14 20:04:26', NULL),
+(11, 2, 'সরিষার তেল (৫০০ মি. গ্রা.)', NULL, NULL, 3, NULL, '2020-01-14 20:04:26', NULL),
+(12, 2, 'ভিম বার', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(13, 2, 'লিকুইড ডিশ ওয়াশ', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(14, 2, 'ওয়াশিং পাউডার (৫০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(15, 2, 'লাইজল (৫০০ মি. লি.)', NULL, NULL, 5, NULL, '2020-01-14 20:04:26', NULL),
+(16, 2, 'হারপিক', NULL, NULL, 4, NULL, '2020-01-14 20:04:26', NULL),
+(17, 2, 'হারপিক পাউডার (৫০০ গ্রাম)', NULL, NULL, 5, NULL, '2020-01-14 20:04:26', NULL),
+(18, 2, 'ওডোনিল', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(19, 2, 'ফেসিয়াল টিস্যু', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(20, 2, 'ন্যাপকিন টিস্যু', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(21, 2, 'টয়লেট টিস্যু', NULL, NULL, 3, NULL, '2020-01-14 20:04:26', NULL),
+(22, 2, 'অ্যারোসল (৮৭৫ মি. লি.)', NULL, NULL, 5, NULL, '2020-01-14 20:04:26', NULL),
+(23, 2, 'এয়ার ফ্রেশনার', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(24, 2, 'ডেটল (১ লিটার)', NULL, NULL, 3, NULL, '2020-01-14 20:04:26', NULL),
+(25, 2, 'ফিনাইল (১ লিটার)', NULL, NULL, 4, NULL, '2020-01-14 20:04:26', NULL),
+(26, 2, 'ফুলের ঝাড়ু', NULL, NULL, 6, NULL, '2020-01-14 20:04:26', NULL),
+(27, 2, 'ঝুল ঝাড়ু', NULL, NULL, 2, NULL, '2020-01-14 20:04:26', NULL),
+(28, 2, 'মব', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(29, 2, 'শলার ঝাড়ু', NULL, NULL, 1, NULL, '2020-01-14 20:04:26', NULL),
+(30, 1, 'dsfsdfsd', NULL, NULL, 3, NULL, NULL, NULL),
+(31, 1, 'sdssss', NULL, NULL, 4, NULL, NULL, NULL),
+(32, 1, 'sdfssss', NULL, NULL, 44, NULL, NULL, NULL),
+(33, 5, 'হ্যান্ড ওয়াশ', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(34, 5, 'রিফিল প্যাক', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(35, 5, 'বেবি পাউডার (১০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(36, 5, 'বেবি লোশন (১০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(37, 5, 'বেবি শ্যাম্পু (১০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(38, 5, 'বেবি সোপ (৪০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(39, 5, 'অলিভ অয়েল (৫০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(40, 5, 'ভ্যাসলিন (১৫ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(41, 5, 'সরিষার তেল (৫০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(42, 5, 'ভিম বার', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(43, 5, 'লিকুইড ডিশ ওয়াশ', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(44, 5, 'ওয়াশিং পাউডার (৫০০ মি. গ্রা.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(45, 5, 'লাইজল (৫০০ মি. লি.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(46, 5, 'হারপিক', NULL, NULL, 2, NULL, '2020-01-15 14:52:15', NULL),
+(47, 5, 'হারপিক পাউডার (৫০০ গ্রাম)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(48, 5, 'ওডোনিল', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(49, 5, 'ফেসিয়াল টিস্যু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(50, 5, 'ন্যাপকিন টিস্যু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(51, 5, 'টয়লেট টিস্যু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(52, 5, 'অ্যারোসল (৮৭৫ মি. লি.)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(53, 5, 'এয়ার ফ্রেশনার', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(54, 5, 'ডেটল (১ লিটার)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(55, 5, 'ফিনাইল (১ লিটার)', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(56, 5, 'ফুলের ঝাড়ু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(57, 5, 'ঝুল ঝাড়ু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(58, 5, 'মব', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(59, 5, 'শলার ঝাড়ু', NULL, NULL, 1, NULL, '2020-01-15 14:52:15', NULL),
+(60, 6, 'বিদ্যুত বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(61, 6, 'ডিশ বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(62, 6, 'ইন্টারনেট বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(63, 6, 'ময়লা বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(64, 6, 'পেপার বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(65, 6, 'পানির কিট', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(66, 6, 'পলিথিন বাবদ', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(67, 6, 'চা পাতা, টি-ব্যাগ, চিনি, বিস্কুট বাবদ', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(68, 6, 'আপ্যায়ন খরচ', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(69, 6, 'টেলিফোন বিল', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(70, 6, 'মেরামত সংক্রান্ত', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(71, 6, 'বাচ্চাদের জরুরী ঔষধসহ আনুষাঙ্গিক (ডেঙ্গু প্রত', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(72, 6, 'অন্যান্য', NULL, NULL, 1000, NULL, '2020-01-15 15:31:21', NULL),
+(73, 7, 'বিদ্যুত বিল', NULL, NULL, NULL, 4000, '2020-01-15 16:18:54', NULL),
+(74, 7, 'ডিশ বিল', NULL, NULL, NULL, 500, '2020-01-15 16:18:54', NULL),
+(75, 7, 'ইন্টারনেট বিল', NULL, NULL, NULL, 1000, '2020-01-15 16:18:54', NULL),
+(76, 7, 'ময়লা বিল', NULL, NULL, NULL, 250, '2020-01-15 16:18:54', NULL),
+(77, 7, 'পেপার বিল', NULL, NULL, NULL, 240, '2020-01-15 16:18:54', NULL),
+(78, 7, 'পানির কিট', NULL, NULL, NULL, 1300, '2020-01-15 16:18:54', NULL),
+(79, 7, 'পলিথিন বাবদ', NULL, NULL, NULL, 570, '2020-01-15 16:18:54', NULL),
+(80, 7, 'চা পাতা, টি-ব্যাগ, চিনি, বিস্কুট বাবদ', NULL, NULL, NULL, 1500, '2020-01-15 16:18:54', NULL),
+(81, 7, 'আপ্যায়ন খরচ', NULL, NULL, NULL, 1500, '2020-01-15 16:18:54', NULL),
+(82, 7, 'টেলিফোন বিল', NULL, NULL, NULL, 1000, '2020-01-15 16:18:54', NULL),
+(83, 7, 'মেরামত সংক্রান্ত', NULL, NULL, NULL, 3000, '2020-01-15 16:18:54', NULL),
+(84, 7, 'বাচ্চাদের জরুরী ঔষধসহ আনুষাঙ্গিক (ডেঙ্গু প্রত', NULL, NULL, NULL, 2000, '2020-01-15 16:18:54', NULL),
+(85, 7, 'অন্যান্য', NULL, NULL, NULL, 1000, '2020-01-15 16:18:54', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `budget_types`
+--
+
+CREATE TABLE `budget_types` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `budget_types`
+--
+
+INSERT INTO `budget_types` (`id`, `name`, `status`) VALUES
+(1, 'Monthly', 1),
+(2, 'Advance', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL,
+  `title` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `location` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `feature_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `day_cares_id` int(11) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `gallery`
+-- Dumping data for table `events`
 --
 
-INSERT INTO `gallery` (`id`, `name`, `image_file`, `category_id`, `url`, `display_home`, `status`) VALUES
-(26, '', '01.jpg', 'দব-যতন-কনদর-১', '', 0, 1),
-(27, '', '02.jpg', 'দব-যতন-কনদর-২', '', 0, 1),
-(28, '', '03.jpg', 'দব-যতন-কনদর-৩', '', 0, 1),
-(29, '', '04.jpg', 'দব-যতন-কনদর-৪', '', 0, 1),
-(30, '', '05.jpg', 'দব-যতন-কনদর-৫', '', 0, 1),
-(31, '', '06.jpg', 'দব-যতন-কনদর-৬', '', 0, 1),
-(32, '', '07.jpg', 'দব-যতন-কনদর-৭', '', 0, 1),
-(33, '', '08.jpg', 'দব-যতন-কনদর-৮', '', 0, 1);
+INSERT INTO `events` (`id`, `title`, `description`, `date`, `location`, `feature_image`, `day_cares_id`, `status`) VALUES
+(1, 'test event 2', '<p>test description</p>\r\n\r\n<p>update</p>', '2020-01-20 05:18:18', 'dhaka 2', 'Blick-auf-die-Skyline-von-Dhaka-Copyright-iStockphoto-948x320.jpg', 1, 1),
+(2, 'test 2', '<p>dsf dsfsdf</p>\r\n\r\n<p>dsf sd</p>\r\n\r\n<p>fds&', '2020-01-20 12:36:54', 'chittagong', '10553589_254574751406826_109475571718522446_n1.jpg', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gallery_category`
+-- Table structure for table `galleries`
 --
 
-CREATE TABLE `gallery_category` (
-  `id` smallint(6) NOT NULL,
-  `cat_name` varchar(50) NOT NULL,
-  `slug` varchar(100) NOT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `gallery_category`
---
-
-INSERT INTO `gallery_category` (`id`, `cat_name`, `slug`, `status`) VALUES
-(7, 'দিবা যত্ন কেন্দ্র  ১', 'দব-যতন-কনদর-১', 1),
-(8, 'দিবা যত্ন কেন্দ্র  ২', 'দব-যতন-কনদর-২', 1),
-(9, 'দিবা যত্ন কেন্দ্র  ৩', 'দব-যতন-কনদর-৩', 1),
-(10, 'দিবা যত্ন কেন্দ্র  ৪', 'দব-যতন-কনদর-৪', 1),
-(11, 'দিবা যত্ন কেন্দ্র  ৫', 'দব-যতন-কনদর-৫', 1),
-(12, 'দিবা যত্ন কেন্দ্র  ৬', 'দব-যতন-কনদর-৬', 1),
-(13, 'দিবা যত্ন কেন্দ্র  ৭', 'দব-যতন-কনদর-৭', 1),
-(14, 'দিবা যত্ন কেন্দ্র  ৮', 'দব-যতন-কনদর-৮', 1),
-(15, 'দিবা যত্ন কেন্দ্র  ৯', 'দব-যতন-কনদর-৯', 1),
-(17, 'দিবা যত্ন কেন্দ্র ১০', 'দব-যতন-কনদর-১০', 1),
-(18, 'দিবা যত্ন কেন্দ্র ১১', 'দব-যতন-কনদর-১১', 1),
-(19, 'দিবা যত্ন কেন্দ্র ১২', 'দব-যতন-কনদর-১২', 1),
-(20, 'দিবা যত্ন কেন্দ্র ১৩', 'দব-যতন-কনদর-১৩', 1),
-(21, 'দিবা যত্ন কেন্দ্র ১৪', 'দব-যতন-কনদর-১৪', 1),
-(22, 'দিবা যত্ন কেন্দ্র ১৫', 'দব-যতন-কনদর-১৫', 1),
-(23, 'দিবা যত্ন কেন্দ্র ১৬', 'দব-যতন-কনদর-১৬', 1),
-(24, 'দিবা যত্ন কেন্দ্র ১৭', 'দব-যতন-কনদর-১৭', 1),
-(25, 'দিবা যত্ন কেন্দ্র ১৮', 'দব-যতন-কনদর-১৮', 1),
-(26, 'দিবা যত্ন কেন্দ্র ১৯', 'দব-যতন-কনদর-১৯', 1),
-(27, 'দিবা যত্ন কেন্দ্র ২০', 'দব-যতন-কনদর-২০', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `groups`
---
-
-CREATE TABLE `groups` (
-  `id` mediumint(8) UNSIGNED NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `description` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `groups`
---
-
-INSERT INTO `groups` (`id`, `name`, `description`) VALUES
-(1, 'admin', 'Super Admin'),
-(2, 'dc_admin', 'Day Care Admin'),
-(3, 'parents', 'Parents');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login_attempts`
---
-
-CREATE TABLE `login_attempts` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `ip_address` varchar(15) NOT NULL,
-  `login` varchar(100) NOT NULL,
-  `time` int(11) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `setting`
---
-
-CREATE TABLE `setting` (
+CREATE TABLE `galleries` (
   `id` int(11) NOT NULL,
-  `contact_number` varchar(30) NOT NULL,
-  `contact_email` varchar(50) NOT NULL,
-  `contact_address` varchar(200) NOT NULL,
-  `image_file` varchar(100) NOT NULL,
-  `image_file1` varchar(255) NOT NULL,
-  `copyright` varchar(50) NOT NULL,
-  `google_map` text NOT NULL,
-  `google_map_lng` varchar(50) NOT NULL,
-  `video_title` varchar(100) NOT NULL,
-  `video_link` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status` tinyint(2) DEFAULT NULL,
+  `day_cares_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `setting`
+-- Dumping data for table `galleries`
 --
 
-INSERT INTO `setting` (`id`, `contact_number`, `contact_email`, `contact_address`, `image_file`, `image_file1`, `copyright`, `google_map`, `google_map_lng`, `video_title`, `video_link`) VALUES
-(1, '+880-1817000000', 'info@demo.com', '19-B/2-C & 2-D, Block-F, 5th Floor, Ring Road, Shamoli, Dhaka-1207', 'logo.png', 'logo1.png', 'Day Care', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.3029262561745!2d90.35383331435895!3d23.772224893860464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c09877020211%3A0x659eedef50a532ae!2z4Kas4Ka-4Kav4Ka84Kak4KeB4KayIOCmhuCmruCmvuCmqCDgprngpr7gpongppzgpr_gpoIg4Ka44KeL4Ka44Ka-4KaH4Kaf4Ka_!5e0!3m2!1sbn!2sbd!4v1514693295088\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', '90.353453', 'Your Company Slogna', 'https://www.youtube.com/watch?v=PRq2eH4BrtU');
+INSERT INTO `galleries` (`id`, `image`, `status`, `day_cares_id`) VALUES
+(4, '1-01.png', 1, 1),
+(3, '1-02.jpg', 1, 1),
+(5, '1-04.png', 1, 1),
+(6, '1-12.png', 1, 1),
+(7, '1-03.jpg', 1, 1),
+(8, '1-07.png', 1, 1),
+(9, '1-011.png', 1, 1),
+(10, '1-08.jpg', 1, 1),
+(11, '1-07.jpg', 1, 1),
+(12, '1-02.png', 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slider`
+-- Table structure for table `members`
 --
 
-CREATE TABLE `slider` (
+CREATE TABLE `members` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `details` varchar(300) NOT NULL,
-  `image_file` varchar(100) NOT NULL,
-  `display_home` tinyint(1) NOT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `parents_id` int(11) DEFAULT NULL,
+  `registrations_id` int(11) DEFAULT NULL,
+  `member_types_id` int(11) NOT NULL,
+  `day_cares_id` int(11) NOT NULL,
+  `child_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_dob` date DEFAULT NULL,
+  `gender` enum('Male','Female') COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_age` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_weight` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_height` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `birth_mark` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `birth_certificate_no` int(11) DEFAULT NULL,
+  `child_name_2` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `child_dob_2` date DEFAULT NULL,
+  `birth_certificate_no_2` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `describe_food` text COLLATE utf8_unicode_ci,
+  `describe_health_problem` text COLLATE utf8_unicode_ci,
+  `child_vaccination` enum('Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL,
+  `bcg` tinyint(1) NOT NULL DEFAULT '0',
+  `penta` tinyint(1) NOT NULL DEFAULT '0',
+  `pcb` tinyint(1) NOT NULL DEFAULT '0',
+  `opb` tinyint(1) NOT NULL DEFAULT '0',
+  `ipb` tinyint(1) NOT NULL DEFAULT '0',
+  `mr` tinyint(1) NOT NULL DEFAULT '0',
+  `ham` tinyint(1) NOT NULL DEFAULT '0',
+  `phone` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image_file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `immunization_file` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL,
+  `is_waiting_sms_send` tinyint(1) NOT NULL DEFAULT '0',
+  `status` tinyint(4) DEFAULT '0',
+  `is_applied` tinyint(1) NOT NULL DEFAULT '0',
+  `child_diseases_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `slider`
+-- Dumping data for table `members`
 --
 
-INSERT INTO `slider` (`id`, `title`, `details`, `image_file`, `display_home`, `status`) VALUES
-(18, 'slider 1', '', 'Image-071.jpg', 1, 1),
-(19, 'slider 2', '', 'Image-03.jpg', 1, 1),
-(20, 'slider 3', '', 'Image-011.jpg', 1, 1),
-(21, 'slider 4', '', 'Image-062.jpg', 1, 1);
+INSERT INTO `members` (`id`, `parents_id`, `registrations_id`, `member_types_id`, `day_cares_id`, `child_name`, `child_dob`, `gender`, `child_age`, `child_weight`, `child_height`, `birth_mark`, `birth_certificate_no`, `child_name_2`, `child_dob_2`, `birth_certificate_no_2`, `describe_food`, `describe_health_problem`, `child_vaccination`, `bcg`, `penta`, `pcb`, `opb`, `ipb`, `mr`, `ham`, `phone`, `image_file`, `immunization_file`, `created`, `updated`, `is_waiting_sms_send`, `status`, `is_applied`, `child_diseases_name`) VALUES
+(1, 27, 2, 1, 1, 'হুমাইরা মোস্তাফা', '2019-10-23', 'Female', '১৪ মাস', '৫ কেজি', '২ ফুট', 'নাই', 2147483647, NULL, NULL, NULL, 'নাই', 'নাই', 'No', 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, '2020-01-15 18:14:20', NULL, 1, 0, 0, NULL),
+(2, 27, 2, 1, 1, 'বাবু', '2019-10-23', 'Male', '১০ মাস', '৫ কেজি', '১.৫ ফুট', 'নাই', 2147483647, NULL, NULL, NULL, 'নাই', 'নাই', 'No', 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, '2020-01-15 18:14:20', NULL, 0, 2, 0, NULL),
+(3, NULL, NULL, 2, 1, 'Kaoser dfdsfsdf', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, '018566956875', '14457421_1113871188704343_206025188351581740_n1.jpg', NULL, NULL, NULL, 0, 0, 0, NULL),
+(4, NULL, NULL, 2, 1, 'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, '34324324', '404.gif', NULL, NULL, NULL, 0, 0, 0, NULL),
+(5, 27, 3, 1, 1, '', '0000-00-00', NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, '2021-02-13 20:49:02', NULL, 0, 0, 0, NULL),
+(6, 27, 4, 1, 0, '', '0000-00-00', NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, '2021-02-13 21:40:32', NULL, 0, 0, 0, NULL),
+(7, 27, 5, 1, 1, '', '0000-00-00', NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, '2021-02-13 22:11:25', NULL, 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `member_types`
 --
 
-CREATE TABLE `users` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `day_care_id` int(11) DEFAULT NULL,
-  `ip_address` varchar(45) NOT NULL,
-  `username` varchar(100) DEFAULT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `first_name` varchar(50) DEFAULT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
-  `phone` varchar(20) DEFAULT NULL,
-  `gender` enum('Male','Female') DEFAULT NULL,
-  `salt` varchar(255) DEFAULT NULL,
-  `activation_code` varchar(40) DEFAULT NULL,
-  `forgotten_password_code` varchar(40) DEFAULT NULL,
-  `forgotten_password_time` int(11) UNSIGNED DEFAULT NULL,
-  `remember_code` varchar(40) DEFAULT NULL,
-  `created_on` int(11) UNSIGNED NOT NULL,
-  `last_login` int(11) UNSIGNED DEFAULT NULL,
-  `active` tinyint(1) UNSIGNED DEFAULT NULL,
-  `company` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `day_care_id`, `ip_address`, `username`, `email`, `password`, `first_name`, `last_name`, `phone`, `gender`, `salt`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `company`) VALUES
-(1, NULL, '127.0.0.1', 'superadmin', 'kaosermahmud.cse@gmail.com', '$2y$08$JVmNVsHrxUX5BL2hULDBfeDx2bUndCpLTo9dLripmVBJyrhuIAVIu', 'Kaoser', 'Mahmud', '01923405632', NULL, '', '', NULL, NULL, NULL, 1496699848, 1606540430, 1, NULL),
-(4, NULL, '::1', 'mostafa.csit@gmail.com', 'mostafa.csit@gmail.com', '$2y$08$lNymcMnrj39073RLH49yNe/PhANZzvmyklstkHu4f16dNcrEQg/FO', 'Ataul', 'Mostafa', '01923405632', NULL, NULL, NULL, NULL, NULL, NULL, 1502622274, 1607165575, 1, NULL),
-(7, 1, '::1', 'dc_dhanmondi', '', '$2y$08$G3X/D6jUJOxwkmC7cp4cPO4b/qSz9UIoJfmggLRKw1KXJyKLKPhCS', 'Dhanmondi', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578983843, 1601279044, 1, NULL),
-(8, 2, '::1', 'dc_motijheel', '', '$2y$08$XwTWPuNtcQcbVjaN38muYeaaKfOLtbJ1t0mUJNwTySTq5XwPvabji', 'Motijheel', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984142, NULL, 1, NULL),
-(9, 3, '::1', 'dc_rayerbazar', '', '$2y$08$kTiD8r31VJYgIioXALIfm.0njsIWCpRhpWHmJJkE4bqPJoAXb2c1G', 'Rayerbazar', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984185, NULL, 1, NULL),
-(10, 4, '::1', 'dc_kamalapur', '', '$2y$08$jDL9ZLKpjo1IsxXG0ZIPm.VFexmcU4v88/pJI.TA8dUlVoKbM9y6a', 'Kamalapur', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984214, NULL, 1, NULL),
-(11, 5, '::1', 'dc_mugda', '', '$2y$08$mUJGnPuxMEi6alU/svTWjOkweIK2sM./yhaqNt0ISxK5Qvytqozni', 'Mugda', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984240, NULL, 1, NULL),
-(12, 6, '::1', 'dc_pallabi', '', '$2y$08$Mw/CGRHvYLi1/qhfw7kH/OjW8200b6aYSi2bdbB0CXKY64iWGZ4Oa', 'Pallabi', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984291, NULL, 1, NULL),
-(13, 7, '::1', 'dc_sayedabad', '', '$2y$08$G/yhiihUmpaaHL0tqdDO3.TaIq2vdFOFHY8W9MzMlmGc4FpUNt.Yq', 'Sayedabad', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984321, NULL, 1, NULL),
-(14, 8, '::1', 'dc_mohakhali', '', '$2y$08$crhj8ccZumn53Ut0ow0h8OLAD0s926MxiKTpR6mlga064g51Dv/g6', 'Mohakhali', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984349, NULL, 1, NULL),
-(15, 9, '::1', 'dc_palashbari', '', '$2y$08$bveKDcLIBuBh180q9bE52OpqncqxW.97ZY2xNXcQVp7/RyFwt5aOa', 'Palashbari', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984382, NULL, 1, NULL),
-(16, 10, '::1', 'dc_rangpur', '', '$2y$08$PblplkFQQJtRm2GYI4FJQemCKhfgRrzUTbW4sO5rCf5CDwlkbjofe', 'Rangpur', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984415, NULL, 1, NULL),
-(17, 11, '::1', 'dc_gopalganj', '', '$2y$08$zVKNVENpcJFlT8GEtj1tj.4hcOe28n6G70jHlSO3kOSbsA6b7YqUK', 'Gopalganj', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984546, NULL, 1, NULL),
-(18, 12, '::1', 'dc_gazipur', '', '$2y$08$czaUDSXYE1ShwyQUuRYmc.yxBqeVoRrmb2Q4qLWVU2ZdEP5ZSsYA6', 'Gazipur', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984575, NULL, 1, NULL),
-(19, 13, '::1', 'dc_coxsbazar', '', '$2y$08$N7gZKl7pCStp5AA3QlGhqOv8e3BMnaFLh/a6pjdZfk7gCeXSrXg2W', 'Coxsbazar', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984606, NULL, 1, NULL),
-(20, 14, '::1', 'dc_naogaon', '', '$2y$08$WxQXom3dtJzcaQT.BYJAse8t/I.UFC4Prbhv.w2fAVe66/tUABKp6', 'Naogaon', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984641, NULL, 1, NULL),
-(21, 15, '::1', 'dc_gaibandha', '', '$2y$08$cEfmhYAFqqATYQkmFej/m.mdtHvz470nQO82kIuK/eLe7PugvHti2', 'Gaibandha', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984694, NULL, 1, NULL),
-(22, 16, '::1', 'dc_bhola', '', '$2y$08$Ke4qyOmO0REpHQ5oA4q4/eC4raKfPs.qiO6hxybHpHpiIN3IoYwLu', 'Bhola', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984738, NULL, 1, NULL),
-(23, 17, '::1', 'dc_tangail', '', '$2y$08$VnUJtmyL3vvVxrcUDOzA/u7mEjUg.s8xJTGEvnjpxTyRXeceQff4i', 'Tangail', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984769, 1579674967, 1, NULL),
-(24, 18, '::1', 'dc_noakhali', '', '$2y$08$X8ezaffffbyu/a30DWUMEuFMNLCYYSAfL5jrhXp/srXgu4PVK6wpe', 'Noakhali', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984801, NULL, 1, NULL),
-(25, 19, '::1', 'dc_chandpur', '', '$2y$08$83bqvteVEn6BUkkcfEB1pOX6PSkyoFoPowqjhhztdVIII7OEKnErm', 'Chandpur', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1578984915, NULL, 1, NULL),
-(27, NULL, '::1', 'mostafa@gmail.com', '', '$2y$08$hmkhMa80fdfcfpVxF.3Yxe7mIl3yh6FfeRBlfSePwRsG27ZVtjjy2', 'আতাউল', 'মোস্তাফা', '01813291011', 'Male', NULL, NULL, NULL, NULL, NULL, 1579088488, 1602134684, 1, NULL),
-(28, NULL, '::1', 'my@dsfkljs.com', '', '$2y$08$xscF3HEKHeQDMeT00IO4be93SgEqAd8QrpbQIUIw4lTf8S2Qw2VTa', 'যিয়েড', 'উডডিন', '01977450000', 'Male', NULL, NULL, NULL, NULL, NULL, 1579151354, NULL, 1, NULL),
-(29, NULL, '::1', 'my@gmail.com', '', '$2y$08$G9ui867I4yd5SQ6Sk.FiEeTU5lTNaxs3DqGKULHrqEDIbhgd1sSdW', 'যিয়েড', 'ুডডিন', '01923405632', 'Male', NULL, NULL, NULL, NULL, NULL, 1579151642, 1579151660, 1, NULL),
-(30, NULL, '::1', 'test2@gmail.com', '', '$2y$08$0luDKbCwUoI/c.5aRj2.D.4sdw8sNCgEaDCALEGiqLEeapIVcjNti', 'সডফসডফসড', 'সসডফসডফসডফ', '01813291011', 'Male', NULL, NULL, NULL, NULL, NULL, 1579928195, 1579928195, 1, NULL),
-(31, 20, '::1', 'dc_rampura', '', '$2y$08$TJh4ycggoqEJXOGZa2ZLGOrWCsUo2x3yvVk5OjAgMUfpWmOUk1VKq', 'Rampura', 'Daycare', '', NULL, NULL, NULL, NULL, NULL, NULL, 1579950146, 1579950146, 1, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users_daycares`
---
-
-CREATE TABLE `users_daycares` (
+CREATE TABLE `member_types` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `daycare_id` int(11) NOT NULL,
-  `member_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `string` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `users_daycares`
+-- Dumping data for table `member_types`
 --
 
-INSERT INTO `users_daycares` (`id`, `user_id`, `daycare_id`, `member_id`) VALUES
-(1, 27, 1, 1),
-(2, 27, 1, 2),
-(3, 27, 5, 5);
+INSERT INTO `member_types` (`id`, `name`, `string`) VALUES
+(1, 'Child', NULL),
+(2, 'Staff', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_groups`
+-- Table structure for table `registrations`
 --
 
-CREATE TABLE `users_groups` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `user_id` int(11) UNSIGNED NOT NULL,
-  `group_id` mediumint(8) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `registrations` (
+  `id` int(11) NOT NULL,
+  `day_cares_id` int(11) NOT NULL,
+  `parents_id` int(11) NOT NULL,
+  `members_id` int(11) NOT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  `child_mother_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_national_no` int(11) DEFAULT NULL,
+  `child_father_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_national_no` int(11) DEFAULT NULL,
+  `child_parents_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_parents_ph_no` int(11) DEFAULT NULL,
+  `child_parents_national_no` int(11) DEFAULT NULL,
+  `child_mother_designation` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_working_place` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_ph_no` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_total_salary` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_basic_salary` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_pay_scale` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_job_duration` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_total_salary` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_basic_salary` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_pay_scale` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_parents_present_address` text COLLATE utf8_unicode_ci,
+  `child_mother_permanent_address` text COLLATE utf8_unicode_ci,
+  `child_mother_parmanent_ph_no` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_permanent_address` text COLLATE utf8_unicode_ci,
+  `child_father_ph_no` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_admit_interest` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_number` tinyint(4) DEFAULT NULL,
+  `applicant_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `applicant_relation` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_dob` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_email` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_dob` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_email` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_parents_dob` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_work_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_work_type` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_working_institute` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_work_ph_no` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_work_md` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_work_md_add` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_mother_working_institute_type` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_work_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_work_type` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_designation` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_working_institute` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_work_ph_no` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_work_md` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_work_md_add` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_father_working_institute_type` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_parents_relation` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `child_parents_name_2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `child_parents_present_address_2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `child_parents_ph_no_2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `child_parents_national_no_2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `child_parents_relation_2` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `child_doj` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `reg_date` date DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `users_groups`
+-- Dumping data for table `registrations`
 --
 
-INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
-(22, 1, 1),
-(21, 4, 1),
-(20, 7, 2),
-(56, 8, 2),
-(55, 9, 2),
-(57, 10, 2),
-(54, 11, 2),
-(53, 12, 2),
-(58, 13, 2),
-(52, 14, 2),
-(51, 15, 2),
-(50, 16, 2),
-(49, 17, 2),
-(48, 18, 2),
-(47, 19, 2),
-(46, 20, 2),
-(45, 21, 2),
-(44, 22, 2),
-(43, 23, 2),
-(42, 24, 2),
-(41, 25, 2),
-(60, 27, 3),
-(61, 28, 3),
-(62, 29, 3),
-(63, 30, 3),
-(64, 31, 3);
+INSERT INTO `registrations` (`id`, `day_cares_id`, `parents_id`, `members_id`, `status`, `child_mother_name`, `child_mother_national_no`, `child_father_name`, `child_father_national_no`, `child_parents_name`, `child_parents_ph_no`, `child_parents_national_no`, `child_mother_designation`, `child_mother_working_place`, `child_mother_ph_no`, `child_mother_total_salary`, `child_mother_basic_salary`, `child_mother_pay_scale`, `child_mother_job_duration`, `child_father_total_salary`, `child_father_basic_salary`, `child_father_pay_scale`, `child_parents_present_address`, `child_mother_permanent_address`, `child_mother_parmanent_ph_no`, `child_father_permanent_address`, `child_father_ph_no`, `child_admit_interest`, `child_number`, `applicant_name`, `applicant_relation`, `child_mother_dob`, `child_mother_email`, `child_father_dob`, `child_father_email`, `child_parents_dob`, `child_mother_work_name`, `child_mother_work_type`, `child_mother_working_institute`, `child_mother_work_ph_no`, `child_mother_work_md`, `child_mother_work_md_add`, `child_mother_working_institute_type`, `child_father_work_name`, `child_father_work_type`, `child_father_designation`, `child_father_working_institute`, `child_father_work_ph_no`, `child_father_work_md`, `child_father_work_md_add`, `child_father_working_institute_type`, `child_parents_relation`, `child_parents_name_2`, `child_parents_present_address_2`, `child_parents_ph_no_2`, `child_parents_national_no_2`, `child_parents_relation_2`, `child_doj`, `reg_date`, `created`, `updated`) VALUES
+(2, 1, 27, 0, NULL, 'সাইমা ইসলাম', 2147483647, 'আতাউল মোস্তাফা', 2147483647, 'আতাউল মোস্তাফা', 1977450000, 254875855, 'ম্যানেজার', 'বিডি', '018548785878', '30000', '20000', 'গ্রেড - ২', '৫ বছর', '40000', '25000', 'গ্রেড - ৩', 'আদাবর, ঢাকা', 'চট্টগ্রাম', '0185525554', 'চট্টগ্রাম', '25454587', '১', 2, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, '', NULL, '2020-01-15 18:14:20', NULL),
+(3, 1, 27, 0, NULL, 'dfdsfsdfsd', 0, 'dsfsdf', 0, '', 0, 0, '', '', 'dsfdsfdsf', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'sdfdsfsd', 'dsfdsfsd', 'dsf', '', '', NULL, NULL, 'fsdfdsdsf sdfsdfsd', 'Mother', '2021-03-04', '', '', '', '', 'dsfdsfsd', NULL, '', '', '', '', NULL, '', NULL, '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '2021-02-13 20:49:02', NULL),
+(4, 1, 27, 0, NULL, 'sdfds', 0, 'dsfdsf', 0, '', 0, 0, '', '', 'dsfdsf', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 'sdfdsfds', 'sdfd', '', '', NULL, NULL, 'helllllllll', 'Mother', '2021-02-16', 'fsdfsdfsd', '2021-02-17', '', '', '', NULL, '', '', '', '', NULL, '', NULL, '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '2021-02-13 21:40:32', NULL),
+(5, 1, 27, 0, NULL, '', 0, '', 0, '', 0, 0, '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, NULL, 'dsfdsf sdf', 'Mother', '', '', '', '', '', '', NULL, '', '', '', '', NULL, '', NULL, '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '2021-02-13 22:11:25', NULL);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `contact`
+-- Indexes for table `attendances`
 --
-ALTER TABLE `contact`
+ALTER TABLE `attendances`
+  ADD PRIMARY KEY (`id`,`members_id`,`day_cares_id`),
+  ADD KEY `fk_attendances_members1_idx` (`members_id`),
+  ADD KEY `fk_attendances_day_cares1_idx` (`day_cares_id`);
+
+--
+-- Indexes for table `budgets`
+--
+ALTER TABLE `budgets`
+  ADD PRIMARY KEY (`id`,`day_cares_id`,`budget_types_id`),
+  ADD KEY `fk_budgets_day_cares1_idx` (`day_cares_id`),
+  ADD KEY `fk_budgets_budget_types1_idx` (`budget_types_id`);
+
+--
+-- Indexes for table `budget_items`
+--
+ALTER TABLE `budget_items`
+  ADD PRIMARY KEY (`id`,`budgets_id`),
+  ADD KEY `fk_budget_items_budgets1_idx` (`budgets_id`);
+
+--
+-- Indexes for table `budget_types`
+--
+ALTER TABLE `budget_types`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `day_cares`
+-- Indexes for table `events`
 --
-ALTER TABLE `day_cares`
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`id`,`day_cares_id`),
+  ADD KEY `fk_events_day_cares1_idx` (`day_cares_id`);
+
+--
+-- Indexes for table `galleries`
+--
+ALTER TABLE `galleries`
+  ADD PRIMARY KEY (`id`,`day_cares_id`),
+  ADD KEY `fk_galleries_day_cares1_idx` (`day_cares_id`);
+
+--
+-- Indexes for table `members`
+--
+ALTER TABLE `members`
+  ADD PRIMARY KEY (`id`,`member_types_id`,`day_cares_id`),
+  ADD KEY `fk_members_day_cares1_idx` (`day_cares_id`),
+  ADD KEY `fk_members_member_types1_idx` (`member_types_id`);
+
+--
+-- Indexes for table `member_types`
+--
+ALTER TABLE `member_types`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `gallery`
+-- Indexes for table `registrations`
 --
-ALTER TABLE `gallery`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `gallery_category`
---
-ALTER TABLE `gallery_category`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `groups`
---
-ALTER TABLE `groups`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `login_attempts`
---
-ALTER TABLE `login_attempts`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `setting`
---
-ALTER TABLE `setting`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `slider`
---
-ALTER TABLE `slider`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users_daycares`
---
-ALTER TABLE `users_daycares`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users_groups`
---
-ALTER TABLE `users_groups`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `uc_users_groups` (`user_id`,`group_id`),
-  ADD KEY `fk_users_groups_users1_idx` (`user_id`),
-  ADD KEY `fk_users_groups_groups1_idx` (`group_id`);
+ALTER TABLE `registrations`
+  ADD PRIMARY KEY (`id`,`day_cares_id`,`parents_id`,`members_id`),
+  ADD KEY `fk_registrations_parents1_idx` (`parents_id`),
+  ADD KEY `fk_registrations_members1_idx` (`members_id`),
+  ADD KEY `fk_registrations_day_cares2_idx` (`day_cares_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT for table `attendances`
 --
-ALTER TABLE `contact`
+ALTER TABLE `attendances`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `budgets`
+--
+ALTER TABLE `budgets`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `budget_items`
+--
+ALTER TABLE `budget_items`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+
+--
+-- AUTO_INCREMENT for table `budget_types`
+--
+ALTER TABLE `budget_types`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `galleries`
+--
+ALTER TABLE `galleries`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `members`
+--
+ALTER TABLE `members`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `member_types`
+--
+ALTER TABLE `member_types`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `registrations`
+--
+ALTER TABLE `registrations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `day_cares`
---
-ALTER TABLE `day_cares`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
--- AUTO_INCREMENT for table `gallery`
---
-ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
---
--- AUTO_INCREMENT for table `gallery_category`
---
-ALTER TABLE `gallery_category`
-  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
-
---
--- AUTO_INCREMENT for table `groups`
---
-ALTER TABLE `groups`
-  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `login_attempts`
---
-ALTER TABLE `login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `setting`
---
-ALTER TABLE `setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `slider`
---
-ALTER TABLE `slider`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
-
---
--- AUTO_INCREMENT for table `users_daycares`
---
-ALTER TABLE `users_daycares`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `users_groups`
---
-ALTER TABLE `users_groups`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `users_groups`
---
-ALTER TABLE `users_groups`
-  ADD CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_users_groups_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

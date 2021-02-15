@@ -48,16 +48,16 @@
          <br>
          <!-- <div class="pdln" id="marquee4"> -->
             <ul style="margin-left: 20px;">            
-               <li><a href="<?=base_url('child-mental-health')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতিসংঘ শিশু অধিকার সনদ, ১৯৮৯</a></li>
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় নারী উন্নয়ন নীতি, ২০১১</a></li>
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় শিক্ষা নীতি, ২০১০</a></li>
-               <li><a href="javascript:void()">  <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় শিশু নীতি, ২০১১</a></li>
-               <li><a href="javascript:void()">  <i class="fa fa-hand-o-right" aria-hidden="true"></i> প্রাক-প্রাথমিক শিক্ষাক্রম, ২০১১</a></li>
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> প্রাক-প্রাথমিক শিক্ষার পরিচালনা কাঠামো, ২০০৮</a></li>
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু আইন, ২০১৩</a></li>
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু দিবাযত্ন কেন্দ্র আইন, ২০২১</a></li>  
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু দিবাযত্ন কেন্দ্রের নকশা এবং কারিগরী নির্দেশিকা</a></li> 
-               <li><a href="javascript:void()"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশুর প্রারম্ভিক যত্ন ও বিকাশের সমন্বিত নীতি-২০১৩</a></li>
+               <li><a href="<?=base_url('law-un-child')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতিসংঘ শিশু অধিকার সনদ, ১৯৮৯</a></li>
+               <li><a href="<?=base_url('law-national-women_dev')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় নারী উন্নয়ন নীতি, ২০১১</a></li>
+               <li><a href="<?=base_url('law-national-edu_law')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় শিক্ষা নীতি, ২০১০</a></li>
+               <li><a href="<?=base_url('law-national-child-law')?>">  <i class="fa fa-hand-o-right" aria-hidden="true"></i> জাতীয় শিশু নীতি, ২০১১</a></li>
+               <li><a href="<?=base_url('law-pre-primary')?>">  <i class="fa fa-hand-o-right" aria-hidden="true"></i> প্রাক-প্রাথমিক শিক্ষাক্রম, ২০১১</a></li>
+               <li><a href="<?=base_url('law-pre-primary-structure')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> প্রাক-প্রাথমিক শিক্ষার পরিচালনা কাঠামো, ২০০৮</a></li>
+               <li><a href="<?=base_url('law-child-law')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু আইন, ২০১৩</a></li>
+               <li><a href="<?=base_url('law-child-dc-center-law')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু দিবাযত্ন কেন্দ্র আইন, ২০২১</a></li>  
+               <li><a href="<?=base_url('law-child-dc-design-instruction')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশু দিবাযত্ন কেন্দ্রের নকশা এবং কারিগরী নির্দেশিকা</a></li> 
+               <li><a href="<?=base_url('law-child-care-law')?>"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> শিশুর প্রারম্ভিক যত্ন ও বিকাশের সমন্বিত নীতি-২০১৩</a></li>
             </ul>
          <!-- </div> -->
 

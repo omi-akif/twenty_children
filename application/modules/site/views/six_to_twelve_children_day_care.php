@@ -10,66 +10,53 @@
          <h4 class="heading-int">শিশুদের খাদ্য তালিকার ১ দিনের নমুনা (০৬ মাস থেকে ০১ বছর)</h4>
          <p>কর্মজীবী পরিবার ও তাদের শিশুদের দিবাকালীন সেবা প্রদানের মাধ্যমে মায়েদের স্ব-স্ব কর্মস্থলে নিশ্চিন্তে কাজ করার সুযোগ প্রদান করা।</p>
 
-         <table style="width:100%">
-            
-            <tr>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li> <h4><b>সকালের খাবারঃ</b></h4></li>
-                     <li><h4>গরুর দুধ: ১০০ মিলি</h4></li>
-                     <li><h4>সুজি : ১৫ গ্রাম</h4></li>
-                     <li><h4>কলা: ১টি(মাঝারি)</h4></li>
-                  </ul>
-               </td>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li><img src="<?=base_url();?>assets/images/home_page/milk.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/shuji.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/banana.png" alt="children" style="width:90px; height: 90px"></li>
-                  </ul>
-               </td>
-            </tr>
-
-            <tr>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li> <h4><b>দুপুরের খাবারঃ</b></h4></li>
-                     <li><h4>ভাত (নাজিরশাইল চাল): ২০ - ৩০গ্রাম</h4></li>
-                     <li><h4>মসুর ডাল: ০৮ - ১০ গ্রাম</h4></li>
-                     <li><h4>সবজী: ৩০ - ৫০ গ্রাম</h4></li>
-                     <li><h4>পালং শাক: ২০ - ৩০ গ্রাম</h4></li>
-                     <li><h4>লেবু: ছোট এক টুকরা</h4></li>
-                  </ul>
-               </td>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li><img src="<?=base_url();?>assets/images/home_page/rice.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/pulses.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/vegetables.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/amarnaths.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/orange.jpg" alt="children" style="width:90px; height: 90px"></li>
-                     
-                  </ul>
-               </td>
-            </tr>
-
-            <tr>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li> <h4><b>বিকালের নাশতাঃ</b></h4></li>
-                     <li><h4>চিকেন স্যুপ: এক বাটি (১২০ মিলি)</h4></li>
-                     <li><h4>কমলার জুস: এক গ্লাস (৯০ মিলি)</h4></li>
-                  </ul>
-               </td>
-               <td>
-                  <ul style="padding-left:5px; margin-left:20px; text-align: left; list-style-type:none">
-                     <li><img src="<?=base_url();?>assets/images/home_page/pulses.png" alt="children" style="width:90px; height: 90px"></li>
-                     <li><img src="<?=base_url();?>assets/images/home_page/orange.jpg" alt="children" style="width:90px; height: 90px"></li>
-                  </ul>
-               </td>
-            </tr>
-
+         <table width="100%">
+            <tbody>
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td width="20%" valign="top"><b>সকালের খাবারঃ</b></td>
+                  <td width="40%" valign="top">
+                     গরুর দুধ: ১০০ মিলি<br>
+                     সুজি : ১৫ গ্রাম<br>
+                     কলা: ১টি(মাঝারি)
+                  </td>
+                  <td valign="top">
+                     <img src="<?=base_url();?>assets/images/home_page/milk.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/shuji.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/banana.png" alt="children" height="60">
+                  </td>
+               </tr>
+               <!-- <tr><td colspan="3" style="border-bottom:1px solid #ccc;padding:20px auto;"></td></tr> -->
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td width="20%" valign="top"><b>দুপুরের খাবারঃ</b></td>
+                  <td width="40%" valign="top">
+                     ভাত (নাজিরশাইল চাল): ২০ - ৩০গ্রাম<br>
+                     মসুর ডাল: ০৮ - ১০ গ্রাম<br>
+                     সবজী: ৩০ - ৫০ গ্রাম<br>
+                     পালং শাক: ২০ - ৩০ গ্রাম<br>
+                     লেবু: ছোট এক টুকরা
+                  </td>
+                  <td valign="top">
+                     <img src="<?=base_url();?>assets/images/home_page/rice.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/pulses.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/vegetables.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/amarnaths.png" alt="children" height="60">
+                     <img src="<?=base_url();?>assets/images/home_page/orange.jpg" alt="children" height="60">
+                  </td>
+               </tr>
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td width="20%" valign="top"><b>বিকালের নাশতাঃ</b></td>
+                  <td width="40%" valign="top">
+                     চিকেন স্যুপ: এক বাটি (১২০ মিলি)<br>
+                     কমলার জুস: এক গ্লাস (৯০ মিলি)
+                  </td>
+                  <td valign="top">
+                     <img src="<?=base_url();?>assets/images/home_page/pulses.png" alt="children" height="80">
+                     <img src="<?=base_url();?>assets/images/home_page/orange.jpg" alt="children" height="80">
+                  </td>
+               </tr>
+            </tbody>
          </table>
+
       </section>
 
       <br>

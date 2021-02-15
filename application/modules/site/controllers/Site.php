@@ -476,8 +476,8 @@ class Site extends Frontend_Controller {
          // Load View
          $this->data['method'] = 'my_profile'; 
          $this->data['meta_title'] = 'প্রোফাইল';                
+         // $this->data['subview'] = 'my_profile';
          $this->data['subview'] = 'childenroll_form';
-         // $this->data['subview'] = 'childenroll_form';
          $this->data['edit'] = $edit == 'edit' ? true : false;
          $this->load->view('frontend/_layout_main', $this->data);
       }
@@ -495,11 +495,7 @@ class Site extends Frontend_Controller {
          $this->data['info'] = $this->Common_model->get_user_details($this->userSessID);
          // Application List
          // $this->data['results'] = $this->Site_model->get_application_data($this->userSessID);
-         $this->data['results'] = $this->Site_model->get_application(null,$id);
-         // echo $this->db->last_query(); exit;
-
-         $this->data['member_id'] = $id;
-
+         $this->data['results'] = $this->Site_model->get_application($this->userSessID);
 
          // echo '<pre>';
          // print_r($this->data['results']); exit;
@@ -1315,4 +1311,70 @@ class Site extends Frontend_Controller {
          $this->data['subview'] = 'at_galance';
          $this->load->view('frontend/_layout_main', $this->data);
       }
+
+      public function law_un_child(){
+         $this->data['meta_title'] = 'জাতিসংঘ শিশু অধিকার সনদ, ১৯৮৯';
+         $this->data['subview'] = 'law_un_child';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_national_women_dev(){
+         $this->data['meta_title'] = 'জাতীয় নারী উন্নয়ন নীতি, ২০১১';
+         $this->data['subview'] = 'law_national_women_dev';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+      public function law_national_edu_law(){
+         $this->data['meta_title'] = 'জাতীয় শিক্ষা নীতি, ২০১০';
+         $this->data['subview'] = 'law_national_edu_law';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_national_child_law(){
+         $this->data['meta_title'] = 'জাতীয় শিশু নীতি, ২০১১';
+         $this->data['subview'] = 'law_national_child_law';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+
+      public function law_pre_primary(){
+         $this->data['meta_title'] = 'প্রাক-প্রাথমিক শিক্ষাক্রম, ২০১১';
+         $this->data['subview'] = 'law_pre_primary';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_pre_primary_structure(){
+         $this->data['meta_title'] = 'প্রাক-প্রাথমিক শিক্ষার পরিচালনা কাঠামো, ২০০৮';
+         $this->data['subview'] = 'law_pre_primary_structure';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_child_law(){
+         $this->data['meta_title'] = 'শিশু আইন, ২০১৩';
+         $this->data['subview'] = 'law_child_law';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+
+
+      public function law_child_dc_center_law(){
+         $this->data['meta_title'] = 'শিশু দিবাযত্ন কেন্দ্র আইন, ২০২১';
+         $this->data['subview'] = 'law_child_dc_center_law';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_child_dc_design_instruction(){
+         $this->data['meta_title'] = 'শিশু দিবাযত্ন কেন্দ্রের নকশা এবং কারিগরী নির্দেশিকা';
+         $this->data['subview'] = 'law_child_dc_design_instruction';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
+      public function law_child_care_law(){
+         $this->data['meta_title'] = 'শিশুর প্রারম্ভিক যত্ন ও বিকাশের সমন্বিত নীতি-২০১৩';
+         $this->data['subview'] = 'law_child_care_law';
+         $this->load->view('frontend/_layout_main', $this->data);
+      }
+
    }

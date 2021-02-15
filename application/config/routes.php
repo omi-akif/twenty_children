@@ -87,8 +87,17 @@ $route['admission-form'] = 'site/admission_form';
 $route['enrollment-application'] = 'site/enrollment_application';
 
 $route['child-rights-certificats'] = 'site/child_rights_certificats';
-$route['child-pre-education'] = 'site/child_pre_education';
 
+$route['law-un-child'] = 'site/law_un_child';
+$route['law-national-women_dev'] = 'site/law_national_women_dev';
+$route['law-national-edu_law'] = 'site/law_national_edu_law';
+$route['law-national-child-law'] = 'site/law_national_child_law';
+$route['law-pre-primary'] = 'site/law_pre_primary';
+$route['law-pre-primary-structure'] = 'site/law_pre_primary_structure';
+$route['law-child-law'] = 'site/law_child_law';
+$route['law-child-dc-center-law'] = 'site/law_child_dc_center_law';
+$route['law-child-dc-design-instruction'] = 'site/law_child_dc_design_instruction';
+$route['law-child-care-law'] = 'site/law_child_care_law';
 
 
 $route['shishu-academy-district'] = 'site/shishu_academy_district';

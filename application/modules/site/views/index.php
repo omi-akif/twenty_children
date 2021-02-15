@@ -47,7 +47,7 @@
      text-align: center;
      text-decoration: none;
      display: inline-block;
-     height: 45px;
+     /* height: 45px; */
      margin: 15px 0 0px 0;
      cursor: pointer;
      display: block;
@@ -75,7 +75,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                <div class="item active">
-                  <img src="<?=base_url();?>assets/images/slider_img/Slideshow01.jpg" alt="slider1" style="width:100%; height: 200px;">
+                  <img src="<?=base_url();?>assets/images/slider_img/Slideshow011.jpg" alt="slider1" style="width:100%; height: 200px;">
                   <!-- <div class="carousel-caption">
                      <h3>Los Angeles</h3>
                      <p>LA is always so much fun!</p>
@@ -195,19 +195,38 @@
              <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
              <p>শিশু একাডেমী, মিউজিয়াম, প্রত্নতত্ত্ব</p>
            </div>
-     <!--      </div>
+     <!--      </div><div class="row"> -->
 
-          <div class="row"> -->
-           <div class="col-md-2">
-            <a href="<?=base_url('stop-crime')?>" class="button_btn button2"  style="text-decoration: none;line-height: 18px;color:white; ">শিশু নির্যাতন বন্ধ করুন</a>
+         
+           <div class="col-md-4">
+           <h5 >শিশু নির্যাতন বন্ধ করুন</h5>
+             <span style="width: 45px; height: 5px; background-color: green; display: block; padding-bottom: 5px;"></span>
+             <p><a href="<?=base_url('stop-crime')?>">বিস্তারিত</a></p>            
            </div>
-           <div class="col-md-2">
-             <a href="<?=base_url('child-rights-certificats')?>" class="button_btn button3"  style="text-decoration: none;line-height: 18px;color:white; ">শিশু অধিকার সনদ প্রতিপালন</a>
+           <div class="col-md-4">
+           <h5 >শিশু অধিকার সনদ প্রতিপালন</h5>
+             <span style="width: 45px; height: 5px; background-color: blue; display: block; padding-bottom: 5px;"></span>
+             <p><a href="<?=base_url('child-rights-certificats')?>">বিস্তারিত</a></p>
            </div>
-           <div class="col-md-2">
-              <a href="<?=base_url('at-a-galance')?>" class="button_btn button5" style="text-decoration: none; background-color: #6464d6; color:white; padding: 15px auto !important; ">একনজরে</a> 
-           </div>
+           <div class="col-md-4">
+           <h5 >একনজরে</h5>
+             <span style="width: 45px; height: 5px; background-color: red; display: block; padding-bottom: 5px;"></span>
+             <p><a href="<?=base_url('at-a-galance')?>">দিবাযত্ন কেন্দ্রসমূহের তথ্য</a></p>
+           </div> 
+           
           </div>
+
+          <!-- <div class="row">
+           <div class="col-md-4">
+            <a href="<?=base_url('stop-crime')?>" class="button_btn button2"  style="text-decoration: none;color:white; padding: 15px auto !important; ">শিশু নির্যাতন বন্ধ করুন</a>
+           </div>
+           <div class="col-md-4">
+             <a href="<?=base_url('child-rights-certificats')?>" class="button_btn button2"  style="text-decoration: none;color:white;padding: 15px auto !important;  ">শিশু অধিকার সনদ প্রতিপালন</a>
+           </div>
+           <div class="col-md-4">
+              <a href="<?=base_url('at-a-galance')?>" class="button_btn button2" style="text-decoration: none; color:white; padding: 15px auto !important; ">একনজরে</a> 
+           </div> 
+          </div> -->
 
 
 

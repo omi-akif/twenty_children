@@ -25,10 +25,10 @@
   <![endif]-->
 </head>
 
-<body class="hold-transition register-page">
+<body class="hold-transition register-page" style="background-image: linear-gradient(to bottom right, #257fd8, #efef81);">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url();?>"><b>Login</b> Panel</a>
+    <a href="<?php echo base_url();?>" style="font-co"><b>20 Daycare User </b> Login Panel</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
