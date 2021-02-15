@@ -102,6 +102,27 @@ class Attendance extends Backend_Controller {
       $this->load->view('backend/_layout_main', $this->data);
    }
 
+   public function logfileupload(){
+      // Validation
+      $this->form_validation->set_rules('logfile', 'select member', 'required|trim');   
+
+      if ($this->form_validation->run() == true){
+         $member_id  = $this->input->post('members_id');
+         $date_start = $this->input->post('date_start');
+         $date_end   = $this->input->post('date_end');
+
+         // Results
+         $this->data['results'] = $this->Attendance_model->get_report($this->DC_ID, $member_id, $date_start, $date_end);
+         // print_r($this->data['results']); exit;
+      }
+      $this->data['results'] = $this->Attendance_model->get_today_attendance($this->DC_ID);
+      
+      // Load View
+      $this->data['meta_title'] = 'Attendance File Upload';
+      $this->data['subview'] = 'attendance/fileupload';
+      $this->load->view('backend/_layout_main', $this->data);
+   }
+
    // public function edit($id){
    //    $this->form_validation->set_rules('child_name', 'name', 'required|trim');     
    //    $this->data['info'] = $this->Attendance_model->get_info($id);
