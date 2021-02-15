@@ -4,7 +4,6 @@
    <div class="col-md-9 main-content">
 
       <section class="project-purpose">
-         <h4 class="lnt text-center">বিকল্প খাবার</h4>
          <h4 class="heading-int">শিশুদের খাদ্য তালিকার ১ দিনের নমুনা (০৬ মাস থেকে ০১ বছর)</h4>
          <!-- <p>কর্মজীবী পরিবার ও তাদের শিশুদের দিবাকালীন সেবা প্রদানের মাধ্যমে মায়েদের স্ব-স্ব কর্মস্থলে নিশ্চিন্তে কাজ করার সুযোগ প্রদান করা।</p> -->
 
@@ -61,7 +60,7 @@
 
       <section class="project-service">
 
-         <h4 class="lnt text-center">বিকল্প খাবার</h4>
+         <h4><b>বিকল্প খাবার</b></h4>
          <p>উপরের মেন্যুটি ১ দিনের, বাকি ৪ দিনের জন্য বিকল্প খাবার হিসেবে নিম্নোক্ত খাবার গুলো দেওয়া হয়ঃ</p>
 
          <table width="100%">
@@ -98,8 +97,6 @@
             </tbody>
          </table>
       </section>
-
-      <?php /*
 
       <section class="project-purpose">
          
@@ -323,8 +320,6 @@
             </div>
          </div>   
       </section>
-
-      */ ?>
 
       <!-- </div> -->
    </div>   
